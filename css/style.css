@@ -406,8 +406,8 @@ input[type="email"]:focus {
 *** Header ***
 *****************************************************/
 #header {
-  padding: 200px 0 510px;
-  background-image: url("../images/banner_background.jpg");
+  padding: 200px 0 50px;
+  /*background-image: url("../images/banner_background.jpg");*/
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1020,7 +1020,9 @@ input[type="email"]:focus {
   margin-top: -8px;
   margin-left: 8px;
 }
-
+/*.header-video {
+  background: url(../images/lay.png);
+}*/
 /*****************************************************
 Responsive Styles
 *****************************************************/
