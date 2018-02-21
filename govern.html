@@ -11,8 +11,8 @@
   <link rel="stylesheet" href="css/bootstrap.min.css"> <!-- Bootstrap Grid -->
   <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
   <link rel="stylesheet" href="css/animate.min.css"><!-- Animate -->
-  <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
   <link rel="stylesheet" href="css/magnific-popup.css"> <!-- Resource style -->
+  <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
 
 </head>
 <body>
@@ -51,31 +51,41 @@
         <div class="row">
           <div class="col-md-8">
             <ul class="left row">
-              <li class="col-md-2"><a href="govern.html">Для правительства</a></li>
-              <li class="col-md-2"><a href="society.html">Для авторского общества</a></li>
-              <li class="col-md-2"><a href="author.html">Для исполнителей</a></li>
-              <li class="col-md-2"><a href="business.html">Для предпринимателей</a></li>
+              <li class="col-md-2"><a href="govern.html" class="govern-link govern-link-active"></a></li>
+              <li class="col-md-2"><a href="society.html" class="society-link"></a></li>
+              <li class="col-md-2"><a href="author.html" class="author-link"></a></li>
+              <li class="col-md-2"><a href="business.html" class="business-link"></a></li>
             </ul>
           </div>
           <div class="col-md-4 text-right">
             <a href="index.html" class="logo"><img src="images/logo.png" alt="Dikoskanner"></a>
           </div>
 
-         </div>
-       </div>
-     </header><!-- //Main Nav -->
+        </div>
+      </div>
+    </header><!-- //Main Nav -->
 
-     <section id="header">
+    <section id="header">
       <div class="container">
         <div class="row">
-          <div class="col-md-8 col-md-offset-2 text-center">
-            <h1 class="wow fadeInUp">50 млн. грн. недополученных налогов в бюджет</h1>
-            <p class="wow fadeInUp" data-wow-delay=".2s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam quae at nemo adipisci blanditiis quia explicabo porro optio voluptatem, sapiente, voluptates fugiat? Ea dolore animi dolor explicabo omnis, dicta quae!</p>
- 
+          <div class="col-md-10 col-md-offset-1 text-center excerpt">
+            <h1 class="wow fadeInUp">МИРОВАЯ ПРАКТИКА</h1>
+            <p class="wow fadeInUp" data-wow-delay=".2s">В каждой стране существует свое авторское общество: в Италии (SIAE, роялти 9,78 евро на душу населения в год ), в Турции (MESAM), в России (РАО) и т.д.
+              <br>
+              Авторское общество является посредником между предпринимателем, артистом и государством. Авторское общество собирает с баров, ресторанов, клубов (всех общественных мест где играет музыка) авторские отчисления за музыкальный контент который игрался в заведении и распределяет их по артистам и государствам.
+              <br>
+            Авторские общества всех стран входят в международное авторское общество CISAC http://www.cisac.org/ (кроме Украины).
+            </p>
           </div>
-          <!-- iPhone -->  
-          <!-- <img class="header_iphone wow fadeInUp" src="images/header_iphone.png" alt="" data-wow-delay=".4s"> -->
-          <!-- //iPhone -->
+          <div id="gb1" class="a-move text-center" onclick="openbox('govern-1'); return false" >Детальнее...</div>
+          <div class="col-md-10 col-md-offset-1 text-center" style="display: none;">
+            <p id="govern-1" class="wow fadeInUp" data-wow-delay=".2s">В каждой стране существует свое авторское общество: в Италии (SIAE, роялти 9,78 евро на душу населения в год ), в Турции (MESAM), в России (РАО) и т.д.
+              <br>
+              Авторское общество является посредником между предпринимателем, артистом и государством. Авторское общество собирает с баров, ресторанов, клубов (всех общественных мест где играет музыка) авторские отчисления за музыкальный контент который игрался в заведении и распределяет их по артистам и государствам.
+              <br>
+            Авторские общества всех стран входят в международное авторское общество CISAC http://www.cisac.org/ (кроме Украины).
+            </p>
+          </div>
         </div>
       </div>
     </section><!-- //Header -->
@@ -367,5 +377,18 @@
 <script src="js/wow.min.js"></script>  <!-- wow -->
 <script src="js/jquery.magnific-popup.min.js"></script>  <!-- wow -->
 <script src="js/main.js"></script>  <!-- Main Script -->
+<script type="text/javascript">
+
+            function openbox(id){
+                display = document.getElementById(id).style.display;
+
+                if(display=='none'){
+                    document.getElementById(id).style.display='flex';
+                    document.getElementById(id).classList.add("a-move");
+                }else{
+                    document.getElementById(id).style.display='none';
+                }
+            }
+        </script>
 </body>
 </html>

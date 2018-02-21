@@ -434,7 +434,55 @@ input[type="email"]:focus {
 #header .video-btn i {
   margin-right: 15px;
 }
+.govern-link {
+  width: 100%;
+  display: block;
+  height: 80px;
+  background: url(../images/ukraina_gerb.png) 50% no-repeat;
+  background-size: contain;
+}
+.society-link {
+  width: 100%;
+  display: block;
+  height: 80px;
+  background: url(../images/society.png) 50% no-repeat;
+  background-size: contain;
+}
+.author-link {
+  width: 100%;
+  display: block;
+  height: 80px;
+  background: url(../images/guitarman.png) 50% no-repeat;
+  background-size: contain;
+}
+.business-link {
+  width: 100%;
+  display: block;
+  height: 80px;
+  background: url(../images/coffee.png) 50% no-repeat;
+  background-size: contain;
+}
+.govern-link:hover, .govern-link-active {
+  background: url(../images/ukraina_gerb-active.png) 50% no-repeat;
+  background-size: contain;
+  transition: .4s; 
+}
+.society-link:hover, .society-link-active {
+  background: url(../images/society-active.png) 50% no-repeat;
+  background-size: contain;
+  transition: .4s;
+}
+.author-link:hover, .author-link-active {
+  background: url(../images/guitarman-active.png) 50% no-repeat;
+  background-size: contain;
+  transition: .4s;
 
+}
+.business-link:hover, .business-link-active {
+  background: url(../images/coffee-active.png) 50% no-repeat;
+  background-size: contain;
+  transition: .4s;
+}
 /*****************************************************
 *** Features ***
 *****************************************************/
@@ -896,7 +944,7 @@ input[type="email"]:focus {
   width: 100%;
   opacity: 0;
   -webkit-transform: scale(0.95);
-          transform: scale(0.95);
+  transform: scale(0.95);
   transition: opacity 0.97s, -webkit-transform 0.97s;
   transition: opacity 0.97s, transform 0.97s;
   transition: opacity 0.97s, transform 0.97s, -webkit-transform 0.97s;
@@ -910,7 +958,7 @@ input[type="email"]:focus {
 #plan #price_tables .individual.active, #plan #price_tables .company.active {
   opacity: 1;
   -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
 }
 
 #plan #price_tables .individual.active .price-table, #plan #price_tables .company.active .price-table {
@@ -1020,9 +1068,25 @@ input[type="email"]:focus {
   margin-top: -8px;
   margin-left: 8px;
 }
+
+.excerpt:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+  left: 0;
+  height: 6em;
+  background: -moz-linear-gradient(top,rgba(255,255,255,0) 0,#fff 100%);
+  background: -webkit-gradient(linear,left top,left bottom,color-stop(0,rgba(255,255,255,0)),color-stop(100%,#fff));
+  background: -webkit-linear-gradient(top,rgba(255,255,255,0) 0,#fff 100%);
+  background: -o-linear-gradient(top,rgba(255,255,255,0) 0,#fff 100%);
+  background: -ms-linear-gradient(top,rgba(255,255,255,0) 0,#fff 100%);
+  background: linear-gradient(top,rgba(255,255,255,0) 0,#fff 100%);
+}
 /*.header-video {
   background: url(../images/lay.png);
-}*/
+  }*/
 /*****************************************************
 Responsive Styles
 *****************************************************/
