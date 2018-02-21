@@ -77,9 +77,10 @@
             Авторские общества всех стран входят в международное авторское общество CISAC http://www.cisac.org/ (кроме Украины).
             </p>
           </div>
-          <div id="gb1" class="a-move text-center" onclick="openbox('govern-1'); return false" >Детальнее...</div>
-          <div class="col-md-10 col-md-offset-1 text-center" style="display: none;">
-            <p id="govern-1" class="wow fadeInUp" data-wow-delay=".2s">В каждой стране существует свое авторское общество: в Италии (SIAE, роялти 9,78 евро на душу населения в год ), в Турции (MESAM), в России (РАО) и т.д.
+          <div id="wc1" class="white-cover"></div>
+          <div id="gb1" class="a-move text-center pointer" style="cursor: pointer" onclick="openbox('govern-1');openbox('gb1');openbox('wc1'); return false" >Детальнее...</div>
+          <div id="govern-1" class="col-md-10 col-md-offset-1 text-center" style="display: none;">
+            <p  class="wow fadeInUp" data-wow-delay=".1s">В каждой стране существует свое авторское общество: в Италии (SIAE, роялти 9,78 евро на душу населения в год ), в Турции (MESAM), в России (РАО) и т.д.
               <br>
               Авторское общество является посредником между предпринимателем, артистом и государством. Авторское общество собирает с баров, ресторанов, клубов (всех общественных мест где играет музыка) авторские отчисления за музыкальный контент который игрался в заведении и распределяет их по артистам и государствам.
               <br>
@@ -384,7 +385,6 @@
 
                 if(display=='none'){
                     document.getElementById(id).style.display='flex';
-                    document.getElementById(id).classList.add("a-move");
                 }else{
                     document.getElementById(id).style.display='none';
                 }

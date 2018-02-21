@@ -1069,11 +1069,11 @@ input[type="email"]:focus {
   margin-left: 8px;
 }
 
-.excerpt:after {
-  content: '';
+.white-cover {
+
   display: block;
   position: absolute;
-  bottom: 5px;
+  bottom: 75px;
   right: 0;
   left: 0;
   height: 6em;
