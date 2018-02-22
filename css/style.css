@@ -29,12 +29,13 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 32px;
   line-height: 72px;
+  text-transform: uppercase;
 }
 
 h2 {
-  font-size: 52px;
-  line-height: 52px;
-  margin-bottom: 64px;
+      font-size: 22px;
+    line-height: 72px;
+    text-transform: uppercase;
 }
 
 h3 {
@@ -406,7 +407,7 @@ input[type="email"]:focus {
 *** Header ***
 *****************************************************/
 #header {
-  padding: 200px 0 50px;
+  padding: 100px 0 0;
   /*background-image: url("../images/banner_background.jpg");*/
   background-repeat: no-repeat;
   background-position: center center;
@@ -683,6 +684,17 @@ ul>li {
   max-width: 100%;
 }
 
+.double {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 3%;
+  -ms-align-items: center;
+  align-items: center;
+}
 /*****************************************************
 *** Buy ***
 *****************************************************/
@@ -726,7 +738,7 @@ ul>li {
 *** Customers ***
 *****************************************************/
 #customers {
-  padding: 120px 0;
+  /*padding: 120px 0;*/
 }
 
 #customers i {
@@ -1025,7 +1037,9 @@ ul>li {
   margin-top: 10px;
   margin-bottom: 0;
 }
-
+.device img {
+  width: 100%;
+}
 /*****************************************************
 *** Footer ***
 *****************************************************/
