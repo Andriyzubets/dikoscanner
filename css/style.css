@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 62px;
+  font-size: 32px;
   line-height: 72px;
 }
 
@@ -59,8 +59,8 @@ p.subtitle {
 }
 
 p {
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 1.2em;
   color: #8c8f94;
 }
 
@@ -416,8 +416,9 @@ input[type="email"]:focus {
 }
 
 #header p {
-  font-size: 20px;
+  font-size: 16px;
   color: #8c8f94;
+  line-height: 1.2em;
 }
 
 #header .header_iphone {
@@ -531,10 +532,11 @@ input[type="email"]:focus {
 
 #iphone-feature .iphone-showcase {
   position: absolute;
-  bottom: 250px;
   right: 50%;
 }
-
+ul>li {
+  list-style: circle;
+}
 /*****************************************************
 *** Map Feature ***
 *****************************************************/
@@ -571,10 +573,47 @@ input[type="email"]:focus {
 
 #map-feature .map-showcase {
   position: absolute;
-  bottom: 110px;
+  bottom: -45px;
   left: 50%;
 }
-
+.minus {
+  margin-left: 60px;
+}
+.plus {
+  margin-left: 60px;
+  display: block;
+}
+.plus:before {
+  content: '+';
+  line-height: 33px;
+  font-size: 45px;
+  text-align: center;
+  color: #fff;
+  display: block;
+  position: relative;
+  left: -60px;
+  top: 55px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background: #19bd17;
+  border: 3px solid #29bd17;
+}
+.minus:before {
+  content: '-';
+  line-height: 31px;
+  font-size: 55px;
+  text-align: center;
+  color: #ea732e;
+  display: block;
+  position: relative;
+  left: -60px;
+  top: 55px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  border: 3px solid #ea732e;
+}
 /*****************************************************
 *** iPhone Screens ***
 *****************************************************/
@@ -724,6 +763,10 @@ input[type="email"]:focus {
   z-index: 5;
   left: 0;
   margin-left: 0;
+  display: flex;
+  justify-content: space-between;
+  -ms-align-items: center;
+  align-items: center;
 }
 
 #customers .carousel-indicators li {
@@ -992,8 +1035,8 @@ input[type="email"]:focus {
 }
 
 #footer .footer-container {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
 
 #footer .copyright-container {
