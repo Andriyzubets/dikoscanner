@@ -287,7 +287,18 @@
     </div>
   </div>
 </footer>
+<script type="text/javascript">
 
+  function openbox(id){
+    display = document.getElementById(id).style.display;
+
+    if(display=='none'){
+      document.getElementById(id).style.display='flex';
+    }else{
+      document.getElementById(id).style.display='none';
+    }
+  }
+</script>
 <script src="js/jquery-2.1.4.min.js"></script> <!-- jQuery -->
 <script src="js/bootstrap.min.js"></script>  <!-- Bootstrap -->
 <script src="js/wow.min.js"></script>  <!-- wow -->
