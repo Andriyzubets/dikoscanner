@@ -5,6 +5,7 @@
 html, body {
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
+  transition: all .2s;
 }
 
 .cf:before,
@@ -189,7 +190,7 @@ input[type="email"]:focus {
   padding: 10px 0;
   font-size: 16px;
   z-index: 10;
-  background-color: transparent;
+  background-color: #fff;
   webkit-transition: all 0.37s cubic-bezier(0, 0, 0.58, 1);
   transition: all 0.37s cubic-bezier(0, 0, 0.58, 1);
 }
@@ -440,7 +441,6 @@ input[type="email"]:focus {
 
 #main-nav.active {
   background-color: #ffffff;
-  opacity: .5;
   padding: 0;
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
   -ms-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
@@ -508,50 +508,58 @@ input[type="email"]:focus {
   width: 100%;
   display: block;
   height: 60px;
-  background: url(../images/ukraina_gerb.png) 50% no-repeat;
+  background: url(../images/govern.png)0 100% no-repeat;
   background-size: contain;
+  opacity: 1;
+  transition: .2s;
 }
 .society-link {
   width: 100%;
   display: block;
   height: 80px;
-  background: url(../images/society.png) 50% no-repeat;
+  background: url(../images/society.png) 0 37% no-repeat;
   background-size: contain;
+  transition: .2s;
+
 }
 .author-link {
   width: 100%;
   display: block;
   height: 80px;
-  background: url(../images/guitarman.png) 50% no-repeat;
+  background: url(../images/author.png) 0 22% no-repeat;
   background-size: contain;
+  transition: .2s;
+
 }
 .business-link {
   width: 100%;
   display: block;
   height: 80px;
-  background: url(../images/coffee.png) 50% no-repeat;
+  background: url(../images/coffee.png) 0 22% no-repeat;
   background-size: contain;
+  transition: .2s;
+
 }
 .govern-link:hover, .govern-link-active {
-  background: url(../images/ukraina_gerb-active.png) 50% no-repeat;
-  background-size: contain;
-  transition: .4s; 
+  opacity: .6;
+  /*filter: drop-shadow(0px 0px 4px #000);*/
+  transition: .2s;
 }
 .society-link:hover, .society-link-active {
-  background: url(../images/society-active.png) 50% no-repeat;
-  background-size: contain;
-  transition: .4s;
+   opacity: .6;
+  /*filter: drop-shadow(0px 0px 4px #000);*/
+  transition: .2s;
 }
 .author-link:hover, .author-link-active {
-  background: url(../images/guitarman-active.png) 50% no-repeat;
-  background-size: contain;
-  transition: .4s;
+   opacity: .6;
+  /*filter: drop-shadow(0px 0px 4px #000);*/
+  transition: .2s;
 
 }
 .business-link:hover, .business-link-active {
-  background: url(../images/coffee-active.png) 50% no-repeat;
-  background-size: contain;
-  transition: .4s;
+   opacity: .6;
+  /*filter: drop-shadow(0px 0px 4px #000);*/
+  transition: .2s;
 }
 .container {
   width: 90%;
