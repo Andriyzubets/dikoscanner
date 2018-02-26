@@ -615,19 +615,19 @@ input[type="email"]:focus {
   right: 40%;
   width: 60%;
 }
-#iphone-feature h2 {
+#iphone-feature h2, #complex h2 {
   color: #1e2135;
   text-transform: none;
   font-size: 40px;
 }
-#iphone-feature hr, #catalogues hr {
+#iphone-feature hr, #catalogues hr, #control hr {
   width: 100px;
   height: 2px;
   background: #d88447;
   border: none;
   margin-left: 0;
 }
-#iphone-feature .bold {
+#iphone-feature .bold, #complex .bold {
   font-weight: 900;
 }
 #iphone-feature ul>li {
@@ -648,6 +648,19 @@ input[type="email"]:focus {
   width: 20px;
   height: 24px;
   background: url(../images/checked-list.png) 50% no-repeat;
+}
+#complex {
+  padding: 60px 0;
+}
+#complex hr {
+  width: 64px;
+  height: 2px;
+  background: #d88447;
+  border:none;
+}
+#complex p {
+  color: #656973;
+  font-size: 18px;
 }
 /*****************************************************
 *** Map Feature ***
@@ -956,7 +969,9 @@ input[type="email"]:focus {
 #customers .carousel-control.right {
   right: -100px;
 }
-
+#control h2 {
+  font-size: 48px;
+}
 /*****************************************************
 *** Plan ***
 *****************************************************/
@@ -1158,7 +1173,7 @@ input[type="email"]:focus {
   max-width: 850px;
   margin: 0 auto;
   display: block;
-
+  padding: 5% 0;
 }
 /*****************************************************
 *** Catalogues ***
