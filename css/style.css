@@ -196,7 +196,7 @@ input[type="email"]:focus {
 }
 
 #main-nav #navigation {
-  color: #fff;
+  color: #1f2236;
   text-decoration: none;
   position: absolute;
   top: 50%;
@@ -517,7 +517,7 @@ input[type="email"]:focus {
   width: 100%;
   display: block;
   height: 80px;
-  background: url(../images/society.png) 0 37% no-repeat;
+  background: url(../images/society.png) 0 10% no-repeat;
   background-size: contain;
   transition: .2s;
 
@@ -526,7 +526,7 @@ input[type="email"]:focus {
   width: 100%;
   display: block;
   height: 80px;
-  background: url(../images/author.png) 0 22% no-repeat;
+  background: url(../images/author.png) 0 -15% no-repeat;
   background-size: contain;
   transition: .2s;
 
@@ -535,7 +535,7 @@ input[type="email"]:focus {
   width: 100%;
   display: block;
   height: 80px;
-  background: url(../images/coffee.png) 0 22% no-repeat;
+  background: url(../images/coffee.png) 0 -15% no-repeat;
   background-size: contain;
   transition: .2s;
 
