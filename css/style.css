@@ -1,11 +1,13 @@
 * {
   box-sizing: border-box;
+  transition: all .4s;
+  
 }
 
 html, body {
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
-  transition: all .2s;
+  transition: all .4s;
 }
 
 .cf:before,
@@ -294,6 +296,7 @@ input[type="email"]:focus {
   display: flex;
   -ms-align-items: center;
   align-items: center;
+  position: relative;
 }
 #main-nav #slide_out_menu {
   position: fixed;
@@ -535,7 +538,7 @@ input[type="email"]:focus {
 .govern-link {
   width: 100%;
   display: block;
-  height: 80px;
+  height: 100px;
   background: url(../images/govern.png)0 10% no-repeat;
   background-size: contain;
   opacity: 1;
@@ -544,7 +547,7 @@ input[type="email"]:focus {
 .society-link {
   width: 100%;
   display: block;
-  height: 80px;
+  height: 100px;
   background: url(../images/society.png) 0 10% no-repeat;
   background-size: contain;
   transition: .2s;
@@ -553,7 +556,7 @@ input[type="email"]:focus {
 .author-link {
   width: 100%;
   display: block;
-  height: 80px;
+  height: 100px;
   background: url(../images/author.png) 0 -15% no-repeat;
   background-size: contain;
   transition: .2s;
@@ -562,7 +565,7 @@ input[type="email"]:focus {
 .business-link {
   width: 100%;
   display: block;
-  height: 80px;
+  height: 100px;
   background: url(../images/coffee.png) 0 -15% no-repeat;
   background-size: contain;
   transition: .2s;
@@ -581,7 +584,7 @@ input[type="email"]:focus {
 .scanner-link {
   width: 100%;
   display: block;
-  height: 80px;
+  height: 100px;
   background: url(../images/final.png) 0 -15% no-repeat;
   background-size: contain;
   transition: .2s;
@@ -589,7 +592,7 @@ input[type="email"]:focus {
 .logo-link {
   width: 100%;
   display: block;
-  height: 80px;
+  height: 100px;
   background: url(../images/logo-white.png) 0 50% no-repeat;
   background-size: contain;
   transition: .2s;
@@ -1339,8 +1342,9 @@ input[type="email"]:focus {
 *** Society ***
 *****************************************************/
 #society-header {
-  background: #7d8a8a;
-  padding: 100px 0 0;
+  /*background: #7d8a8a;*/
+  padding: 10% 0 0;
+  height: 470px;
 }
 #society-header .excerpt {
   display: -webkit-flex;
@@ -1357,7 +1361,7 @@ input[type="email"]:focus {
   align-items: center;
 }
 #society-header .row {
-  margin-top: -200px;
+  margin-top: 0;
 }
 #society-header h1 {
   background: #cc544d;
@@ -1368,13 +1372,15 @@ input[type="email"]:focus {
   padding: 5px 30px;
   border-radius: 5px;
 }
-#society-header .overlay-3 {
-  width: 100vw;
-  height: 400px;
-  background: url(../images/society-header-layout.png) no-repeat;
-  -webkit-background-size: cover;
-  background-size: cover;
-
+.society-header-lay {
+  background: #7d8a8a url(../images/society-header-layout.png) no-repeat;
+  width: 130%;
+  height: 100%;
+  top: 0;
+  left: -15%;
+  background-size: 120%;
+  position: relative;
+  z-index: -1;
 }
 #society-header p {
   background: #3e454787;
@@ -1388,6 +1394,7 @@ input[type="email"]:focus {
 }
 #society-report {
   padding: 3% 0;
+  background: #fff;
 }
 #society-report .container {
   background: #dfdfdf;
@@ -2084,6 +2091,7 @@ a.plus1 {
 #customers {
   padding: 120px 0;
   overflow: visible;
+  background: #fff;
 }
 
 #customers i {

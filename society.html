@@ -20,10 +20,10 @@
   <header id="main-nav">
     <div class="container">
 
-      <a id="navigation" href="#"><i class="fa fa-bars"></i></a>
+      <a id="navigation" href="#" onclick="document.querySelector('.row').style.left='150px';return false"><i class="fa fa-bars"></i></a>
 
       <div id="slide_out_menu">
-        <a href="#" class="menu-close"><i class="fa fa-times"></i></a>
+        <a href="#" class="menu-close" onclick="document.querySelector('.row').style.left='0';return false"><i class="fa fa-times"></i></a>
         <!-- <div class="logo"><img src="images/logo-white.png" alt=""></div> -->
         <ul>
           <li><a href="#" class="side-world"></a></li>
@@ -54,8 +54,11 @@
   </header>
 
   <section id="society-header">
-    <div class="overlay-3"></div>
-    <div class="container">
+    <div class="parall-container">
+      <div id="parall-1" class="society-header-lay layer-1"></div>
+    </div>
+    <!-- <div class="overlay-3"></div> -->
+    <div class="container" style="padding: 10% 0 0;">
       <div class="row">
         <div class="col-md-10 col-md-offset-1 text-justify excerpt">
           <h1 class="wow fadeInUp">МИРОВАЯ ПРАКТИКА</h1>
@@ -73,10 +76,12 @@
     <div id="accordion" class="panel-group">
       <div class="panel panel-default">
         <div class="panel-heading description">
-          Годовой отчет
-          <a id="soc1" class="accordion-toggle plus" href="#collapse-One" data-parent="#accordion" data-toggle="collapse" onclick="openbox('soc1'); return false">
-            +
-          </a>
+          <h4 class="panel-title">
+            Годовой отчет
+            <a id="soc1" class="accordion-toggle plus" href="#collapse-One" data-parent="#accordion" data-toggle="collapse" onclick="openbox('soc1'); return false">
+              +
+            </a>
+          </h4>
           <a id="soc1" class="accordion-toggle plus1" href="#collapse-One" data-parent="#accordion" data-toggle="collapse" onclick="openbox('soc1'); return false">
             -
           </a>
@@ -286,11 +291,25 @@
         document.getElementById(id).style.display='none';
       }
     }
+
+    // var w = document.querySelector('#slide_out_menu');
+    // var width = window.getComputedStyle(w, null).width;
+    // alert(width)
+    // if (window.getComputedStyle(w, null).left === '0px') {
+    //    document.querySelector('.row').style.left=width;
+    //    alert('Ok')
+    // }
+
+   
   </script>
   <script src="js/jquery-2.1.4.min.js"></script> <!-- jQuery -->
   <script src="js/bootstrap.min.js"></script>  <!-- Bootstrap -->
   <script src="js/wow.min.js"></script>  <!-- wow -->
   <script src="js/jquery.magnific-popup.min.js"></script>  <!-- wow -->
+  <script src="js/twinmax.min.js"></script>  <!-- wow -->
+  <script src="js/skrollr.min.js"></script>
+  <script src="js/scroolly.demo.min.js"></script>
+  <script src="js/jquery.scroolly.js"></script>
   <script src="js/main.js"></script>  <!-- Main Script -->
 </body>
 </html>

@@ -20,10 +20,10 @@
   <header id="main-nav">
     <div class="container">
 
-      <a id="navigation" href="#"><i class="fa fa-bars"></i></a>
+      <a id="navigation" href="#" onclick="document.querySelector('.row').style.left='150px';return false"><i class="fa fa-bars"></i></a>
 
       <div id="slide_out_menu">
-        <a href="#" class="menu-close"><i class="fa fa-times"></i></a>
+        <a href="#" class="menu-close" onclick="document.querySelector('.row').style.left='0';return false"><i class="fa fa-times"></i></a>
         <!-- <div class="logo"><img src="images/logo-white.png" alt=""></div> -->
         <ul>
           <li><a href="#" class="side-world"></a></li>
@@ -32,6 +32,7 @@
           <li><a href="#" class="side-benefit"></a></li>
           <li><a href="#" class="side-contacts"></a></li>
         </ul>
+
         
       </div>
 
@@ -241,6 +242,10 @@
   <script src="js/bootstrap.min.js"></script>  <!-- Bootstrap -->
   <script src="js/wow.min.js"></script>  <!-- wow -->
   <script src="js/jquery.magnific-popup.min.js"></script>  <!-- wow -->
+  <script src="js/twinmax.min.js"></script>  <!-- wow -->
+<script src="js/skrollr.min.js"></script>
+<script src="js/scroolly.demo.min.js"></script>
+<script src="js/jquery.scroolly.js"></script>
   <script src="js/main.js"></script>  <!-- Main Script -->
 </body>
 </html>
