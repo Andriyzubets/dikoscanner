@@ -537,7 +537,7 @@ input[type="email"]:focus {
   display: block;
   height: 80px;
   background: url(../images/govern.png)0 10% no-repeat;
-  background-size: cover;
+  background-size: contain;
   opacity: 1;
   transition: .2s;
 }
@@ -546,7 +546,7 @@ input[type="email"]:focus {
   display: block;
   height: 80px;
   background: url(../images/society.png) 0 10% no-repeat;
-  background-size: cover;
+  background-size: contain;
   transition: .2s;
 
 }
@@ -555,7 +555,7 @@ input[type="email"]:focus {
   display: block;
   height: 80px;
   background: url(../images/author.png) 0 -15% no-repeat;
-  background-size: cover;
+  background-size: contain;
   transition: .2s;
 
 }
@@ -564,30 +564,73 @@ input[type="email"]:focus {
   display: block;
   height: 80px;
   background: url(../images/coffee.png) 0 -15% no-repeat;
-  background-size: cover;
+  background-size: contain;
   transition: .2s;
 
 }
+#main-nav .right {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  -ms-align-items: center;
+  align-items: center;
+}
+.scanner-link {
+  width: 100%;
+  display: block;
+  height: 80px;
+  background: url(../images/final.png) 0 -15% no-repeat;
+  background-size: contain;
+  transition: .2s;
+}
+.logo-link {
+  width: 100%;
+  display: block;
+  height: 80px;
+  background: url(../images/logo-white.png) 0 50% no-repeat;
+  background-size: contain;
+  transition: .2s;
+}
+.scanner-link:hover {
+  background: url(../images/dikoscanner-header.gif) no-repeat;
+  background-size: contain;
+  transition: .2s;
+}
+.logo-link:hover {
+  background: url(../images/dikotech-header.gif) no-repeat;
+  background-size: contain;
+  transition: .2s;
+}
 .govern-link:hover, .govern-link-active {
-  opacity: .6;
+  /*opacity: .6;*/
   /*filter: drop-shadow(0px 0px 4px #000);*/
+  background: url(../images/govern-header.gif) no-repeat;
+  background-size: contain;
   transition: .2s;
 }
 .society-link:hover, .society-link-active {
- opacity: .6;
- /*filter: drop-shadow(0px 0px 4px #000);*/
- transition: .2s;
+ /*opacity: .6;*/
+  /*filter: drop-shadow(0px 0px 4px #000);*/
+  background: url(../images/society-header.gif) no-repeat;
+  background-size: contain;
+  transition: .2s;
 }
 .author-link:hover, .author-link-active {
- opacity: .6;
- /*filter: drop-shadow(0px 0px 4px #000);*/
- transition: .2s;
-
+ /*opacity: .6;*/
+  /*filter: drop-shadow(0px 0px 4px #000);*/
+  background: url(../images/author-header.gif) no-repeat;
+  background-size: contain;
+  transition: .2s;
 }
 .business-link:hover, .business-link-active {
- opacity: .6;
- /*filter: drop-shadow(0px 0px 4px #000);*/
- transition: .2s;
+ /*opacity: .6;*/
+  /*filter: drop-shadow(0px 0px 4px #000);*/
+  background: url(../images/business-header.gif) no-repeat;
+  background-size: contain;
+  transition: .2s;
 }
 .container {
   width: 90%;
@@ -596,7 +639,13 @@ input[type="email"]:focus {
 /*****************************************************
 *** Govern ***
 *****************************************************/
-
+#main-video {
+  padding: 103px 0 0;
+}
+#main-video iframe {
+  width: 100%;
+  height: calc(100vh - 103px);
+}
 #govern-header {
   height: 470px;
   width: 100%;
