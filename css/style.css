@@ -1002,7 +1002,7 @@ input[type="email"]:focus {
   text-decoration: none;
 }
 #govern-decision {
-  background: #444c51 url(../images/govern-grafics.gif) 50% no-repeat;
+  background: #444c51 url(../images/govern-diagram.png) 50% no-repeat;
   background-size: cover;
   height: 425px;
   padding: 2% 0;
@@ -1022,7 +1022,8 @@ input[type="email"]:focus {
 #govern-decision .frame {
   width: 53%;
   height: 100%;
-  background: #ccc;
+  background: #ccc url(../images/govern-grafics.gif) 50% no-repeat;
+  background-size: contain;
   margin: 0 auto;
   box-shadow: 0 12px 27px #000004;
 }
@@ -1037,6 +1038,10 @@ input[type="email"]:focus {
   border-style: none;
   border-bottom-style: outset;
   border-radius: 4px;
+  transition: .4s;
+}
+.after-decision:hover {
+  box-shadow: 0 0 10px #000;
 }
 /*****************************************************
 *** Features ***
