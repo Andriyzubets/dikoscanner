@@ -1002,7 +1002,8 @@ input[type="email"]:focus {
   text-decoration: none;
 }
 #govern-decision {
-  background: #444c51 url(../images/govern-diagram.png) 50% no-repeat;
+  background: #444c51 url(../images/govern-grafics.gif) 50% no-repeat;
+  background-size: cover;
   height: 425px;
   padding: 2% 0;
   color: #fff;
