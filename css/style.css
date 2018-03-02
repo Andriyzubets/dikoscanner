@@ -694,46 +694,46 @@ input[type="email"]:focus {
   width: 100%;
   /*position: absolute;*/
  /* top: 0;
-  left: 0;*/
+ left: 0;*/
 
-  -webkit-transform-origin: center top;
-  -moz-transform-origin: center top;
-  -ms-transform-origin: center top;
-  -o-transform-origin: center top;
-  transform-origin: center top;
+ -webkit-transform-origin: center top;
+ -moz-transform-origin: center top;
+ -ms-transform-origin: center top;
+ -o-transform-origin: center top;
+ transform-origin: center top;
+ -webkit-transform: rotateX(-90deg);
+ -moz-transform: rotateX(-90deg);
+ -ms-transform: rotateX(-90deg);
+ -o-transform: rotateX(-90deg);
+ transform: rotateX(-90deg);
+}
+.myBox {
+  /*width: 50vw;*/
+  /*margin: 0 auto;*/
+  /*padding: 10px 0;*/
+  /*background-color: #d73f22;*/
+  /*color: #fff;*/
+  /*position: relative;*/
+
   -webkit-transform: rotateX(-90deg);
   -moz-transform: rotateX(-90deg);
   -ms-transform: rotateX(-90deg);
   -o-transform: rotateX(-90deg);
   transform: rotateX(-90deg);
-}
-.myBox {
-    /*width: 50vw;*/
-    /*margin: 0 auto;*/
-    /*padding: 10px 0;*/
-    /*background-color: #d73f22;*/
-    /*color: #fff;*/
-    /*position: relative;*/
-
-    -webkit-transform: rotateX(-90deg);
-    -moz-transform: rotateX(-90deg);
-    -ms-transform: rotateX(-90deg);
-    -o-transform: rotateX(-90deg);
-    transform: rotateX(-90deg);
-    -webkit-transform-origin: center center;
-    -moz-transform-origin: center center;
-    -ms-transform-origin: center center;
-    -o-transform-origin: center center;
-    transform-origin: center center;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -ms-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    -o-backface-visibility: hidden;
-    backface-visibility: hidden;
+  -webkit-transform-origin: center center;
+  -moz-transform-origin: center center;
+  -ms-transform-origin: center center;
+  -o-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .myBoxB h3 {
   /*border-color: #d73f22;*/
@@ -813,7 +813,7 @@ input[type="email"]:focus {
   background: url(../images/govern-flag-2.png) no-repeat;
   background-size: cover;
   box-shadow: inset 0 0 20px #111111;
-
+  padding: 0 0 5%;
 }
 #govern-problems #parallax-bg1 {
   position: absolute;
@@ -822,133 +822,162 @@ input[type="email"]:focus {
 }
 /*#govern-problems #parallax-bg1 .bg {
   background: url(../images/govern-flag.png);
-}*/
-#govern-problems h2 {
-  margin-top: 5%;
-  color: #fff;
-  font-size: 30px;
-  text-align: center;
-}
-#govern-problems hr {
-  background: #b4b6b0;
-  border: none;
-  height: 4px;
-  width: 100px;
-  margin-bottom: 55px;
-}
-#govern-problems .icons {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  justify-content: space-between;
-  -ms-align-items: center;
-  align-items: center;
-}
-#govern-problems .icons .icon {
-  width: 15%;
-}
+  }*/
+  #govern-problems h2 {
+    margin-top: 5%;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+  }
+  #govern-problems hr {
+    background: #b4b6b0;
+    border: none;
+    height: 4px;
+    width: 100px;
+    margin-bottom: 55px;
+  }
+  #govern-problems .icons {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+  }
+  #govern-problems .icons .icon {
+    width: 15%;
+  }
 
-#govern-problems .icons .icon .circle {
-  width: 125px;
-  height: 125px;
-  border-radius: 100%;
-  border: 5px solid #fff;
-  margin: 0 auto;
-  transition: .4s;
-}
+  #govern-problems .icons .circle {
+    width: 125px;
+    height: 125px;
+    border-radius: 100%;
+    border: 5px solid #fff;
+    margin: 0 auto;
+    transition: .4s;
+    text-decoration: none;
+    padding: 0;
+  }
 
-#govern-problems .icons .icon:hover  .circle{
-  border: 5px solid #76b69f;
-  transition: .4s;
-}
-#govern-problems .icons .icon:hover h4 {
-  color: #76b69f;
-  transition: .4s;
-}
-#govern-problems .icons .icon .law {
-  background: url(../images/weights-white.png) 50% no-repeat;
-  background-size: 90%;
-}
-#govern-problems .icons .icon:hover  .law{
-  background: url(../images/weights-hover.png) 50% no-repeat;
-  background-size: 90%;
-}
-#govern-problems .icons .icon .profit {
-  background: url(../images/funds-white.png) 50% no-repeat;
-  background-size: 90%;
-}
-#govern-problems .icons .icon .world {
-  background: url(../images/no-globe-white.png) 50% no-repeat;
-  background-size: 90%;
-}
-#govern-problems .icons .icon .society {
-  background: url(../images/interest-white.png) 50% no-repeat;
-  background-size: 55%;
-}
-#govern-problems .icons .icon .features {
-  background: url(../images/no-wheel-white.png) 50% no-repeat;
-  background-size: 90%;
-}
-#govern-problems .icons .icon .water {
-  background: url(../images/water-white.png) 50% no-repeat;
-  background-size: 40%;
-}
-#govern-problems .icons .icon h4 {
-  color: #9fabba;
-  text-align: center;
-  font-size: 17px;
-  transition: .4s;
+  #govern-problems .icons li:hover  .circle{
+    border: 5px solid #50b79f;
+    transition: .4s;
+  }
+  #govern-problems .icons li:hover h4 {
+    color: #76b69f;
+    transition: .4s;
+  }
+  #govern-problems .icons .law {
+    background: url(../images/weights-white.png) 50% no-repeat;
+    background-size: 90%;
+  }
+  #govern-problems .icons li:hover  .law{
+    background: url(../images/weights-hover.png) 50% no-repeat;
+    background-size: 90%;
+  }
+  #govern-problems .icons .profit {
+    background: url(../images/funds-white.png) 50% no-repeat;
+    background-size: 90%;
+  }
+  #govern-problems .icons .profit:hover {
+    background: url(../images/funds-hover.png) 50% no-repeat;
+    background-size: 90%;
+  }
+  #govern-problems .icons .world {
+    background: url(../images/no-globe-white.png) 50% no-repeat;
+    background-size: 90%;
+  }
+  #govern-problems .icons .world:hover {
+    background: url(../images/no-globe-hover.png) 50% no-repeat;
+    background-size: 90%;
+  }
+  #govern-problems .icons .society {
+    background: url(../images/interest-white.png) 50% no-repeat;
+    background-size: 55%;
+  }
+  #govern-problems .icons .society:hover {
+    background: url(../images/interest-hover.png) 50% no-repeat;
+    background-size: 55%;
+  }
+  #govern-problems .icons .features {
+    background: url(../images/no-wheel-white.png) 50% no-repeat;
+    background-size: 90%;
+  }
+  #govern-problems .icons .features:hover {
+    background: url(../images/no-wheel-hover.png) 50% no-repeat;
+    background-size: 90%;
+  }
+  #govern-problems .icons .water {
+    background: url(../images/water-white.png) 50% no-repeat;
+    background-size: 40%;
+  }
+  #govern-problems .icons .water:hover {
+    background: url(../images/water-hover.png) 50% no-repeat;
+    background-size: 40%;
+  }
+  #govern-problems .icons h4 {
+    color: #9fabba;
+    text-align: center;
+    font-size: 17px;
+    transition: .4s;
+    top: 115px;
+    position: relative;
+  }
+  #govern-problems .icons .nav-tabs {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border:none;
 
-}
-
-#govern-problems-detailed {
-  padding: 5% 0;
-  background: #f5f4f2;
-  overflow: hidden;
-  display: flex;
-  justify-content: space-between;
-}
-#govern-problems-detailed .quote {
-  width: 405px;
-  height: 120px;
-  background: #fafaf9;
-  border: 1px solid #e9e8e7;
-  padding: 0 13px;
-  opacity: .7
-}
-#govern-problems-detailed .active {
-  opacity: 1;
-}
-#govern-problems-detailed .quote:before {
- content: "";
- display: block;
- width: 40px;
- height: 20px;
- background: #fafaf9;
- position: relative;
- bottom: -92%;
- right: -70%;
- transform: rotate(-25deg);
- border-bottom: 1px solid #e9e8e7;
- border-left: 1px solid #e9e8e7;
-}
-#govern-problems-detailed .active:before {
- content: "";
- display: block;
- width: 40px;
- height: 20px;
- background: #fafaf9;
- position: relative;
- bottom: -92%;
- right: -70%;
- transform: rotate(25deg);
- border-bottom: 1px solid #e9e8e7;
- border-right: 1px solid #e9e8e7;
- border-left: none;
-}
-#govern-problems-detailed .quote p {
+  }
+  #govern-problems-detailed {
+    padding: 5% 0;
+    background: #f5f4f2;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+  }
+  #govern-problems-detailed .quote {
+    width: 405px;
+    height: 120px;
+    background: #fafaf9;
+    border: 1px solid #e9e8e7;
+    padding: 0 13px;
+    opacity: .7
+  }
+  #govern-problems-detailed .active {
+    opacity: 1;
+  }
+  #govern-problems-detailed .quote:before {
+   content: "";
+   display: block;
+   width: 40px;
+   height: 20px;
+   background: #fafaf9;
+   position: relative;
+   bottom: -92%;
+   right: -70%;
+   transform: rotate(-25deg);
+   border-bottom: 1px solid #e9e8e7;
+   border-left: 1px solid #e9e8e7;
+ }
+ #govern-problems-detailed .active:before {
+   content: "";
+   display: block;
+   width: 40px;
+   height: 20px;
+   background: #fafaf9;
+   position: relative;
+   bottom: -92%;
+   right: -70%;
+   transform: rotate(25deg);
+   border-bottom: 1px solid #e9e8e7;
+   border-right: 1px solid #e9e8e7;
+   border-left: none;
+ }
+ #govern-problems-detailed .quote p {
   font-size: 13px;
 }
 #govern-problems-detailed .quote a {
