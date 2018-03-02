@@ -107,136 +107,154 @@
 
   <div class="container">
     <div class="row">
-      <h2>КАК ПРОИСХОДИТ <b>У НАС?</b></h2>
-      <hr>
+      <h2 class="wow fadeInUp">КАК ПРОИСХОДИТ <b>У НАС?</b></h2>
+      <hr class="wow fadeInUp">
       <div class="icons">
 
         <ul class="nav nav-tabs">
-          <li class="active"><a data-toggle="tab" href="#panel3"  class="circle law"><h4>Закон</h4></a></li>
-          <li><a data-toggle="tab" href="#panel4" class="circle profit"><h4>Налоги</h4></a></li>
-          <li><a data-toggle="tab" href="#panel5" class="circle world"><h4>Мир</h4></a></li>
-          <li><a data-toggle="tab" href="#panel6" class="circle society"><h4>Общественность</h4></a></li>
-          <li><a data-toggle="tab" href="#panel7" class="circle features"><h4>Механика</h4></a></li>
-          <li><a data-toggle="tab" href="#panel8"  class="circle water"> <h4>Усилия</h4></a></li>
+          <li class="active"><a data-toggle="tab" href="#panel3"  class="circle law wow fadeInLeft" onclick="document.querySelector('.govern-problems-detailed-tabs').style.left='0';return false"><h4>Закон</h4></a></li>
+          <li><a data-toggle="tab" href="#panel4" class="circle profit wow fadeInLeft" onclick="document.querySelector('.govern-problems-detailed-tabs').style.left='-20vw';return false"><h4>Налоги</h4></a></li>
+          <li><a data-toggle="tab" href="#panel5" class="circle world wow fadeInUp" onclick="document.querySelector('.govern-problems-detailed-tabs').style.left='-40vw';return false"><h4>Мир</h4></a></li>
+          <li><a data-toggle="tab" href="#panel6" class="circle society wow fadeInUp" onclick="document.querySelector('.govern-problems-detailed-tabs').style.left='-60vw';return false"><h4>Общественность</h4></a></li>
+          <li><a data-toggle="tab" href="#panel7" class="circle features wow fadeInRight" onclick="document.querySelector('.govern-problems-detailed-tabs').style.left='-80vw';return false"><h4>Механика</h4></a></li>
+          <li><a data-toggle="tab" href="#panel8"  class="circle water wow fadeInRight" onclick="document.querySelector('.govern-problems-detailed-tabs').style.left='-100vw';return false"> <h4>Усилия</h4></a></li>
         </ul>
       </div>
     </div>
   </section>
 
   <section id="govern-problems-detailed">
-    <div class="quote">
-      <p>Государство не получают больших налогов</p>
-      <a href="#">Читать дальше</a>
-    </div>
-    <div class="quote active">
+
+    <div class="tab-content govern-problems-detailed-tabs">
+      <div id="panel3" class="tab-pane fade in active quote">
+        <p>Государство не получают больших налогов</p>
+        <a href="#">Читать дальше</a>
+      </div>
+      <div id="panel4" class="tab-pane fade quote">
+        <p>Благодаря тому что Украина не входит в международную структуру CISAC, живые выступления мировых популярных артистов становится почти невозможным</p>
+        <a href="#">Читать дальше</a>
+      </div>
+      <div id="panel5" class="tab-pane fade quote">
+       <p>Мировые державы и общественность не понимают – почему так  происходит?</p>
+       <a href="#">Читать дальше</a>
+     </div>
+     <div id="panel6" class="tab-pane fade quote">
       <p>Благодаря тому что Украина не входит в международную структуру CISAC, живые выступления мировых популярных артистов становится почти невозможным</p>
       <a href="#">Читать дальше</a>
     </div>
-    <div class="quote">
-      <p>Мировые державы и общественность не понимают – почему так  происходит?</p>
+    <div id="panel7" class="tab-pane fade quote">
+      <p>Благодаря тому что Украина не входит в международную структуру CISAC, живые выступления мировых популярных артистов становится почти невозможным</p>
       <a href="#">Читать дальше</a>
     </div>
-  </section>
-  <section id="govern-decision">
-    <h2>Решение</h2>
-    <hr>
-    <div class="frame">
-
+    <div id="panel8" class="tab-pane fade quote">
+      <p>Благодаря тому что Украина не входит в международную структуру CISAC, живые выступления мировых популярных артистов становится почти невозможным</p>
+      <a href="#">Читать дальше</a>
     </div>
-  </section>
-  <button class="after-decision">Узнать больше</button>
+  </div>
 
-  <section id="govern-benefit">
-    <figure>
 
-    </figure>
-    <div class="container">
-      <div class="row">
-        <h2><b>Выгода</b> государства</h2>
-        <hr>
-        <p>
-          Государство начнет получать автоматизировано и прозрачно <b>налоги</b>.
-          <br><br>
-          Страна становиться в <b>мировой авторской зоне</b> соответственно государство получает налоги зарубежных артистов у нас и наших артистов за рубежом.
-          <br> <br>
-          Для <b>поднятия культуры</b> достаточно народные песни сделать дешевле для предпринимателей, которым в свою очередь будет выгоднее крутить именно этот контент.
-          <br><br>
-        </p>
+</section>
+<section id="govern-decision">
+  <h2>Решение</h2>
+  <hr>
+  <div class="frame">
+
+  </div>
+</section>
+<button class="after-decision">Узнать больше</button>
+
+<section id="govern-benefit">
+  <figure>
+
+  </figure>
+  <div class="container">
+    <div class="row">
+      <h2><b>Выгода</b> государства</h2>
+      <hr>
+      <p>
+        Государство начнет получать автоматизировано и прозрачно <b>налоги</b>.
+        <br><br>
+        Страна становиться в <b>мировой авторской зоне</b> соответственно государство получает налоги зарубежных артистов у нас и наших артистов за рубежом.
+        <br> <br>
+        Для <b>поднятия культуры</b> достаточно народные песни сделать дешевле для предпринимателей, которым в свою очередь будет выгоднее крутить именно этот контент.
+        <br><br>
+      </p>
+    </div>
+  </div>
+</section>
+<footer id="footer">
+  <div class="container footer-container">
+    <div class="row">
+      <div class="col-md-3">
+        <img class="logo" src="images/logo.png" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos in nemo fuga modi voluptatum. </p>
+        <!-- <a href="#" class="app_download"><img src="images/app-store-download.png" alt=""></a> -->
+        <ul class="socials">
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+          <li><a href="#"><i class="fa fa-tumblr"></i></a></li>
+          <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+      <div class="col-md-2 col-md-offset-3 col-sm-4 col-xs-6 footer-links">
+        <ul>
+          <li><p class="title">Узнать детальнее</p></li>
+          <li><a href="#">Как это работает?</a></li>
+          <li><a href="#">Политика конфиденциальности</a></li>
+          <li><a href="#">Мы в сетях</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="col-md-2 col-sm-4 col-xs-6 footer-links">
+        <ul>
+          <li><p class="title">О нас</p></li>
+          <li><a href="#">О проекте</a></li>
+          <li><a href="#">Возможности</a></li>
+          <li><a href="#">Вопросы | ответы</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="col-md-2 col-sm-4 col-xs-6 footer-links">
+        <ul>
+          <li><p class="title">Поддержка</p></li>
+          <li><a href="#">F.A.Q.</a></li>
+          <li><a href="#">Контакты</a></li>
+          <li><a href="#">FB chat</a></li>
+          <li><a href="#">Позвони нам</a></li>
+        </ul>
       </div>
     </div>
-  </section>
-  <footer id="footer">
-    <div class="container footer-container">
-      <div class="row">
-        <div class="col-md-3">
-          <img class="logo" src="images/logo.png" alt="">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos in nemo fuga modi voluptatum. </p>
-          <!-- <a href="#" class="app_download"><img src="images/app-store-download.png" alt=""></a> -->
-          <ul class="socials">
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-            <li><a href="#"><i class="fa fa-tumblr"></i></a></li>
-            <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-          </ul>
-        </div>
-        <div class="col-md-2 col-md-offset-3 col-sm-4 col-xs-6 footer-links">
-          <ul>
-            <li><p class="title">Узнать детальнее</p></li>
-            <li><a href="#">Как это работает?</a></li>
-            <li><a href="#">Политика конфиденциальности</a></li>
-            <li><a href="#">Мы в сетях</a></li>
-            <li><a href="#">Контакты</a></li>
-          </ul>
-        </div>
-        <div class="col-md-2 col-sm-4 col-xs-6 footer-links">
-          <ul>
-            <li><p class="title">О нас</p></li>
-            <li><a href="#">О проекте</a></li>
-            <li><a href="#">Возможности</a></li>
-            <li><a href="#">Вопросы | ответы</a></li>
-            <li><a href="#">Контакты</a></li>
-          </ul>
-        </div>
-        <div class="col-md-2 col-sm-4 col-xs-6 footer-links">
-          <ul>
-            <li><p class="title">Поддержка</p></li>
-            <li><a href="#">F.A.Q.</a></li>
-            <li><a href="#">Контакты</a></li>
-            <li><a href="#">FB chat</a></li>
-            <li><a href="#">Позвони нам</a></li>
-          </ul>
+  </div>
+  <div class="container copyright-container">
+    <div class="row">
+      <div class="col-md-6 text-left">
+        <div class="more-info">
+          <!-- For more freebies visit: <a href="http://getcraftwork.com">http://getcraftwork.com</a> -->
         </div>
       </div>
-    </div>
-    <div class="container copyright-container">
-      <div class="row">
-        <div class="col-md-6 text-left">
-          <div class="more-info">
-            <!-- For more freebies visit: <a href="http://getcraftwork.com">http://getcraftwork.com</a> -->
-          </div>
-        </div>
-        <div class="col-md-6 text-right">
-          <!-- <div class="made-by">Made with Love by <a href="http://getcraftwork.com" target="_blank"><img src="images/craftwork.png" alt=""></a></div> -->
-        </div>
+      <div class="col-md-6 text-right">
+        <!-- <div class="made-by">Made with Love by <a href="http://getcraftwork.com" target="_blank"><img src="images/craftwork.png" alt=""></a></div> -->
       </div>
     </div>
-  </footer>
+  </div>
+</footer>
 
-  <script src="js/jquery-2.1.4.min.js"></script> <!-- jQuery -->
-  <script src="js/bootstrap.min.js"></script>  <!-- Bootstrap -->
-  <script src="js/wow.min.js"></script>  <!-- wow -->
-  <script src="js/jquery.magnific-popup.min.js"></script>  <!-- wow -->
-  <script src="js/twinmax.min.js"></script>  <!-- wow -->
-  <script src="js/skrollr.min.js"></script>
-  <script src="js/scroolly.demo.min.js"></script>
-  <script src="js/jquery.scroolly.js"></script>
+<script src="js/jquery-2.1.4.min.js"></script> <!-- jQuery -->
+<script src="js/bootstrap.min.js"></script>  <!-- Bootstrap -->
+<script src="js/wow.min.js"></script>  <!-- wow -->
+<script src="js/jquery.magnific-popup.min.js"></script>  <!-- wow -->
+<script src="js/twinmax.min.js"></script>  <!-- wow -->
+<script src="js/skrollr.min.js"></script>
+<script src="js/scroolly.demo.min.js"></script>
+<script src="js/jquery.scroolly.js"></script>
 
-  <script src="js/main.js"></script>  <!-- Main Script -->
-  <script type="text/javascript">
-    var s = skrollr.init();
-  </script>
+<script src="js/main.js"></script>  <!-- Main Script -->
+<script type="text/javascript">
+  var s = skrollr.init();
+
+</script>
 
 </body>
 </html>

@@ -861,7 +861,7 @@ input[type="email"]:focus {
     padding: 0;
   }
 
-  #govern-problems .icons li:hover  .circle{
+  #govern-problems .icons li:hover .circle, #govern-problems .icons li.active .circle{
     border: 5px solid #50b79f;
     transition: .4s;
   }
@@ -873,7 +873,7 @@ input[type="email"]:focus {
     background: url(../images/weights-white.png) 50% no-repeat;
     background-size: 90%;
   }
-  #govern-problems .icons li:hover  .law{
+  #govern-problems .icons li:hover  .law, #govern-problems .icons li.active .law{
     background: url(../images/weights-hover.png) 50% no-repeat;
     background-size: 90%;
   }
@@ -881,7 +881,7 @@ input[type="email"]:focus {
     background: url(../images/funds-white.png) 50% no-repeat;
     background-size: 90%;
   }
-  #govern-problems .icons .profit:hover {
+  #govern-problems .icons .profit:hover, #govern-problems .icons li.active .profit{
     background: url(../images/funds-hover.png) 50% no-repeat;
     background-size: 90%;
   }
@@ -889,7 +889,7 @@ input[type="email"]:focus {
     background: url(../images/no-globe-white.png) 50% no-repeat;
     background-size: 90%;
   }
-  #govern-problems .icons .world:hover {
+  #govern-problems .icons .world:hover, #govern-problems .icons li.active .world {
     background: url(../images/no-globe-hover.png) 50% no-repeat;
     background-size: 90%;
   }
@@ -897,7 +897,7 @@ input[type="email"]:focus {
     background: url(../images/interest-white.png) 50% no-repeat;
     background-size: 55%;
   }
-  #govern-problems .icons .society:hover {
+  #govern-problems .icons .society:hover, #govern-problems .icons li.active .society {
     background: url(../images/interest-hover.png) 50% no-repeat;
     background-size: 55%;
   }
@@ -905,7 +905,7 @@ input[type="email"]:focus {
     background: url(../images/no-wheel-white.png) 50% no-repeat;
     background-size: 90%;
   }
-  #govern-problems .icons .features:hover {
+  #govern-problems .icons .features:hover, #govern-problems .icons li.active .features {
     background: url(../images/no-wheel-hover.png) 50% no-repeat;
     background-size: 90%;
   }
@@ -913,7 +913,7 @@ input[type="email"]:focus {
     background: url(../images/water-white.png) 50% no-repeat;
     background-size: 40%;
   }
-  #govern-problems .icons .water:hover {
+  #govern-problems .icons .water:hover, #govern-problems .icons li.active .water {
     background: url(../images/water-hover.png) 50% no-repeat;
     background-size: 40%;
   }
@@ -938,6 +938,21 @@ input[type="email"]:focus {
     overflow: hidden;
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
+  }
+  #govern-problems-detailed .tab-content>.tab-pane {
+    display: block;
+  }
+  #govern-problems-detailed .tab-content {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    width: 220vw;
+    position: relative;
+    transition: .4s;
   }
   #govern-problems-detailed .quote {
     width: 405px;
@@ -945,7 +960,8 @@ input[type="email"]:focus {
     background: #fafaf9;
     border: 1px solid #e9e8e7;
     padding: 0 13px;
-    opacity: .7
+    opacity: .3;
+    margin: 0 15px 0 0;
   }
   #govern-problems-detailed .active {
     opacity: 1;
