@@ -1,13 +1,11 @@
 * {
   box-sizing: border-box;
-  transition: all .4s;
-  
 }
 
 html, body {
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
-  transition: all .4s;
+  transition: all .2s;
 }
 
 .cf:before,
