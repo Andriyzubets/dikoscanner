@@ -63,16 +63,16 @@ $(document).ready(function() {
 
 
 	// Wow Animations
-    wow = new WOW(
-      {
+	wow = new WOW(
+	{
       boxClass:     'wow',      // default
       animateClass: 'animated', // default
       offset:       0,          // default
       mobile:       true,       // default
       live:         true        // default
-    }
-    )
-    wow.init();
+  }
+  )
+	wow.init();
 
 
     // Menu For Xs Mobile Screens
@@ -81,16 +81,16 @@ $(document).ready(function() {
     }
 
     $(window).on('resize', function(){
-	    if ($(window).height() < 450) {
-	    	$('#slide_out_menu').addClass('xs-screen');
-	    } else{
-	    	$('#slide_out_menu').removeClass('xs-screen');
-	    }
+    	if ($(window).height() < 450) {
+    		$('#slide_out_menu').addClass('xs-screen');
+    	} else{
+    		$('#slide_out_menu').removeClass('xs-screen');
+    	}
     });
 
 
     // Magnific Popup
-    $(".lightbox").magnificPopup();
+    // $(".lightbox").magnificPopup();
 
 
 
@@ -98,30 +98,65 @@ $(document).ready(function() {
 
 
 var 
-    $layer_1 = $('.layer-1'),
-    
-    $container = $('#govern-header'),
-    container_w = $container.width(),
-    container_h = $container.height();
+$layer_1 = $('.layer-1'),
+
+$container = $('#govern-header'),
+container_w = $container.width(),
+container_h = $container.height();
 
 $(window).on('mousemove.parallax', function(event) {
-  var pos_x = event.pageX,
-      pos_y = event.pageY,
-      left  = 0,
-      top   = 0;
+	var pos_x = event.pageX,
+	pos_y = event.pageY,
+	left  = 0,
+	top   = 0;
 
-  left = container_w / 2 - pos_x;
-  top  = container_h / 2 - pos_y;
-  
-  TweenMax.to(
-    $layer_1, 
-    1, 
-    { 
-      css: { 
-        transform: 'translateX(' + left / 8 + 'px) translateY(' + top / 8 + 'px)' 
-      }, 
-      ease:Expo.easeOut, 
-      overwrite: 'all' 
-    });
-  
+	left = container_w / 2 - pos_x;
+	top  = container_h / 2 - pos_y;
+
+	TweenMax.to(
+		$layer_1, 
+		1, 
+		{ 
+			css: { 
+				transform: 'translateX(' + left / 8 + 'px) translateY(' + top / 8 + 'px)' 
+			}, 
+			ease:Expo.easeOut, 
+			overwrite: 'all' 
+		});
+
 });
+
+$('#govern-problems').scroolly([
+{
+//                    from: 'doc-top',
+to: 'el-bottom = vp-top',
+cssFrom: {
+//                        '-border-radius': '0px'
+//                        'background-position': 'center 0px'
+//                        'opacity': '1'
+},
+cssTo: {
+//                        '-border-radius': '400px'
+//                        'background-position': 'center 40%'
+//                        'opacity': '.1'
+},
+onScroll: function(element, offset, length){
+	var progress = offset / length;
+
+	element.css('background-position', 'center '+$.scroolly.getTransitionFloatValue(0, 70, progress)+'%');
+}
+},
+{
+	from: 'el-center = vp-top',
+	to: 'el-bottom = vp-top',
+	cssFrom: {
+//                        'background-position': 'center 0px',
+//                        'opacity': '1'
+},
+cssTo: {
+//                        'background-position': 'center 200px',
+//                        'opacity': '.1'
+}
+}                
+]);
+//            
