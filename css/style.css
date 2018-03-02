@@ -1443,7 +1443,7 @@ input[type="email"]:focus {
 #author-header .monitor {
   width: 70%;
   height: 350px;
-  background: url(../images/author-header-pc.png) no-repeat;
+  background:  url(../images/author-header-lay.gif) 50% no-repeat, url(../images/author-header-pc.png) no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
   margin: 0 auto;
@@ -1452,6 +1452,22 @@ input[type="email"]:focus {
   display: block;
   margin: 0 auto;
   padding-top: 10%;
+  animation: pulses 1s ease infinite;
+}
+@keyframes pulses {
+  0% {
+    -webkit-transform: scale3d(1,1,1);
+    transform: scale3d(1,1,1);
+  }
+  
+  60% {
+    -webkit-transform: scale3d(1.05,1.05,1.05);
+    transform: scale3d(1.05,1.05,1.05);
+  }
+  100% {
+    -webkit-transform: scale3d(1,1,1);
+    transform: scale3d(1,1,1);
+  }
 }
 #author-practice {
   padding: 0 0 75px;
