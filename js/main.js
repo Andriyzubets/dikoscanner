@@ -95,3 +95,33 @@ $(document).ready(function() {
 
 
 });
+
+
+var 
+    $layer_1 = $('.layer-1'),
+    
+    $container = $('#govern-header'),
+    container_w = $container.width(),
+    container_h = $container.height();
+
+$(window).on('mousemove.parallax', function(event) {
+  var pos_x = event.pageX,
+      pos_y = event.pageY,
+      left  = 0,
+      top   = 0;
+
+  left = container_w / 2 - pos_x;
+  top  = container_h / 2 - pos_y;
+  
+  TweenMax.to(
+    $layer_1, 
+    1, 
+    { 
+      css: { 
+        transform: 'translateX(' + left / 8 + 'px) translateY(' + top / 8 + 'px)' 
+      }, 
+      ease:Expo.easeOut, 
+      overwrite: 'all' 
+    });
+  
+});
