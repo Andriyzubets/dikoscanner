@@ -2836,7 +2836,7 @@ Responsive Styles
   /*** Main Nav ***/
   #main-nav .col-md-4:first-child,
   #main-nav .col-md-4:last-child {
-    display: none;
+    /*display: none;*/
   }
   #main-nav .logo {
     padding-top: 0px;
@@ -2957,6 +2957,21 @@ Responsive Styles
     text-align: left;
     margin-top: 22px;
   }
+  #main-nav >.container>.row {
+    flex-wrap: wrap;
+  }
+  #main-nav ul.left {
+    margin-left: 0;
+  }
+  #main-nav .right {
+    justify-content: center;
+  }
+  #main-nav .scanner-link {
+    width: 110px;
+  }
+  #main-nav .logo {
+    width: 220px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -3036,6 +3051,15 @@ Responsive Styles
   }
   #footer .footer-links {
     width: 100%;
+  }
+  
+}
+@media screen and (max-width: 480px) {
+  #main-nav >.container>.row {
+    display: none;
+  }
+  #main-nav #navigation {
+    margin-top: 40px;
   }
 }
 /*# sourceMappingURL=style.css.map */
