@@ -497,13 +497,25 @@ input[type="email"]:focus {
   position: absolute;
   left: 0;
   top: 0;
-  opacity: .7;
+  opacity: .5;
   width: 100%;
   height: 100%;
   background: url(../images/overlay-main-header.png) 50% 50% no-repeat;
   background-size: 70%;
+  animation: scanner 2s linear infinite;
 }
-#header .overlay-2 {
+@keyframes scanner {
+  0% {
+    transform: scale(.6) translate(0,-30px);
+  }
+  50% {
+    transform: scale(1.1) translate(10px,50px);
+  }
+  100% {
+    transform: scale(.6) translate(0,-30px);
+  }
+}
+/*#header .overlay-2 {
   position: absolute;
   left: 0;
   top: 0;
@@ -512,7 +524,7 @@ input[type="email"]:focus {
   height: 100%;
   background: url(../images/overlay-main-header-2.png) 50% 50% no-repeat;
   background-size: 70%;
-}
+}*/
 #header p {
   font-size: 23px;
   color: #858ea8;
@@ -1674,7 +1686,7 @@ input[type="email"]:focus {
   position: relative;
   height: 450px;
   width: 100%;
-  background: #6a7382;
+
   padding: 125px 0 0;
 }
 
@@ -1689,15 +1701,23 @@ input[type="email"]:focus {
   right: 25px;
   bottom:-60px;
 }
+#business-header .parall-container {
+  background:  #6a7382;
+  z-index: -1;
+}
 #business-header .lay-6 {
-  width: 100%;
+  width: 130%;
   height: 100%;
-  display: block;
+  top: 0;
+  left: -15%;
+  background-size: 120%;
+  position: relative;
+  z-index: -1;
   background: url(../images/business-header.png) no-repeat;
   background-size: cover;
 }
 #business-header h1 {
-  margin-top: -20%;
+  margin-top: 3%;
   margin-right: 20px;
   font-size: 46px;
 }
@@ -1849,6 +1869,7 @@ input[type="email"]:focus {
   margin: 0 auto;
   background: url(../images/business-macbook.png) no-repeat;
   background-size: cover;
+
 }
 #business-benefit {
   padding: 10% 10% 0;
@@ -1875,8 +1896,9 @@ input[type="email"]:focus {
  -webkit-background-size: cover;
  background-size: cover;
  position: relative;
- transform: translate(31vw,0);
+ transform: translate(30vw,0);
  margin-top: 3%;
+ opacity: .2;
 }
 /*****************************************************
 *** Map Feature ***

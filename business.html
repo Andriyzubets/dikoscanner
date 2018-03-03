@@ -20,10 +20,10 @@
   <header id="main-nav">
     <div class="container">
 
-      <a id="navigation" href="#" onclick="document.querySelector('.row').style.left='150px';return false"><i class="fa fa-bars"></i></a>
+      <a id="navigation" href="#" onclick="document.querySelector('.row').style.transition='.4s';document.querySelector('.row').style.left='150px';return false"><i class="fa fa-bars"></i></a>
 
       <div id="slide_out_menu">
-        <a href="#" class="menu-close" onclick="document.querySelector('.row').style.left='0';return false"><i class="fa fa-times"></i></a>
+        <a href="#" class="menu-close" onclick="document.querySelector('.row').style.left='0';document.querySelector('.row').style.transition='.4s';return false"><i class="fa fa-times"></i></a>
         <!-- <div class="logo"><img src="images/logo-white.png" alt=""></div> -->
         <ul>
           <li><a href="#" class="side-world"></a></li>
@@ -54,17 +54,19 @@
   </header>
 
   <section id="business-header">
-    <div class="lay-6"></div>
-    <h1 class="text-right">Мировая практика</h1>
+    <div class="parall-container">
+      <div id="parall-1" class="lay-6 layer-1"></div>
+    </div>
+    <h1 class="text-right wow fadeInUp">Мировая практика</h1>
     <div class="images">
-      <img src="images/business-header-geo.png" alt="" class="geo">
-      <img src="images/business-header-globe.png" alt="" class="globe">
+      <img src="images/business-header-geo.png" alt="" class="geo wow fadeInRight">
+      <img src="images/business-header-globe.png" alt="" class="globe wow fadeInLeft">
 
     </div>
     
   </section>
   <section id="business-feature">
-    <div class="container">
+    <div class="container wow fadeInUp">
       <div class="row">
         <ul class="nav nav-tabs">
           <li class="active"><a data-toggle="tab" href="#panel1"><img src="images/business-statistic-big.png" alt=""></a></li>
@@ -94,9 +96,9 @@
   </section><!-- //Map Feature -->
   
   <section id="business-problem">
-    <h2 class="text-center">КАК ПРОИСХОДИТ <b>У НАС?</b></h2>
-    <hr>
-    <hr>
+    <h2 class="text-center wow fadeInUp">КАК ПРОИСХОДИТ <b>У НАС?</b></h2>
+    <hr class="wow fadeInLeft">
+    <hr class="wow fadeInRight">
     <div class="container">
       <div class="row">
         <div class="col-md-10 col-md-offset-1">
@@ -129,20 +131,20 @@
   </section>
   <section id="business-decision">
     <div class="overlay-8">
-      <h2 class="text-center">РЕШЕНИЕ</h2>
-      <hr>
-      <hr>
+      <h2 class="text-center wow fadeInUp">РЕШЕНИЕ</h2>
+      <hr class="wow fadeInLeft">
+      <hr class="wow fadeInRight">
       <div class="window">
 
       </div>
     </div>
   </section>
-  <button class="after-decision">Узнать больше</button>
+  <button class="after-decision wow fadeInUp">Узнать больше</button>
 
   <section id="business-benefit">
-    <h2><b>Выгода</b> заведения</h2>
-    <hr>
-    <p>Предприниматель в любое время может зайти в свой <b>личный кабинет</b> и посмотреть список песен которые играли, кто исполнял, получить полную статистику, оплатить авторские, добавить на счет, получить рекомендации и многое другое зная что к нему не нагрянет с проверкой очередное авторское общество.</p>
+    <h2 class="wow fadeInUp"><b>Выгода</b> заведения</h2>
+    <hr class="wow fadeInUp">
+    <p class="wow fadeInRight">Предприниматель в любое время может зайти в свой <b>личный кабинет</b> и посмотреть список песен которые играли, кто исполнял, получить полную статистику, оплатить авторские, добавить на счет, получить рекомендации и многое другое зная что к нему не нагрянет с проверкой очередное авторское общество.</p>
     <div class="window"></div>
   </section>
   <footer id="footer">
@@ -213,5 +215,84 @@
 <script src="js/scroolly.demo.min.js"></script>
 <script src="js/jquery.scroolly.js"></script>
   <script src="js/main.js"></script>  <!-- Main Script -->
+  <script type="text/javascript">
+  var s = skrollr.init();
+
+
+  function openbox(id){
+    display = document.getElementById(id).style.display;
+
+    if(display=='none'){
+      document.getElementById(id).style.display='block';
+    }else{
+      document.getElementById(id).style.display='none';
+    }
+  }
+
+    // var w = document.querySelector('#slide_out_menu');
+    // var width = window.getComputedStyle(w, null).width;
+    // alert(width)
+    // if (window.getComputedStyle(w, null).left === '0px') {
+    //    document.querySelector('.row').style.left=width;
+    //    alert('Ok')
+    // }
+    $('#business-decision').scroolly([
+    {
+//                    from: 'doc-top',
+to: 'el-bottom = vp-top',
+cssFrom: {
+//                        '-border-radius': '0px'
+//                        'background-position': 'center 0px'
+//                        'opacity': '1'
+},
+cssTo: {
+//                        '-border-radius': '400px'
+//                        'background-position': 'center 40%'
+//                        'opacity': '.1'
+},
+onScroll: function(element, offset, length){
+  var progress = offset / length;
+
+  element.css('background-position', 'center '+$.scroolly.getTransitionFloatValue(0, 70, progress)+'%');
+}
+},
+{
+  from: 'el-center = vp-top',
+  to: 'el-bottom = vp-top',
+  cssFrom: {
+//                        'background-position': 'center 0px',
+//                        'opacity': '1'
+},
+cssTo: {
+//                        'background-position': 'center 200px',
+//                        'opacity': '.1'
+}
+}                
+]);
+
+window.onscroll = function() {
+      var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+      if (scrolled > "1350" ) {
+        document.querySelector('#business-decision .window').style.transition=".4s";
+        document.querySelector('#business-decision .window').style.filter="drop-shadow(0px 5px 20px #000)";
+
+      }
+      else {
+        document.querySelector('#business-decision .window').style.filter="none";
+      }
+      if (scrolled > "1950" ) {
+        document.querySelector('#business-benefit .window').style.transition=".4s";
+        document.querySelector('#business-benefit .window').style.filter="drop-shadow(0px 5px 20px #000)";
+        document.querySelector('#business-benefit .window').style.opacity="1";
+
+      }
+      else {
+        document.querySelector('#business-benefit .window').style.filter="none";
+        document.querySelector('#business-benefit .window').style.opacity=".2";
+      }
+    }
+
+
+</script>
 </body>
 </html>

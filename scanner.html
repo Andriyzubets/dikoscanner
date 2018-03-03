@@ -20,10 +20,10 @@
   <header id="main-nav">
     <div class="container">
 
-      <a id="navigation" href="#" onclick="document.querySelector('.row').style.left='150px';return false"><i class="fa fa-bars"></i></a>
+      <a id="navigation" href="#" onclick="document.querySelector('.row').style.transition='.4s';document.querySelector('.row').style.left='150px';return false"><i class="fa fa-bars"></i></a>
 
       <div id="slide_out_menu">
-        <a href="#" class="menu-close" onclick="document.querySelector('.row').style.left='0';return false"><i class="fa fa-times"></i></a>
+        <a href="#" class="menu-close" onclick="document.querySelector('.row').style.left='0';document.querySelector('.row').style.transition='.4s';return false"><i class="fa fa-times"></i></a>
         <!-- <div class="logo"><img src="images/logo-white.png" alt=""></div> -->
         <ul>
           <li><a href="#" class="side-world"></a></li>
@@ -53,148 +53,151 @@
     </div>
   </header>
 
-     <section id="header">
-      <div class="overlay-1"></div>
-      <div class="overlay-2"></div>
-      <img class="header_iphone wow fadeInUp" src="images/header-scanner.png" alt="" data-wow-delay=".4s">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-md-offset-2 text-center">
-            <h1 class="wow fadeInUp">DikoScanner</h1>
-            <p class="wow fadeInUp" data-wow-delay=".2s">Автоматизированная прозрачная система</p>
-            <!-- <a href="#" class="btn btn-lg video-btn wow fadeInUp lightbox mfp-iframe" data-wow-delay=".3s" data-effect="mfp-zoom-in"><i class="fa fa-play"></i> Видос Ильи</a> -->
-          </div>
-          <!-- <iframe width="100%" height="600" src="https://www.youtube.com/embed/2eGsn4ytGSA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
-          <!-- iPhone -->  
-          
-          <!-- //iPhone -->
-        </div>
-      </div>
-    </section><!-- //Header -->
-    
-    <section id="map-feature">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-md-offset-3 text-center wow fadeInUp">
-            <h2>Аппаратно-программный комплекс</h2>
-            <hr>
-            <p>
-              Как на воду, на свет, на газ ставятся счетчики так же и датчики авторского-права «DikoScanner» устанавливается во всех местах где музыкальный контент используется на коммерческой основе и начинает сканировать музыкальный отпечаток в реальном времени.
-            </p>
-
-          </div>
-
-
-        </div>
-      </div>
-    </section><!-- //Map Feature -->
-
-    <section id="iphone-feature">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-5 col-md-offset-7 wow fadeInRight">
-            <h2>
-              <span class="bold">OnLine</span> кабинет 24 / 7
-            </h2>
-            <hr>
-            <p>
-             Учетная запись для каждого заведения поможет пользователю <span class="bold">Online</span> с любого устройства, введя свой <span class="bold">уникальный логин</span> и пароль и получить доступ ко всей информации по данному устройству и контенту который воспроизводился.
-
-           </p>
-           <ul>
-            <li>Время воспроизведения</li>
-            <li>Информация об артисте</li>
-            <li>Название контента</li>
-            <li>Название лейбла</li>
-            <li>Принадлежность авторского общества</li>
-            <li>Название заведения</li>
-            <li>Адрес заведения </li>
-            <li>Другая информация</li>
-          </ul>
-        </div>
-
-        <div class="iphone-showcase wow fadeInLeft">
-          <div class="device">
-            <img src="images/note-main.png" alt="">
-          </div>
-        </div><!-- //iPhone Showcase -->
-
-
-      </div>
+  <section id="header">
+    <div id="canvas-wrapper" style="position: absolute;display: block;"">
+      <canvas id="demo-canvas"></canvas>
     </div>
-  </section><!-- //iPhone Feature -->
-
-  <section id="catalogues">
+    <div class="overlay-1"></div>
+    
+    <img class="header_iphone wow fadeInUp" src="images/header-scanner.png" alt="" data-wow-delay=".4s">
     <div class="container">
       <div class="row">
-        <div class="col-md-5">
-
+        <div class="col-md-8 col-md-offset-2 text-center">
+          <h1 class="wow fadeInUp">DikoScanner</h1>
+          <p class="wow fadeInUp" data-wow-delay=".2s">Автоматизированная прозрачная система</p>
+          <!-- <a href="#" class="btn btn-lg video-btn wow fadeInUp lightbox mfp-iframe" data-wow-delay=".3s" data-effect="mfp-zoom-in"><i class="fa fa-play"></i> Видос Ильи</a> -->
         </div>
+        <!-- <iframe width="100%" height="600" src="https://www.youtube.com/embed/2eGsn4ytGSA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+        <!-- iPhone -->  
 
-        <div class="col-md-5 col-md-offset-1 right wow fadeInRight">
-          <h2>Каталоги</h2>
-          <hr>
-          <p>
-            Решат задачу с выбором музыкального контента упираюсь на бюджет заведения.
-          </p>
-          <p>
-            Достаточно указать или уже внести сумму и программа автоматически предложит каталоги музыки соответствующие бюджету.
-
-          </p>
-        </div>
-
+        <!-- //iPhone -->
       </div>
     </div>
-  </section>
+  </section><!-- //Header -->
 
-  <section id="complex">
+  <section id="map-feature">
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-md-offset-3 text-center wow fadeInUp">
-          <h2>Полная <span class="bold">Автоматизация</span></h2>
+          <h2>Аппаратно-программный комплекс</h2>
           <hr>
           <p>
-            Программа покажет полную статистику заведения. Гибкость позволит найти точную информацию и в любой промежуток времени. Оплачивать можно не выходя из приложения.
+            Как на воду, на свет, на газ ставятся счетчики так же и датчики авторского-права «DikoScanner» устанавливается во всех местах где музыкальный контент используется на коммерческой основе и начинает сканировать музыкальный отпечаток в реальном времени.
           </p>
-          
+
         </div>
-        <div class="iphone-showcase wow fadeInLeft">
-          <div class="device">
-            <img src="images/ipad-diko.png" style="max-width: 100%;
-            filter: drop-shadow(7px 22px 30px #000);" alt="">
-          </div>
-        </div><!-- //iPhone Showcase -->
 
 
       </div>
     </div>
-  </section><!-- //iPhone Feature -->
-  <section id="control">
+  </section><!-- //Map Feature -->
+
+  <section id="iphone-feature">
     <div class="container">
-      <div class="row" style="margin-right: -15px;
-      margin-left: -15px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;">
-      <div class="col-md-6 wow fadeInLeft">
-        <img src="images/scanner-green.png" alt="">
+      <div class="row">
+        <div class="col-md-5 col-md-offset-7 wow fadeInRight">
+          <h2>
+            <span class="bold">OnLine</span> кабинет 24 / 7
+          </h2>
+          <hr>
+          <p>
+           Учетная запись для каждого заведения поможет пользователю <span class="bold">Online</span> с любого устройства, введя свой <span class="bold">уникальный логин</span> и пароль и получить доступ ко всей информации по данному устройству и контенту который воспроизводился.
+
+         </p>
+         <ul>
+          <li>Время воспроизведения</li>
+          <li>Информация об артисте</li>
+          <li>Название контента</li>
+          <li>Название лейбла</li>
+          <li>Принадлежность авторского общества</li>
+          <li>Название заведения</li>
+          <li>Адрес заведения </li>
+          <li>Другая информация</li>
+        </ul>
       </div>
-      <div class="col-md-6 wow fadeInRight">
-        <h2>
-          100% <b>КОНТРОЛЬ</b>
-        </h2>
-        <hr>
-        <p>
-          Программный контроль <b>DikoScanner</b> всегда покажет ошибки и работоспособность устройства. Тем самым обеспечит <b>100%</b> контроль авторского права даже у злобных нарушителей. Обмануть систему не возможно.
-        </p>
-        <p class="pointed">
-          Технология Blockchain сразу покажет вышедшее из работы устройства, тем самым по мимо прозрачности технология обеспечит безопасность.
-        </p>
+
+      <div class="iphone-showcase wow fadeInLeft">
+        <div class="device">
+          <img src="images/note-main.png" alt="">
+        </div>
       </div><!-- //iPhone Showcase -->
 
 
     </div>
   </div>
+</section><!-- //iPhone Feature -->
+
+<section id="catalogues">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+
+      </div>
+
+      <div class="col-md-5 col-md-offset-1 right wow fadeInRight">
+        <h2>Каталоги</h2>
+        <hr>
+        <p>
+          Решат задачу с выбором музыкального контента упираюсь на бюджет заведения.
+        </p>
+        <p>
+          Достаточно указать или уже внести сумму и программа автоматически предложит каталоги музыки соответствующие бюджету.
+
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="complex">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 text-center wow fadeInUp">
+        <h2>Полная <span class="bold">Автоматизация</span></h2>
+        <hr>
+        <p>
+          Программа покажет полную статистику заведения. Гибкость позволит найти точную информацию и в любой промежуток времени. Оплачивать можно не выходя из приложения.
+        </p>
+
+      </div>
+      <div class="iphone-showcase wow fadeInLeft">
+        <div class="device">
+          <img src="images/ipad-diko.png" style="max-width: 100%;
+          filter: drop-shadow(7px 22px 30px #000);" alt="">
+        </div>
+      </div><!-- //iPhone Showcase -->
+
+
+    </div>
+  </div>
+</section><!-- //iPhone Feature -->
+<section id="control">
+  <div class="container">
+    <div class="row" style="margin-right: -15px;
+    margin-left: -15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;">
+    <div class="col-md-6 wow fadeInLeft">
+      <img src="images/scanner-green.png" alt="">
+    </div>
+    <div class="col-md-6 wow fadeInRight">
+      <h2>
+        100% <b>КОНТРОЛЬ</b>
+      </h2>
+      <hr>
+      <p>
+        Программный контроль <b>DikoScanner</b> всегда покажет ошибки и работоспособность устройства. Тем самым обеспечит <b>100%</b> контроль авторского права даже у злобных нарушителей. Обмануть систему не возможно.
+      </p>
+      <p class="pointed">
+        Технология Blockchain сразу покажет вышедшее из работы устройства, тем самым по мимо прозрачности технология обеспечит безопасность.
+      </p>
+    </div><!-- //iPhone Showcase -->
+
+
+  </div>
+</div>
 </section><!-- //iPhone Feature -->
 <section id="diko-how">
   <div class="container">
@@ -301,6 +304,13 @@
 <script src="js/skrollr.min.js"></script>
 <script src="js/scroolly.demo.min.js"></script>
 <script src="js/jquery.scroolly.js"></script>
+
+<!-- сетка -->
+<script src="js/TweenLite.min.js"></script>
+<script src="js/EasePack.min.js"></script>
+<script src="js/rAF.js"></script>
+<script src="js/demo-1.js"></script>
+
 <script src="js/main.js"></script>  <!-- Main Script -->
 <script>
   $(window).scroll(function() {
