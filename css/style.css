@@ -1819,10 +1819,19 @@ input[type="email"]:focus {
   background: #f9fafa url(../images/business-protect.png) 50% 60% no-repeat;
   background-size: 70%;
 }
+#business-problem .double .protect:hover {
+  background: #f9fafa url(../images/business-protect.gif) 50% 60% no-repeat;
+  background-size: cover;
+}
 #business-problem .double .fine {
   background: #f9fafa url(../images/business-fine.png) 50% no-repeat;
   background-size: 90%;
 }
+#business-problem .double .fine:hover {
+  background: #f9fafa url(../images/business-fine.gif) 50% no-repeat;
+  background-size: cover;
+}
+
 #business-problem p {
   background: #f9fafa;
   padding: 45px 110px;
