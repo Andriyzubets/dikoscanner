@@ -524,128 +524,128 @@ input[type="email"]:focus {
   height: 100%;
   background: url(../images/overlay-main-header-2.png) 50% 50% no-repeat;
   background-size: 70%;
-}*/
-#header p {
-  font-size: 23px;
-  color: #858ea8;
-  line-height: 1.2em;
-}
+  }*/
+  #header p {
+    font-size: 23px;
+    color: #858ea8;
+    line-height: 1.2em;
+  }
 
-#header .header_iphone {
-  position: relative;
-  display: block;
-  margin: 0 auto;
-  top: 85%;
-}
+  #header .header_iphone {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    top: 85%;
+  }
 
-#header .video-btn {
-  margin-top: 48px;
-}
+  #header .video-btn {
+    margin-top: 48px;
+  }
 
-#header .video-btn i {
-  margin-right: 15px;
-}
-.govern-link {
-  width: 100%;
-  display: block;
-  height: 100px;
-  background: url(../images/govern.png)0 10% no-repeat;
-  background-size: contain;
-  opacity: 1;
-  transition: .2s;
-}
-.society-link {
-  width: 100%;
-  display: block;
-  height: 100px;
-  background: url(../images/society.png) 0 10% no-repeat;
-  background-size: contain;
-  transition: .2s;
+  #header .video-btn i {
+    margin-right: 15px;
+  }
+  .govern-link {
+    width: 100%;
+    display: block;
+    height: 100px;
+    background: url(../images/govern.png)0 10% no-repeat;
+    background-size: contain;
+    opacity: 1;
+    transition: .2s;
+  }
+  .society-link {
+    width: 100%;
+    display: block;
+    height: 100px;
+    background: url(../images/society.png) 0 10% no-repeat;
+    background-size: contain;
+    transition: .2s;
 
-}
-.author-link {
-  width: 100%;
-  display: block;
-  height: 100px;
-  background: url(../images/author.png) 0 -15% no-repeat;
-  background-size: contain;
-  transition: .2s;
+  }
+  .author-link {
+    width: 100%;
+    display: block;
+    height: 100px;
+    background: url(../images/author.png) 0 -15% no-repeat;
+    background-size: contain;
+    transition: .2s;
 
-}
-.business-link {
-  width: 100%;
-  display: block;
-  height: 100px;
-  background: url(../images/coffee.png) 0 -15% no-repeat;
-  background-size: contain;
-  transition: .2s;
+  }
+  .business-link {
+    width: 100%;
+    display: block;
+    height: 100px;
+    background: url(../images/coffee.png) 0 -15% no-repeat;
+    background-size: contain;
+    transition: .2s;
 
-}
-#main-nav .right {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  justify-content: space-between;
-  -ms-align-items: center;
-  align-items: center;
-}
-.scanner-link {
-  width: 100%;
-  display: block;
-  height: 100px;
-  background: url(../images/final.png) 0 -15% no-repeat;
-  background-size: contain;
-  transition: .2s;
-}
-.logo-link {
-  width: 100%;
-  display: block;
-  height: 100px;
-  background: url(../images/logo-white.png) 0 50% no-repeat;
-  background-size: contain;
-  transition: .2s;
-}
-.scanner-link:hover {
-  background: url(../images/dikoscanner-header.gif) no-repeat;
-  background-size: contain;
-  transition: .2s;
-}
-.logo-link:hover {
-  background: url(../images/dikotech-header.gif) no-repeat;
-  background-size: contain;
-  transition: .2s;
-}
-.govern-link:hover, .govern-link-active {
-  /*opacity: .6;*/
-  /*filter: drop-shadow(0px 0px 4px #000);*/
-  background: url(../images/govern-header.gif) no-repeat;
-  background-size: contain;
-  transition: .2s;
-}
-.society-link:hover, .society-link-active {
- /*opacity: .6;*/
- /*filter: drop-shadow(0px 0px 4px #000);*/
- background: url(../images/society-header.gif) no-repeat;
- background-size: contain;
- transition: .2s;
-}
-.author-link:hover, .author-link-active {
- /*opacity: .6;*/
- /*filter: drop-shadow(0px 0px 4px #000);*/
- background: url(../images/author-header.gif) no-repeat;
- background-size: contain;
- transition: .2s;
-}
-.business-link:hover, .business-link-active {
- /*opacity: .6;*/
- /*filter: drop-shadow(0px 0px 4px #000);*/
- background: url(../images/business-header.gif) no-repeat;
- background-size: contain;
- transition: .2s;
-}
-.container {
+  }
+  #main-nav .right {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+  }
+  .scanner-link {
+    width: 100%;
+    display: block;
+    height: 100px;
+    background: url(../images/final.png) 0 -15% no-repeat;
+    background-size: contain;
+    transition: .2s;
+  }
+  .logo-link {
+    width: 100%;
+    display: block;
+    height: 100px;
+    background: url(../images/logo-white.png) 0 50% no-repeat;
+    background-size: contain;
+    transition: .2s;
+  }
+  .scanner-link:hover {
+    background: url(../images/dikoscanner-header.gif) no-repeat;
+    background-size: contain;
+    transition: .2s;
+  }
+  .logo-link:hover {
+    background: url(../images/dikotech-header.gif) no-repeat;
+    background-size: contain;
+    transition: .2s;
+  }
+  .govern-link:hover, .govern-link-active {
+    /*opacity: .6;*/
+    /*filter: drop-shadow(0px 0px 4px #000);*/
+    background: url(../images/govern-header.gif) no-repeat;
+    background-size: contain;
+    transition: .2s;
+  }
+  .society-link:hover, .society-link-active {
+   /*opacity: .6;*/
+   /*filter: drop-shadow(0px 0px 4px #000);*/
+   background: url(../images/society-header.gif) no-repeat;
+   background-size: contain;
+   transition: .2s;
+ }
+ .author-link:hover, .author-link-active {
+   /*opacity: .6;*/
+   /*filter: drop-shadow(0px 0px 4px #000);*/
+   background: url(../images/author-header.gif) no-repeat;
+   background-size: contain;
+   transition: .2s;
+ }
+ .business-link:hover, .business-link-active {
+   /*opacity: .6;*/
+   /*filter: drop-shadow(0px 0px 4px #000);*/
+   background: url(../images/business-header.gif) no-repeat;
+   background-size: contain;
+   transition: .2s;
+ }
+ .container {
   width: 90%;
 }
 
@@ -1164,8 +1164,8 @@ input[type="email"]:focus {
 }
 #diko-how {
   height: 290px;
-  background: url(../images/video-lay-diko.jpg) no-repeat;
-  background-size: cover;
+  background: #ccc url(../images/video-lay-diko-2.jpg) no-repeat;
+  /*background-size: cover;*/
   padding: 2% 0;
 }
 #diko-how h3 {
@@ -1185,6 +1185,12 @@ input[type="email"]:focus {
 #diko-how img {
   display: block;
   margin: 2% auto;
+  cursor: pointer;
+  transition: .2s;
+}
+#diko-how img:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0px 0px 10px #000);
 }
 #non-bugger {
   overflow: hidden;
@@ -2636,6 +2642,70 @@ a.plus1 {
 #catalogues {
   background: #1e2135;
   padding: 110px 0;
+}
+#catalogues .left {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+}
+#catalogues .drag {
+  width: 90%;
+  height: 60px;
+  background: #fff;
+  display: block;
+  margin: 0 auto 5%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  -ms-align-items: center;
+  align-items: center;
+  font-size: 12px;
+  padding: 4%;
+}
+#catalogues .drag div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 15px;
+}
+#catalogues .drag p {
+  font-size: 12px;
+  margin: 0 0 0 20px;
+}
+#catalogues .drag p:before {
+  content: " o";
+  position: relative;
+  left: -14px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #6074b5;
+  color: #fff;
+  padding: 0 4px 1px;
+  line-height: 1em;
+}
+#catalogues .drag div span {
+  width: 3px;
+  height: 3px;
+  background: #7983a0;
+  border-radius: 50%;
+}
+#catalogues #second {
+  width: 48%;
+  height: 400px;
+  margin: 20px auto;
+}
+#catalogues section {
+  width: 48%;
+  height: 200px;
+  margin: 20px auto;
 }
 #catalogues h2 {
   font-size: 48px;

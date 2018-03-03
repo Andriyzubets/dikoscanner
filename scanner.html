@@ -130,24 +130,74 @@
 <section id="catalogues">
   <div class="container">
     <div class="row">
-      <div class="col-md-5">
+      <div class="col-md-5 left wow fadeInLeft">
 
+        <section id="section"  ondragenter="return dragEnter(event)" 
+        ondrop="return dragDrop(event)" 
+        ondragover="return dragOver(event)">
+        <div class="drag" id="boxA" draggable="true" ondragstart="return dragStart(event)">
+          <p>Бесплатный контент</p>
+          <div>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="drag" id="boxB" draggable="true" ondragstart="return dragStart(event)">
+          <p>Дешевый контент</p>
+          <div>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="drag" id="boxB" draggable="true" ondragstart="return dragStart(event)">
+          <p>Танцевальный контент</p>
+          <div>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+      </section>
+      <div id="second" ondragenter="return dragEnter(event)"
+      ondrop="return dragDrop(event)" 
+      ondragover="return dragOver(event)">
+      <div class="drag" id="boxB" draggable="true" ondragstart="return dragStart(event)">
+        <p>Популярный контент</p>
+        <div>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
-
-      <div class="col-md-5 col-md-offset-1 right wow fadeInRight">
-        <h2>Каталоги</h2>
-        <hr>
-        <p>
-          Решат задачу с выбором музыкального контента упираюсь на бюджет заведения.
-        </p>
-        <p>
-          Достаточно указать или уже внести сумму и программа автоматически предложит каталоги музыки соответствующие бюджету.
-
-        </p>
+      <div class="drag" id="boxB" draggable="true" ondragstart="return dragStart(event)">
+        <p>Народный контент</p>
+        <div>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
-
+      <p class="text-center">Перетяните сюда</p>
     </div>
   </div>
+
+  <div class="col-md-5 col-md-offset-1 right">
+    <h2 class="wow fadeInUp">Каталоги</h2>
+    <hr class=" wow fadeInUp">
+    <p class="wow fadeInLeft">
+      Решат задачу с выбором музыкального контента упираюсь на бюджет заведения.
+    </p>
+    <p class="wow fadeInRight">
+      Достаточно указать или уже внести сумму и программа автоматически предложит каталоги музыки соответствующие бюджету.
+
+    </p>
+  </div>
+
+</div>
+</div>
 </section>
 
 <section id="complex">
@@ -163,8 +213,8 @@
       </div>
       <div class="iphone-showcase wow fadeInLeft">
         <div class="device">
-          <img src="images/ipad-diko.png" style="max-width: 100%;
-          filter: drop-shadow(7px 22px 30px #000);" alt="">
+          <img src="images/ipad-diko.png" class="device-diko" style="max-width: 100%;
+          " alt="">
         </div>
       </div><!-- //iPhone Showcase -->
 
@@ -180,7 +230,7 @@
     justify-content: space-between;
     align-items: center;">
     <div class="col-md-6 wow fadeInLeft">
-      <img src="images/scanner-green.png" alt="">
+      <img src="images/scanner-green.png" class="scanner" alt="">
     </div>
     <div class="col-md-6 wow fadeInRight">
       <h2>
@@ -205,10 +255,22 @@
       <h3>КАК МУЗЫКАНТУ ЗАРАБОТАТЬ</h3>
       <p>СЕГОДНЯ</p>
 
-      <img src="images/play-btn.png" alt="play">
+      <img src="images/play-btn.png" alt="play" data-toggle="modal" data-target="#myModal">
+      <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" style="transform: translate(0,10%);width: 80vw;height: 80vh;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <iframe width="100%" height="500" src="https://www.youtube.com/embed/HdA9-LoCofk?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" control="none" allowfullscreen></iframe>
+          </div>
+        </div>
 
+      </div>
     </div>
   </div>
+</div>
 </section><!-- //iPhone Feature -->
 <section id="non-bugger">
   <figure>
@@ -312,12 +374,83 @@
 <script src="js/demo-1.js"></script>
 
 <script src="js/main.js"></script>  <!-- Main Script -->
+<script type="text/javascript">
+  function dragStart(ev) {
+    ev.dataTransfer.effectAllowed='move';
+    ev.dataTransfer.setData("Text", ev.target.getAttribute('id'));
+    ev.dataTransfer.setDragImage(ev.target,100,100);
+    return true;
+  }
+  function dragEnter(ev) {
+    event.preventDefault();
+    return true;
+  }
+  function dragOver(ev) {
+    event.preventDefault();
+  }
+  function dragDrop(ev) {
+    var data = ev.dataTransfer.getData("Text");
+    ev.target.appendChild(document.getElementById(data));
+    ev.stopPropagation();
+    return false;
+  }
+</script>
 <script>
-  $(window).scroll(function() {
-    var theta = $(window).scrollTop() % Math.PI;
-    $('#leftgear').css({ transform: 'rotate(' + theta + 'rad)' });
-    $('#rightgear').css({ transform: 'rotate(-' + theta + 'rad)' });
-  });
+
+  window.onscroll = function() {
+    var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrolled > "2350" ) {
+      document.querySelector('#complex .device-diko').style.transition=".4s";
+      document.querySelector('#complex .device-diko').style.filter="drop-shadow(2px 11px 20px #000)";
+
+    }
+    else {
+      document.querySelector('#complex .device-diko').style.filter="none";
+    }
+    if (scrolled > "2850" ) {
+      document.querySelector('#control .scanner').style.transition=".4s";
+      document.querySelector('#control .scanner').style.filter="drop-shadow(2px 11px 20px #000)";
+
+    }
+    else {
+      document.querySelector('#control .scanner').style.filter="none";
+    }
+
+  }
+  $('#diko-how').scroolly([
+  {
+//                    from: 'doc-top',
+to: 'el-bottom = vp-top',
+cssFrom: {
+//                        '-border-radius': '0px'
+//                        'background-position': 'center 0px'
+//                        'opacity': '1'
+},
+cssTo: {
+//                        '-border-radius': '400px'
+//                        'background-position': 'center 40%'
+//                        'opacity': '.1'
+},
+onScroll: function(element, offset, length){
+  var progress = offset / length;
+
+  element.css('background-position', 'center '+$.scroolly.getTransitionFloatValue(0, 70, progress)+'%');
+}
+},
+{
+  from: 'el-center = vp-top',
+  to: 'el-bottom = vp-top',
+  cssFrom: {
+//                        'background-position': 'center 0px',
+//                        'opacity': '1'
+},
+cssTo: {
+//                        'background-position': 'center 200px',
+//                        'opacity': '.1'
+}
+}                
+]);
+
 </script>
 </body>
 </html>
