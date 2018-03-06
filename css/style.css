@@ -280,8 +280,13 @@ input[type="email"]:focus {
 }
 
 #main-nav .logo {
-  display: inline-block;
-  padding-top: 11px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
 }
 #main-nav .scanner img {
   width: 70px;
@@ -548,7 +553,7 @@ input[type="email"]:focus {
   .govern-link {
     width: 100%;
     display: block;
-    height: 100px;
+    /*height: 100px;*/
     /*background: url(../images/govern.png)0 10% no-repeat;*/
     background-size: contain;
     opacity: 1;
@@ -582,7 +587,7 @@ input[type="email"]:focus {
     display: none;
   }
    #main-nav .left li>a:hover video, #main-nav .right a:hover video {
-      transition: 
+      transition: .4s;
       display: block;
     }
   .business-link {
@@ -621,7 +626,7 @@ input[type="email"]:focus {
     transition: .2s;
   }
   .logo-link img {
-    transform: translate(0,30%);
+    /*transform: translate(0,30%);*/
   }
   .scanner-link:hover {
     /*background: url(../images/dikoscanner-header.gif) no-repeat;*/
