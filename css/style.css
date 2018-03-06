@@ -311,7 +311,7 @@ input[type="email"]:focus {
   top: 0;
   padding: 10px;
   z-index: 50;
-  background: #26272deb;
+  background: #26272d;
   transition: left 0.7s cubic-bezier(0.545, 0, 0.05, 1);
 }
 .side-world {
@@ -385,7 +385,7 @@ input[type="email"]:focus {
 }
 
 #main-nav #slide_out_menu ul li:last-child {
-  margin-top: 20px;
+  /*margin-top: 20px;*/
 }
 
 #main-nav #slide_out_menu .slide_out_menu_footer {
@@ -583,13 +583,13 @@ input[type="email"]:focus {
   #main-nav .left video, #main-nav .right video {
     display: none;
   }
- #main-nav .left li>a:hover img, #main-nav .right a:hover img {
+  #main-nav .left li>a:hover img, #main-nav .right a:hover img {
     display: none;
   }
-   #main-nav .left li>a:hover video, #main-nav .right a:hover video {
-      transition: .4s;
-      display: block;
-    }
+  #main-nav .left li>a:hover video, #main-nav .right a:hover video {
+    transition: .4s;
+    display: block;
+  }
   .business-link {
     width: 100%;
     display: block;
@@ -674,14 +674,44 @@ input[type="email"]:focus {
 *** Govern ***
 *****************************************************/
 #main-video {
-  padding: 103px 0 0;
+  padding: 210px 0 0;
+  height: 100vh;
+  background: #25262c url(../images/index-layer.png) 50% -30% no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
 }
-#main-video iframe {
-  width: 100%;
-  height: calc(100vh - 103px);
+#main-video .play {
+  width: 12vw;
+  height: 12vw;
+  background: url(../images/play.png) 50% no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 44%;
+  top: 62%;
 }
-#main-video button.ytp-large-play-button {
-  background: green !important;
+.modal-content {
+  background: #242424;
+}
+.modal-header {
+  border: none;
+}
+.modal-content .close {
+  color: #fff;
+  transition: .4s;
+}
+.modal-content .close:hover {
+  opacity: 1;
+
+}
+#main-video p {
+  font-size: 16px;
+  color: #d16a6a;
+  margin-bottom: 20px;
+}
+#main-video h2 {
+  font-size: 24px;
+  color: #ffffff;
+  margin-top: 0;
 }
 #govern-header {
   height: 470px;
@@ -2887,6 +2917,10 @@ Responsive Styles
 *****************************************************/
 @media only screen and (max-width: 992px) {
   /*** Main Nav ***/
+  #main-video div {
+    top: 49%;
+  }
+
   #main-nav .col-md-4:first-child,
   #main-nav .col-md-4:last-child {
     /*display: none;*/
@@ -2897,9 +2931,9 @@ Responsive Styles
   #main-nav #slide_out_menu {
     position: fixed;
     display: block;
-    width: 300px;
+    width: 40vw;
     height: 100%;
-    left: -300px;
+    left: -40vw;
   }
   #main-nav #slide_out_menu .menu-close {
     top: 41px;
@@ -3017,7 +3051,7 @@ Responsive Styles
     margin-left: 0;
   }
   #main-nav .right {
-    justify-content: center;
+    justify-content: flex-end;
   }
   #main-nav .scanner-link {
     width: 110px;
@@ -3025,10 +3059,35 @@ Responsive Styles
   #main-nav .logo {
     width: 220px;
   }
+  #main-nav .left img, #main-nav .right img, #main-nav .left video, #main-nav .right video {
+    width: 80%;
+    margin: 0 0 0 20%;
+  }
+  #main-nav li:hover video,  #main-nav a:hover video {
+    display: none !important;
+  }
+  #main-nav li:hover img, #main-nav a:hover img {
+    display: block !important;
+  }
+  #main-nav a#navigation {
+    display: block !important;
+  }
+  #main-nav #slide_out_menu {
+    padding: 5% 10px;
+  }
+  #main-nav #slide_out_menu ul a {
+    height: auto;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   /*** iPhone Screens ***/
+  #main-video div {
+    width: 17vw;
+    height: 17vw;
+    left: 41.5%;
+    top: 47.5%;
+  }
   #iphone-screens {
     padding: 120px 0 460px;
   }
@@ -3104,15 +3163,21 @@ Responsive Styles
   }
   #footer .footer-links {
     width: 100%;
-  }
-  
+  } 
+  #main-nav #slide_out_menu {
+    width: 100vw;
+    left: -100vw;
+  }  
 }
 @media screen and (max-width: 480px) {
-  #main-nav >.container>.row {
+  #main-nav .scanner-link {
     display: none;
   }
-  #main-nav #navigation {
-    margin-top: 40px;
+  #main-video div {
+    width: 26vw;
+    height: 26vw;
+    left: 37.5%;
+    top: 48%;
   }
 }
 /*# sourceMappingURL=style.css.map */

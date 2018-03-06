@@ -126,37 +126,4 @@ $(window).on('mousemove.parallax', function(event) {
 
 });
 
-$('#govern-problems').scroolly([
-{
-//                    from: 'doc-top',
-to: 'el-bottom = vp-top',
-cssFrom: {
-//                        '-border-radius': '0px'
-//                        'background-position': 'center 0px'
-//                        'opacity': '1'
-},
-cssTo: {
-//                        '-border-radius': '400px'
-//                        'background-position': 'center 40%'
-//                        'opacity': '.1'
-},
-onScroll: function(element, offset, length){
-	var progress = offset / length;
-
-	element.css('background-position', 'center '+$.scroolly.getTransitionFloatValue(0, 70, progress)+'%');
-}
-},
-{
-	from: 'el-center = vp-top',
-	to: 'el-bottom = vp-top',
-	cssFrom: {
-//                        'background-position': 'center 0px',
-//                        'opacity': '1'
-},
-cssTo: {
-//                        'background-position': 'center 200px',
-//                        'opacity': '.1'
-}
-}                
-]);
-//            
+         

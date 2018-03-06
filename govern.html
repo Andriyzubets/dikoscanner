@@ -144,9 +144,9 @@
       <div class="icons">
 
         <ul class="nav nav-tabs">
-          <li class="active"><a data-toggle="tab" href="#panel9"  class="circle law wow fadeInLeft" onclick="document.querySelector('.govern-problems-detailed-tabs').style.left='5vw';return false"><h4>Закон</h4></a></li>
+          <li><a data-toggle="tab" href="#panel9"  class="circle law wow fadeInLeft" onclick="document.querySelector('.govern-problems-detailed-tabs').style.left='5vw';return false"><h4>Закон</h4></a></li>
           <li><a data-toggle="tab" href="#panel4" class="circle profit wow fadeInLeft" onclick="document.querySelector('.govern-problems-detailed-tabs').style.left='-20vw';return false"><h4>Налоги</h4></a></li>
-          <li><a data-toggle="tab" href="#panel5" class="circle world wow fadeInUp" onclick="document.querySelector('.govern-problems-detailed-tabs').style.left='-40vw';return false"><h4>Мир</h4></a></li>
+          <li class="active"><a data-toggle="tab" href="#panel5" class="circle world wow fadeInUp" onclick="document.querySelector('.govern-problems-detailed-tabs').style.left='-40vw';return false"><h4>Мир</h4></a></li>
           <li><a data-toggle="tab" href="#panel6" class="circle society wow fadeInUp" onclick="document.querySelector('.govern-problems-detailed-tabs').style.left='-60vw';return false"><h4>Общественность</h4></a></li>
           <li><a data-toggle="tab" href="#panel7" class="circle features wow fadeInRight" onclick="document.querySelector('.govern-problems-detailed-tabs').style.left='-80vw';return false"><h4>Механика</h4></a></li>
           <li><a data-toggle="tab" href="#panel8"  class="circle water wow fadeInRight" onclick="document.querySelector('.govern-problems-detailed-tabs').style.left='-100vw';return false"> <h4>Усилия</h4></a></li>
@@ -158,7 +158,7 @@
   <section id="govern-problems-detailed">
 
     <div class="tab-content govern-problems-detailed-tabs">
-      <div id="panel9" class="tab-pane fade in active quote">
+      <div id="panel9" class="tab-pane fade quote">
         <p>Международные требования</p>
         <a href="" data-toggle="modal" data-target="#pan3">Читать дальше</a>
         <div id="pan3" class="modal fade" role="dialog">
@@ -198,7 +198,7 @@
           </div>
         </div>
       </div>
-      <div id="panel5" class="tab-pane fade quote">
+      <div id="panel5" class="tab-pane fade in active quote">
        <p>Риски</p>
        <a href="" data-toggle="modal" data-target="#pan5">Читать дальше</a>
        <div id="pan5" class="modal fade" role="dialog">
@@ -383,6 +383,40 @@
 <script type="text/javascript">
   var s = skrollr.init();
 
+$('#govern-problems').scroolly([
+{
+//                    from: 'doc-top',
+to: 'el-bottom = vp-top',
+cssFrom: {
+//                        '-border-radius': '0px'
+//                        'background-position': 'center 0px'
+//                        'opacity': '1'
+},
+cssTo: {
+//                        '-border-radius': '400px'
+//                        'background-position': 'center 40%'
+//                        'opacity': '.1'
+},
+onScroll: function(element, offset, length){
+  var progress = offset / length;
+
+  element.css('background-position', 'center '+$.scroolly.getTransitionFloatValue(0, 70, progress)+'%');
+}
+},
+{
+  from: 'el-center = vp-top',
+  to: 'el-bottom = vp-top',
+  cssFrom: {
+//                        'background-position': 'center 0px',
+//                        'opacity': '1'
+},
+cssTo: {
+//                        'background-position': 'center 200px',
+//                        'opacity': '.1'
+}
+}                
+]);
+//   
 </script>
 
 </body>
