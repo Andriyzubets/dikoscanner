@@ -23,7 +23,7 @@ html, body {
   top: 0;
   width: 100%;
   height: 100%;
-  background: url(../images/preloader.gif) no-repeat;
+  background: #f2fafe;
   background-size: cover;
   z-index: 9999;
   transition: 1s all;
@@ -549,7 +549,7 @@ input[type="email"]:focus {
     width: 100%;
     display: block;
     height: 100px;
-    background: url(../images/govern.png)0 10% no-repeat;
+    /*background: url(../images/govern.png)0 10% no-repeat;*/
     background-size: contain;
     opacity: 1;
     transition: .2s;
@@ -558,7 +558,7 @@ input[type="email"]:focus {
     width: 100%;
     display: block;
     height: 100px;
-    background: url(../images/society.png) 0 10% no-repeat;
+    /*background: url(../images/society.png) 0 10% no-repeat;*/
     background-size: contain;
     transition: .2s;
 
@@ -567,16 +567,28 @@ input[type="email"]:focus {
     width: 100%;
     display: block;
     height: 100px;
-    background: url(../images/author.png) 0 -15% no-repeat;
-    background-size: contain;
+    /*background: url(../images/author.png) 0 -15% no-repeat;*/
+    /*background-size: contain;*/
     transition: .2s;
 
   }
+  #main-nav .left img, #main-nav .right img,  #main-nav .left video, #main-nav .right video {
+    width: 100%;
+  }
+  #main-nav .left video, #main-nav .right video {
+    display: none;
+  }
+ #main-nav .left li>a:hover img, #main-nav .right a:hover img {
+    display: none;
+  }
+   #main-nav .left li>a:hover video, #main-nav .right a:hover video {
+      display: block;
+    }
   .business-link {
     width: 100%;
     display: block;
     height: 100px;
-    background: url(../images/coffee.png) 0 -15% no-repeat;
+    /*background: url(../images/coffee.png) 0 -15% no-repeat;*/
     background-size: contain;
     transition: .2s;
 
@@ -592,10 +604,10 @@ input[type="email"]:focus {
     align-items: center;
   }
   .scanner-link {
-    width: 100%;
+    width: 150px;
     display: block;
     height: 100px;
-    background: url(../images/final.png) 0 -15% no-repeat;
+    /*background: url(../images/final.png) 0 -15% no-repeat;*/
     background-size: contain;
     transition: .2s;
   }
@@ -603,45 +615,48 @@ input[type="email"]:focus {
     width: 100%;
     display: block;
     height: 100px;
-    background: url(../images/logo-white.png) 0 50% no-repeat;
+    /*background: url(../images/logo-white.png) 0 50% no-repeat;*/
     background-size: contain;
     transition: .2s;
   }
+  .logo-link img {
+    transform: translate(0,30%);
+  }
   .scanner-link:hover {
-    background: url(../images/dikoscanner-header.gif) no-repeat;
+    /*background: url(../images/dikoscanner-header.gif) no-repeat;*/
     background-size: contain;
     transition: .2s;
   }
   .logo-link:hover {
-    background: url(../images/dikotech-header.gif) no-repeat;
+    /*background: url(../images/dikotech-header.gif) no-repeat;*/
     background-size: contain;
     transition: .2s;
   }
   .govern-link:hover, .govern-link-active {
     /*opacity: .6;*/
     /*filter: drop-shadow(0px 0px 4px #000);*/
-    background: url(../images/govern-header.gif) no-repeat;
+    /*background: url(../images/govern-header.gif) no-repeat;*/
     background-size: contain;
     transition: .2s;
   }
   .society-link:hover, .society-link-active {
    /*opacity: .6;*/
    /*filter: drop-shadow(0px 0px 4px #000);*/
-   background: url(../images/society-header.gif) no-repeat;
+   /*background: url(../images/society-header.gif) no-repeat;*/
    background-size: contain;
    transition: .2s;
  }
  .author-link:hover, .author-link-active {
    /*opacity: .6;*/
    /*filter: drop-shadow(0px 0px 4px #000);*/
-   background: url(../images/author-header.gif) no-repeat;
+   /*background: url(../images/author-header.mp4) no-repeat;*/
    background-size: contain;
    transition: .2s;
  }
  .business-link:hover, .business-link-active {
    /*opacity: .6;*/
    /*filter: drop-shadow(0px 0px 4px #000);*/
-   background: url(../images/business-header.gif) no-repeat;
+   /*background: url(../images/business-header.gif) no-repeat;*/
    background-size: contain;
    transition: .2s;
  }
@@ -794,21 +809,26 @@ input[type="email"]:focus {
   padding: 40px 30px;
 }
 #govern-feature .tab-pane {
-  display: -webkit-flex;
+/*  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between;*/
 
 }
 #govern-feature .tab-pane > div {
   width: 45%;
 }
+#govern-feature .tab-pane .right {
+  width: auto;
+}
 #govern-feature .tab-pane .left {
   background: #30363b url(../images/govern-girl.png) no-repeat;
   background-size: cover;
   height: 240px;
+  float: left;
+  margin: 0 10px 10px 0;
 }
 #govern-feature .tab-pane .right h2 {
   color: #fff;
@@ -972,12 +992,18 @@ input[type="email"]:focus {
     height: 120px;
     background: #fafaf9;
     border: 1px solid #e9e8e7;
-    padding: 0 13px;
+    padding: 15px;
     opacity: .3;
     margin: 0 15px 0 0;
   }
+  #govern-problems-detailed .quote a {
+    display: none;
+  }
   #govern-problems-detailed .active {
     opacity: 1;
+  }
+  #govern-problems-detailed .active a {
+    display: block;
   }
   #govern-problems-detailed .quote:before {
    content: "";
@@ -986,7 +1012,7 @@ input[type="email"]:focus {
    height: 20px;
    background: #fafaf9;
    position: relative;
-   bottom: -92%;
+   bottom: -106%;
    right: -70%;
    transform: rotate(-25deg);
    border-bottom: 1px solid #e9e8e7;
@@ -999,14 +1025,18 @@ input[type="email"]:focus {
    height: 20px;
    background: #fafaf9;
    position: relative;
-   bottom: -92%;
+   bottom: -106%;
    right: -70%;
    transform: rotate(25deg);
    border-bottom: 1px solid #e9e8e7;
    border-right: 1px solid #e9e8e7;
    border-left: none;
  }
- #govern-problems-detailed .quote p {
+ #govern-problems-detailed .panel-default>.panel-heading {
+  background: none;
+  color: #8c8f94;
+}
+#govern-problems-detailed .quote p {
   font-size: 13px;
 }
 #govern-problems-detailed .quote a {
@@ -1015,7 +1045,7 @@ input[type="email"]:focus {
   text-decoration: none;
 }
 #govern-decision {
-  background: #444c51  url(../images/govern-grafics.gif) 50% no-repeat;
+  /*background: #444c51  url(../images/govern-grafics.gif) 50% no-repeat;*/
   background-size: contain;
   height: 425px;
   padding: 2% 0;
@@ -1039,6 +1069,8 @@ input[type="email"]:focus {
   background-size: contain;
   margin: 0 auto;
   box-shadow: 0 12px 27px #000004;
+  padding: 5%;
+  text-align: justify;
 }
 .after-decision {
   display: block;
@@ -1335,7 +1367,7 @@ input[type="email"]:focus {
   transform: rotate(45deg) translate(25vw,5vw);
 }
 #govern-benefit .row {
-  width: 80%;
+  width: 90%;
   padding: 20% 0 0 20%;
 }
 #govern-benefit h2 {
@@ -1601,9 +1633,11 @@ input[type="email"]:focus {
 #author-problem .wrapper .right img {
   width: 170px;
   object-fit: contain;
+  margin: 0 20px 0 30px;
 }
 #author-problem .wrapper .right h4 {
   font-size: 20px;
+  width: 90%;
 }
 #author-problem .wrapper .right .line:before {
   content: "";
@@ -1613,7 +1647,8 @@ input[type="email"]:focus {
   display: block;
   position: relative;
   top: -40px;
-  left: 4px
+  left: 4px;
+
 }
 #author-problem .wrapper .right .line:after {
   content: "";
@@ -1650,8 +1685,9 @@ input[type="email"]:focus {
   width: 65px;
 }
 #author-decision .ipad {
-  width: 40vw;
-  height: 25vw;
+  width: 50vw;
+  height: 30vw;
+  padding: 45px 65px;
   margin: 30px auto;
   background: url(../images/author-ipad.png) no-repeat;
   background-size: cover;
@@ -1848,7 +1884,7 @@ input[type="email"]:focus {
   width: 20px;
   height: 20px;
   background: #f9fafa;
-  transform: rotate(38deg) skew(-22deg) translate(-38px,94px);
+  transform: rotate(38deg) skew(-22deg) translate(42px,163px);
 }
 #business-problem p.left:after {
   content: "";
@@ -1879,8 +1915,9 @@ input[type="email"]:focus {
   width: 65px;
 }
 #business-decision .window {
-  width: 40vw;
-  height: 25vw;
+  width: 52vw;
+  height: 30vw;
+  padding: 25px 90px;
   margin: 0 auto;
   background: url(../images/business-macbook.png) no-repeat;
   background-size: cover;
@@ -1912,7 +1949,7 @@ input[type="email"]:focus {
  background-size: cover;
  position: relative;
  transform: translate(30vw,0);
- margin-top: 3%;
+ margin-top: 7%;
  opacity: .2;
 }
 /*****************************************************
@@ -2370,6 +2407,7 @@ a.plus1 {
   background: url(../images/society-window-video.png) no-repeat;
   background-size: cover;
   filter: drop-shadow(0px 5px 10px #000);
+  padding: 40px 10px;
 }
 #society-benefit {
   padding: 5% 0;
