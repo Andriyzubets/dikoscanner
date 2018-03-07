@@ -3119,6 +3119,21 @@ Responsive Styles
   #govern-feature li.active a, #govern-feature li a {
     font-size: 14px;
   }
+  #govern-problems .icons .nav-tabs {
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  #govern-problems .icons .nav-tabs li {
+    width: 30%;
+    margin-bottom: 7%;
+  }
+  #govern-problems .icons .nav-tabs:before, #govern-problems .icons .nav-tabs:after,  #govern-problems .icons .nav-tabs li:before {
+    content: "";
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -3167,6 +3182,15 @@ Responsive Styles
   #govern-problems {
     background-position: center 0% !important;
   }
+#govern-decision > video {
+  display: none;
+}
+#govern-decision .frame {
+  width: 90%;
+}
+#govern-benefit figure {
+  display: none;
+}
 }
 
 @media only screen and (max-width: 575px) {
@@ -3230,6 +3254,9 @@ Responsive Styles
   #govern-feature li {
     width: 30%;
   }
+  #govern-problems .icons .nav-tabs li {
+    width: 47%;
+  }
 }
 @media screen and (max-width: 480px) {
   #main-nav .scanner-link {
@@ -3240,6 +3267,26 @@ Responsive Styles
     height: 26vw;
     left: 37.5%;
     top: 48%;
+  }
+  #govern-problems .icons .nav-tabs {
+    display: none;
+  }
+  #govern-problems-detailed .tab-content {
+    flex-direction: column;
+    left: 0;
+    align-items: center;
+  }
+  #govern-problems-detailed .tab-content>.tab-pane {
+    display: block;
+    opacity: 1;
+    margin: 0 0 30px;
+  }
+  #govern-problems-detailed .quote a {
+    display: block;
+}
+#govern-problems-detailed .modal-dialog {
+    transform: translate(0,10%) !important;
+    width: 95vw  !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
