@@ -687,10 +687,17 @@ input[type="email"]:focus {
   background-size: contain;
   position: absolute;
   left: 44%;
-  top: 62%;
+  top: 55%;
 }
 .modal-content {
   background: #242424;
+  color: #fff;
+}
+#govern-problems-detailed .modal-content {
+  background: #242424;
+  color: #fff;
+  display: flex;
+  flex-direction: row-reverse;
 }
 .modal-header {
   border: none;
@@ -738,6 +745,9 @@ input[type="email"]:focus {
   position: relative;
   z-index: -1;
 }
+#main-nav .smart {
+  display: none;
+}
 #govern-header img {
   display: block;
   margin: 0 auto;
@@ -748,11 +758,14 @@ input[type="email"]:focus {
   margin: 1% 0;
   font-size: 30px;
 }
+#govern-feature .smart {
+  display: none;
+}
 .perspective {
-  -webkit-perspective: 600px;
-  -moz-perspective: 600px;
-  -ms-perspective: 600px;
-  perspective: 600px;
+  -webkit-perspective: 1800px;
+  -moz-perspective: 1800px;
+  -ms-perspective: 1800px;
+  perspective: 1800px;
 }
 .myBoxB {
   width: 100%;
@@ -874,7 +887,7 @@ input[type="email"]:focus {
   border-top: 1px solid #72767c;
 }
 #govern-feature .right p {
-  font-size: 18px;
+  font-size: 14px;
   color: #86929a;
 }
 #govern-problems {
@@ -1022,6 +1035,7 @@ input[type="email"]:focus {
     width: 220vw;
     position: relative;
     transition: .4s;
+    left: -22vw;
   }
   #govern-problems-detailed .quote {
     width: 405px;
@@ -1090,6 +1104,7 @@ input[type="email"]:focus {
 #govern-decision h2 {
   font-size: 36px;
   text-align: center;
+  color: #333333;
 }
 #govern-decision hr {
   background: #b4b6b0;
@@ -1100,13 +1115,16 @@ input[type="email"]:focus {
 }
 #govern-decision .frame {
   width: 53%;
-  height: 100%;
+  /*height: 100%;*/
   background: #ccc;
   background-size: contain;
   margin: 0 auto;
   box-shadow: 0 12px 27px #000004;
-  padding: 5%;
+  /*padding: 5%;*/
   text-align: justify;
+}
+#govern-decision .frame video {
+  width: 100%;
 }
 .after-decision {
   display: block;
@@ -1419,7 +1437,7 @@ input[type="email"]:focus {
 #govern-benefit p {
   margin: 0 0 0 20px;
   font-size: 16px;
-  color: #2b2c2c;
+  color: #8c8f94;
 }
 
 /*****************************************************
@@ -2938,6 +2956,9 @@ Responsive Styles
   #main-nav #slide_out_menu .menu-close {
     top: 41px;
   }
+  #main-nav .smart {
+    display: block;
+  }
   /*** Features ***/
   #features {
     padding: 100px 0;
@@ -3078,6 +3099,26 @@ Responsive Styles
   #main-nav #slide_out_menu ul a {
     height: auto;
   }
+  #govern-header .parall-container {
+    display: none;
+  }
+  #govern-header {
+    background: url(../images/govern-header.jpg) no-repeat;
+    background-size: cover;
+    padding: 25%;
+  }
+  #govern-feature .tab-content {
+    padding: 5px 10px;
+  }
+  #govern-feature .tab-pane .right h2 {
+    font-size: 16px;
+  }
+  #govern-feature .tab-pane .right hr {
+    margin: 5px 0;
+  }
+  #govern-feature li.active a, #govern-feature li a {
+    font-size: 14px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -3088,6 +3129,7 @@ Responsive Styles
     left: 41.5%;
     top: 47.5%;
   }
+
   #iphone-screens {
     padding: 120px 0 460px;
   }
@@ -3114,6 +3156,16 @@ Responsive Styles
   #iphone-screens .images-list li.main-img {
     width: 220px;
     margin-left: -110px;
+  }
+  #govern-feature .big {
+    display: none;
+  }
+  #govern-feature .smart {
+    display: flex;
+    align-items: flex-end;
+  }
+  #govern-problems {
+    background-position: center 0% !important;
   }
 }
 
@@ -3167,7 +3219,17 @@ Responsive Styles
   #main-nav #slide_out_menu {
     width: 100vw;
     left: -100vw;
-  }  
+  } 
+  #govern-feature .smart .left {
+    display: none;
+  } 
+  #govern-feature li.active a, #govern-feature li a {
+    font-size: 11px;
+    word-wrap: break-word;
+  }
+  #govern-feature li {
+    width: 30%;
+  }
 }
 @media screen and (max-width: 480px) {
   #main-nav .scanner-link {
