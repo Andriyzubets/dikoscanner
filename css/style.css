@@ -1705,17 +1705,33 @@ input[type="email"]:focus {
   width: 100%;
 }
 #author-problem .wrapper .right .line {
-  width: 17px;
+  width: 19px;
   height: 17px;
   border-radius: 100%;
   border:3px solid #ccc;
   -ms-align-self: center;
   align-self: center;
 }
-#author-problem .wrapper .right img {
+#author-problem .wrapper .right .pic {
   width: 170px;
-  object-fit: contain;
-  margin: 0 20px 0 30px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  /*margin: 0 20px 0 30px;*/
+}
+#author-problem .wrapper .right .no-money {
+  background: url(../images/author-no-money.png) 50% no-repeat;
+  background-size: cover;
+}
+#author-problem .wrapper .right .pocket {
+  background: url(../images/author-pocket.png) 50% no-repeat;
+  background-size: cover;
+}
+#author-problem .wrapper .right .choice {
+  background: url(../images/author-choise.png) 50% no-repeat;
+  background-size: cover;
 }
 #author-problem .wrapper .right h4 {
   font-size: 20px;
@@ -1724,23 +1740,23 @@ input[type="email"]:focus {
 #author-problem .wrapper .right .line:before {
   content: "";
   width: 2px;
-  height: 40px;
+  height: 54px;
   background: #ccc;
   display: block;
   position: relative;
-  top: -40px;
+  top: -56px;
   left: 4px;
 
 }
 #author-problem .wrapper .right .line:after {
   content: "";
   width: 2px;
-  height: 40px;
+  height: 71px;
   background: #ccc;
   display: block;
   position: relative;
-  top: -28px;
-  left: 4px
+  top: -41px;
+  left: 4px;
 }
 #author-problem #accordion {
   width: 92%;
@@ -1769,7 +1785,7 @@ input[type="email"]:focus {
 #author-decision .ipad {
   width: 50vw;
   height: 30vw;
-      padding: 43px 56px 39px 55px;
+  padding: 43px 56px 39px 55px;
   margin: 30px auto;
   background: url(../images/author-ipad.png) no-repeat;
   background-size: cover;
@@ -1952,103 +1968,103 @@ input[type="email"]:focus {
 /*#business-problem .double .protect:hover {
   background: #f9fafa url(../images/business-protect.gif) 50% 60% no-repeat;
   background-size: cover;
-}*/
-#business-problem .double .fine {
-  background: #f9fafa url(../images/business-fine.gif) 50% no-repeat;
-  background-size: cover;
-}
+  }*/
+  #business-problem .double .fine {
+    background: #f9fafa url(../images/business-fine.gif) 50% no-repeat;
+    background-size: cover;
+  }
 /*#business-problem .double .fine:hover {
   background: #f9fafa url(../images/business-fine.gif) 50% no-repeat;
   background-size: cover;
-}*/
+  }*/
 
-#business-problem p {
-  background: #f9fafa;
-  padding: 45px 110px;
-}
-#business-problem a {
-  display: block;
-  color: #78b272;
-  text-decoration: none;
-}
-#business-problem p.right:before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background: #f9fafa;
-  transform: rotate(38deg) skew(-22deg) translate(42px,163px);
-}
-#business-problem p.left:after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background: #f9fafa;
-  transform: rotate(38deg) skew(-22deg) translate(200px,-352px);
-}
-#business-decision {
-  height: 345px;
-  padding: 5px 0;
-  background: url(../images/business-decision-lay.jpg) no-repeat;
-  background-size: cover;
-}
-#business-decision h2 {
-  color: #fff;
-  font-size: 36px;
-}
-#business-decision hr {
-  width: 95px;
-  background: #c8cdd3;
-  height: 4px;
-  border: none;
-}
-#business-decision hr:nth-child(2n+1) {
-  width: 65px;
-}
-#business-decision .window {
-  width: 52vw;
-  height: 30vw;
-      padding: 3vw 7vw 4vw;
-  margin: 0 auto;
-  background: url(../images/business-macbook.png) no-repeat;
-  background-size: cover;
+  #business-problem p {
+    background: #f9fafa;
+    padding: 45px 110px;
+  }
+  #business-problem a {
+    display: block;
+    color: #78b272;
+    text-decoration: none;
+  }
+  #business-problem p.right:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #f9fafa;
+    transform: rotate(38deg) skew(-22deg) translate(42px,163px);
+  }
+  #business-problem p.left:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #f9fafa;
+    transform: rotate(38deg) skew(-22deg) translate(200px,-352px);
+  }
+  #business-decision {
+    height: 345px;
+    padding: 5px 0;
+    background: url(../images/business-decision-lay.jpg) no-repeat;
+    background-size: cover;
+  }
+  #business-decision h2 {
+    color: #fff;
+    font-size: 36px;
+  }
+  #business-decision hr {
+    width: 95px;
+    background: #c8cdd3;
+    height: 4px;
+    border: none;
+  }
+  #business-decision hr:nth-child(2n+1) {
+    width: 65px;
+  }
+  #business-decision .window {
+    width: 52vw;
+    height: 30vw;
+    padding: 3vw 7vw 4vw;
+    margin: 0 auto;
+    background: url(../images/business-macbook.png) no-repeat;
+    background-size: cover;
 
-}
-#business-decision .window div  {
-      /*padding: 14px 0 0;*/
-}
-#business-benefit {
-  padding: 10% 10% 0;
-}
-#business-benefit h2{
-  color: #314052;
-  font-size: 30px;
-}
-#business-benefit hr {
-  width: 100px;
-  height: 4px;
-  border: none;
-  background: #79818b;
-  margin-left: 0;
+  }
+  #business-decision .window div  {
+    /*padding: 14px 0 0;*/
+  }
+  #business-benefit {
+    padding: 10% 10% 0;
+  }
+  #business-benefit h2{
+    color: #314052;
+    font-size: 30px;
+  }
+  #business-benefit hr {
+    width: 100px;
+    height: 4px;
+    border: none;
+    background: #79818b;
+    margin-left: 0;
 
-}
-#business-benefit p{
-  color: #939393;
-}
-#business-benefit .window {
- width: 60vw;
- height: 35vw;
- background: url(../images/business-benefit-window.png) no-repeat;
- -webkit-background-size: cover;
- background-size: cover;
- position: relative;
- transform: translate(30vw,0);
- margin-top: 7%;
- opacity: .2;
-}
+  }
+  #business-benefit p{
+    color: #939393;
+  }
+  #business-benefit .window {
+   width: 60vw;
+   height: 35vw;
+   background: url(../images/business-benefit-window.png) no-repeat;
+   -webkit-background-size: cover;
+   background-size: cover;
+   position: relative;
+   transform: translate(30vw,0);
+   margin-top: 7%;
+   opacity: .2;
+ }
 /*****************************************************
 *** Map Feature ***
 *****************************************************/
@@ -2383,7 +2399,7 @@ a.plus1 {
 }
 
 #customers .carousel-indicators li.active {
-  
+
 }
 
 #customers .carousel-control.left,
@@ -3339,3 +3355,125 @@ Responsive Styles
   }
 }
 /*# sourceMappingURL=style.css.map */
+
+/*fb*/
+
+#top {
+  bottom: 5%;
+  cursor: pointer;
+  font-size: 150%;
+  position: fixed;
+  right: 1.6%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #dd4430;
+  z-index: 100;
+}
+#top:before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+  left: 10px;
+  top: 12px;
+  border-radius: 1px;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+}
+#top:after {
+ content: "";
+ display: block;
+ width: 45px;
+ height: 45px;
+ border-radius: 50%;
+ border: 2px solid #fff;
+ position: relative;
+ top: -17.5px;
+ left: -7.5px;
+}
+#facebook-call-back {
+  bottom: 5%;
+  cursor: pointer;
+  font-size: 150%;
+  position: fixed;
+  left: 1.6%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  z-index: 100;
+
+}
+#facebook-call-back:after {
+  content: "Напишите нам";
+  display: block;
+  position: relative;
+  opacity: 0;
+  font-family: "oswald", helvetica, sans-serif;
+  font-size: 17px;
+  width: 120px;
+  right: -60px;
+  top: -25px;
+  animation: text 10s linear infinite;
+}
+#facebook-call-back:before {
+  content: "";
+  display: block;
+  position: relative;
+  background: url(../images/Facebook_Messenger.png
+    ) no-repeat;
+  width: 40px;
+  height: 40px;
+  background-size: 100%;
+  left: 5px;
+  top: 5px;
+  animation: rotate 10s linear infinite;
+}
+@keyframes text {
+  0%  {opacity:0}
+  50% {opacity:0.7}
+  60% {opacity:1}
+  70% {opacity:0.7}
+  80% {opacity:0}
+  100% {opacity:0}
+
+
+}
+@keyframes rotate {
+  0% {transform: rotate(0deg);}
+  50% {transform: rotate(0deg);}
+  51% {transform: rotate(-25deg);}
+  52% {transform: rotate(25deg);}
+  53% {transform: rotate(-25deg);}
+  54% {transform: rotate(25deg);}
+  55% {transform: rotate(-25deg);}
+  56% {transform: rotate(0deg);}
+  100% {transform: rotate(0deg);}
+
+
+}
+/*#facebook-call-back:after {
+  content: "";
+    display: block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+
+    position: relative;
+    top: -27.5px;
+    left: -7.5px;
+    }*/
+    /*#facebook-call-back:active:before {
+     content: "";
+     display: block;
+     position: relative;
+     background: url(../../images/close.png) no-repeat;
+     width: 40px;
+     height: 40px;
+     background-size: 100%;
+     left: 5px;
+     top: 5px;
+   }*/
