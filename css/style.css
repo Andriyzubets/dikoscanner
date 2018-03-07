@@ -1918,6 +1918,9 @@ input[type="email"]:focus {
   transition: .4s;
   width: 100px;
 }
+#business-feature .nav-tabs>li.active img {
+  filter: drop-shadow(0 0 10px #000);
+}
 #business-problem {
   padding: 5% 0;
   background: #d4d4d4;
@@ -1937,26 +1940,27 @@ input[type="email"]:focus {
   height: 200px;
   border-radius: 100%;
   background: #f9fafa;
+  overflow: hidden;
 }
 #business-problem .double p {
   width: 70%;
 }
 #business-problem .double .protect {
-  background: #f9fafa url(../images/business-protect.png) 50% 60% no-repeat;
-  background-size: 70%;
-}
-#business-problem .double .protect:hover {
   background: #f9fafa url(../images/business-protect.gif) 50% 60% no-repeat;
   background-size: cover;
 }
+/*#business-problem .double .protect:hover {
+  background: #f9fafa url(../images/business-protect.gif) 50% 60% no-repeat;
+  background-size: cover;
+}*/
 #business-problem .double .fine {
-  background: #f9fafa url(../images/business-fine.png) 50% no-repeat;
-  background-size: 90%;
-}
-#business-problem .double .fine:hover {
   background: #f9fafa url(../images/business-fine.gif) 50% no-repeat;
   background-size: cover;
 }
+/*#business-problem .double .fine:hover {
+  background: #f9fafa url(../images/business-fine.gif) 50% no-repeat;
+  background-size: cover;
+}*/
 
 #business-problem p {
   background: #f9fafa;
@@ -2379,7 +2383,7 @@ a.plus1 {
 }
 
 #customers .carousel-indicators li.active {
-
+  
 }
 
 #customers .carousel-control.left,
