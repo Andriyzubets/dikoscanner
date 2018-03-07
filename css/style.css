@@ -1498,6 +1498,34 @@ input[type="email"]:focus {
   padding: 3% 0;
   background: #fff;
 }
+#society-report .accPanel {
+  background: #dfdfdf;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 3px;
+  padding: 5px 20px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+}
+#society-report .accPanel > div {
+  width: calc(100% - 60px);
+}
+#society-report .accPanel h4 {
+  font-size: 14px;
+  margin: 0;
+}
+#society-report p, #society-report #soc-1 {
+  color: #767677;
+  font-size: 14px;
+}
+#society-report #soc-1 {
+  overflow: hidden;
+  transition: .4s;
+}
 #society-report .container {
   background: #dfdfdf;
   border-radius: 5px;
@@ -2055,22 +2083,19 @@ input[type="email"]:focus {
   cursor: pointer;
 }
 a.plus {
-  position: absolute;
-  display: block;
-  cursor: pointer;
+  position: relative;
   text-decoration: none;
-  line-height: 33px;
+  line-height: 28px;
   font-size: 40px;
   text-align: center;
   color: #a5afb0;
   display: block;
   width: 40px;
   height: 40px;
-  right: 7%;
-  margin: -15px 0 0;
   border-radius: 50px;
   background: transparent;
   border: 3px solid #a5afb0;
+  margin: 10px 0 0;
 }
 a.plus1 {
   position: absolute;
@@ -2461,7 +2486,16 @@ a.plus1 {
   background: url(../images/society-window-video.png) no-repeat;
   background-size: cover;
   filter: drop-shadow(0px 5px 10px #000);
-  padding: 40px 10px;
+  padding: 40px 5px;
+}
+#society-decision .window div {
+  width: 100%;
+  height: 117%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+#society-decision .window div video {
+  width: 100%;
 }
 #society-benefit {
   padding: 5% 0;
@@ -3182,15 +3216,15 @@ Responsive Styles
   #govern-problems {
     background-position: center 0% !important;
   }
-#govern-decision > video {
-  display: none;
-}
-#govern-decision .frame {
-  width: 90%;
-}
-#govern-benefit figure {
-  display: none;
-}
+  #govern-decision > video {
+    display: none;
+  }
+  #govern-decision .frame {
+    width: 90%;
+  }
+  #govern-benefit figure {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 575px) {
@@ -3283,8 +3317,8 @@ Responsive Styles
   }
   #govern-problems-detailed .quote a {
     display: block;
-}
-#govern-problems-detailed .modal-dialog {
+  }
+  #govern-problems-detailed .modal-dialog {
     transform: translate(0,10%) !important;
     width: 95vw  !important;
   }
