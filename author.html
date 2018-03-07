@@ -277,12 +277,12 @@
       js = d.createElement(s); js.id = id;
       js.src = 'https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.12';
       fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+    }(document, 'script', 'facebook-jssdk'));
 
-<!--  -->
-<script type="text/javascript">
 
-</script>
+
+  </script>
+
 <script src="js/jquery-2.1.4.min.js"></script> <!-- jQuery -->
 <script src="js/bootstrap.min.js"></script>  <!-- Bootstrap -->
 <script src="js/wow.min.js"></script>  <!-- wow -->
@@ -347,6 +347,23 @@ cssTo: {
 }
 }                
 ]);
+// кнопка наверх
+    var top_show = 150; // В каком положении полосы прокрутки начинать показ кнопки "Наверх"
+    var delay = 1000; // Задержка прокрутки
+    $(document).ready(function() {
+      $(window).scroll(function () { // При прокрутке попадаем в эту функцию
+        /* В зависимости от положения полосы прокрукти и значения top_show, скрываем или открываем кнопку "Наверх" */
+        if ($(this).scrollTop() > top_show) $('#top').fadeIn();
+        else $('#top').fadeOut();
+      });
+      $('#top').click(function () { // При клике по кнопке "Наверх" попадаем в эту функцию
+        /* Плавная прокрутка наверх */
+        $('body, html').animate({
+          scrollTop: 0
+        }, delay);
+      });
+    });
+  
 </script>
 </body>
 </html>

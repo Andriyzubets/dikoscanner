@@ -298,7 +298,28 @@
     </div>
   </div>
 </footer>
+<!-- buttons -->
+<div id="top"></div>
+<div id="facebook-call-back" onclick="openbox('facebook-form'); return false"></div>
+  <!-- Facebook -->
+<div id="facebook-form" class="fb-page" style="display:none;position:fixed;bottom: 15%;left: 0%;z-index: 200;" data-href="https://www.facebook.com/DikoScanner-1595843727117873/" data-tabs="messages" data-width="300" data-height="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
 
+  <blockquote cite="https://www.facebook.com/DikoScanner-1595843727117873/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/DikoScanner-1595843727117873/">Dikoscanner</a></blockquote>
+
+</div>
+
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.12';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
+
+
+  </script>
 <script src="js/jquery-2.1.4.min.js"></script> <!-- jQuery -->
 <script src="js/bootstrap.min.js"></script>  <!-- Bootstrap -->
 <script src="js/wow.min.js"></script>  <!-- wow -->
@@ -371,7 +392,22 @@ cssTo: {
 }
 }                
 ]);
-
+// кнопка наверх
+    var top_show = 150; // В каком положении полосы прокрутки начинать показ кнопки "Наверх"
+    var delay = 1000; // Задержка прокрутки
+    $(document).ready(function() {
+      $(window).scroll(function () { // При прокрутке попадаем в эту функцию
+        /* В зависимости от положения полосы прокрукти и значения top_show, скрываем или открываем кнопку "Наверх" */
+        if ($(this).scrollTop() > top_show) $('#top').fadeIn();
+        else $('#top').fadeOut();
+      });
+      $('#top').click(function () { // При клике по кнопке "Наверх" попадаем в эту функцию
+        /* Плавная прокрутка наверх */
+        $('body, html').animate({
+          scrollTop: 0
+        }, delay);
+      });
+    });
 
 </script>
 </body>
