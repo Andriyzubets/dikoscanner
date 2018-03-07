@@ -209,7 +209,7 @@
 </div>
 
 </section>
-<button class="after-decision wow fadeInUp" style="margin-top: 20%">Узнать больше</button>
+<button class="after-decision wow fadeInUp" style="margin-top: 20%" onclick="location.href='scanner.html'">Узнать больше</button>
 
 <section id="society-benefit">
   <h2 class="text-center wow fadeInUp"><b>Выгода</b> авторского общества!</h2>
@@ -325,10 +325,8 @@
     height = document.getElementById(id).style.height;
 
     if(height=='0px'){
-      document.getElementById(id).style.transition='.4s';
       document.getElementById(id).style.height='auto';
     }else{
-      document.getElementById(id).style.transition='.4s';
       document.getElementById(id).style.height='0px';
     }
   }

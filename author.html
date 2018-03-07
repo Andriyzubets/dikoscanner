@@ -146,31 +146,24 @@
     </div>
 
   </div>
-  <div id="accordion" class="panel-group  wow fadeInUp">
-    <div class="panel panel-default">
-      <div class="panel-heading description">
-        Автоматизация процесса сбора роялти. 
-        <a id="soc1" class="accordion-toggle plus" href="#collapse-One" data-parent="#accordion" data-toggle="collapse" onclick="openbox('soc1'); return false" style="    margin: -25px 0 0;">
-          +
-        </a>
-        <a id="soc1" class="accordion-toggle plus1" href="#collapse-One" data-parent="#accordion" data-toggle="collapse" onclick="openbox('soc1'); return false" style="    margin: -25px 0 0;">
-          -
-        </a>
-        <p>
-          
-        </p>
+  <section id="society-report">
 
-      </div>
-      <div id="collapse-One" class="accordion-body collapse">
-        <div class="panel-body description" style="padding: 2%;">
-          <div class="row">
-            <p>Организации будут обязаны постоянно отчитываться о своей деятельности, сообщать автору об использовании его произведений, причитающееся ему вознаграждение. Правообладатели смогут через свои онлайн-кабинеты иметь постоянный детализированный доступ к ежегодным отчетам, которые будут общедоступными на сайтах этих организаций</p>
-
-          </div>
+  <div class="accPanel">
+      <a href="" class="plus" style="margin: 0;" onclick="heightbox('soc-1');openbox('pl');openbox('min'); return false">
+        <span id="pl">+</span>
+        <span id="min" style="display: none;">-</span>
+      </a>
+      <div>
+        <h4>Автоматизация процесса сбора роялти.</h4>
+        
+        <div id="soc-1" style="height: 0px;">
+          Организации будут обязаны постоянно отчитываться о своей деятельности, сообщать автору об использовании его произведений, причитающееся ему вознаграждение. Правообладатели смогут через свои онлайн-кабинеты иметь постоянный детализированный доступ к ежегодным отчетам, которые будут общедоступными на сайтах этих организаций
         </div>
       </div>
+      
     </div>
-  </div>
+</section>
+  
 </section> 
 <section id="author-decision" class="perspective">
 
@@ -179,13 +172,15 @@
   <hr class=" wow fadeInRight">
   <div class="ipad class="window myBox" data--5p-bottom="transform: rotateX(-90deg);"
   data--20p-bottom="transform: rotateX(0deg);">
-  <p style="text-align:justify;"">
+    <div><video src="images/decision.mp4" loop autoplay></video></div>
+
+  <!-- <p style="text-align:justify;"">
     Чтобы справиться с незаконным использованием авторского продукта в заведениях, клубах и торговых центрах, необходимо использовать современные ресурсы, которые не подвержены вмешательству человека. Лучшим решением для этих целей станет программно-аппаратный комплекс, функционирующий в режиме реального времени. Такую систему создала известная компания DikoTech, и установка их оборудования возможна уже сейчас. <br>
     В ее функциональное наполнение входит подсчет используемых произведений, на основании чего, ресторан или кафе выплачивает определенную сумму, часть из которой предназначена для государства, как налог, а остальные деньги предоставляются исполнителю, за право использования его продукта.  
-  </p>
+  </p> -->
 </div>
 </section>
-<button class="after-decision wow fadeInUp" style="margin-top: 20%">Узнать больше</button>
+<button class="after-decision wow fadeInUp" style="margin-top: 20%" onclick="location.href='scanner.html'">Узнать больше</button>
 <section id="author-benefit">
   <h2 class="wow fadeInUp"><b>Выгода</b> музыканта</h2>
   <hr class="wow fadeInLeft">
@@ -285,6 +280,15 @@
       document.getElementById(id).style.display='block';
     }else{
       document.getElementById(id).style.display='none';
+    }
+  }
+  function heightbox(id){
+    height = document.getElementById(id).style.height;
+
+    if(height=='0px'){
+      document.getElementById(id).style.height='auto';
+    }else{
+      document.getElementById(id).style.height='0px';
     }
   }
   $('#author-decision').scroolly([
