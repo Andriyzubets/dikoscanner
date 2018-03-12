@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dikoscanner</title>
+  <title>Dikoscanner | Музыкант</title>
   <!-- <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700,500' rel='stylesheet' type='text/css'> -->
   <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css"> <!-- Font Awesome -->
   <link rel="stylesheet" href="css/normalize.css"> <!-- CSS reset -->
@@ -20,24 +20,39 @@
   <header id="main-nav">
     <div class="container">
 
-      <a id="navigation" href="#" onclick="document.querySelector('.row').style.transition='.4s';document.querySelector('.row').style.left='150px';return false"><i class="fa fa-bars"></i></a>
+      <a id="navigation" href="#" onclick="document.querySelector('.row').style.transition='.4s';document.querySelector('.row').style.left='150px';document.querySelector('#footer').style.transition='.4s';document.querySelector('#footer').style.left='250px';return false"><i class="fa fa-bars"></i></a>
 
       <div id="slide_out_menu">
-        <a href="#" class="menu-close" onclick="document.querySelector('.row').style.left='0';document.querySelector('.row').style.transition='.4s';return false"><i class="fa fa-times"></i></a>
+        <a href="#" class="menu-close" onclick="document.querySelector('.row').style.left='0';document.querySelector('.row').style.transition='.4s';document.querySelector('#footer').style.left='0';return false"><i class="fa fa-times"></i></a>
         <!-- <div class="logo"><img src="images/logo-white.png" alt=""></div> -->
         <ul>
           <li><a href="#" class="side-world"></a></li>
-          <li><a href="#" class="side-ukr"></a></li>
-          <li><a href="#" class="side-decision"></a></li>
-          <li><a href="#" class="side-benefit"></a></li>
-          <li><a href="#" class="side-contacts"></a></li>
+          <li><a href="#author-problem" class="side-ukr"></a></li>
+          <li><a href="#author-decision" class="side-decision"></a></li>
+          <li><a href="#author-benefit" class="side-benefit"></a></li>
+          <li><a href="#footer" class="side-contacts"></a></li>
         </ul>
-
+        <ul class="smart">
+          <li><a href="#">Мировая практика</a></li>
+          <li><a href="#author-problem">Как происходит у нас</a></li>
+          <li><a href="#author-decision">Решение</a></li>
+          <li><a href="#author-benefit">Выгода</a></li>
+          <li><a href="#footer">Контакты</a></li>
+          <br>
+          <br>
+          <br>
+          <li><a href="govern.html"><p>Государству</p></a></li>
+          <li><a href="society.html"><p>Авторскому обществу</p></a></li>
+          <li><a href="author.html"><p>Музыканту</p></a></li>
+          <li><a href="business.html"><p>Заведению</p></a></li>
+          <li><a href="scanner.html"><p>Дикосканнер</p></a></li>
+          <li><a href="index.html"><p>Главная</p></a></li>
+        </ul>
         
       </div>
 
       <div class="row">
-        <div class="col-md-7">
+        <div class="col-md-7 visible-md visible-lg">
           <ul class="left row">
             <li class="col-md-2"><a href="govern.html" class="govern-link">
               <img src="images/govern.png" alt="">
@@ -47,7 +62,7 @@
               <img src="images/society.png" alt="">
               <video src="images/society-header.mp4" autoplay="autoplay" loop></video>
             </a></li>
-            <li class="col-md-2"><a href="author.html" class="author-link">
+            <li class="col-md-2"><a href="author.html" class="author-link" style="background:#000;border-radius: 20px;box-shadow: 0 0 22px #111;height: auto;">
               <img src="images/author.png" alt="">
               <video src="images/author-header.mp4" autoplay="autoplay" loop></video>
             </a></li>
@@ -57,10 +72,10 @@
             </a></li>
           </ul>
         </div>
-        <div class="col-md-3 col-md-offset-2 text-right right">
+        <div class="col-md-3 col-md-offset-2 text-right col-xs-12 right">
           <a href="scanner.html" class="scanner scanner-link">
             <img src="images/final.png" alt="">
-             <video src="images/dikoscanner.mp4" autoplay="autoplay" loop></video>
+            <video src="images/dikoscanner.mp4" autoplay="autoplay" loop></video>
           </a>
           <a href="index.html" class="logo logo-link">
             <img src="images/logo-white.png" alt="">
@@ -73,8 +88,10 @@
 
   <section id="author-header">
     <div class="monitor">
-
-      <img src="images/author-header-logo.png" alt="">
+      <div class="inner">
+        <img src="images/author-header-logo.png" alt="">
+        
+      </div>
 
     </div>
   </section>
@@ -83,33 +100,31 @@
     <h2 class="wow fadeInUp">Мировая практика</h2>
     <hr class="wow fadeInRight">
     <hr class="wow fadeInLeft">
-    <p class="wow fadeInUp" style="    width: 70%;
+    <!-- <p class="wow fadeInUp" style="    width: 70%;
     margin: 0 auto;
     text-align: justify;">
     Пользователи имеют много оперативных способов использования музыкального контента — стриминг, дискотеки, бары, караоке, концерты, публичное сообщение. Украинская музыка популярна в мире, особенно в тех странах, где присутствуют крупные украинские диаспоры. Произведения отечественных авторов звучат не только во время концертных туров — их используют в секторе HoReCa, их ставят на спортивных мероприятиях и тому подобное. За эту музыку местные ОКУ собирают авторское вознаграждение, однако часто, так и не дождавшись своего владельца, роялти «сгорают» в этих организациях, как невостребованные средства.
 
-  </p>
+  </p> -->
   <div class="map myBox" data--5p-bottom="transform: rotateX(90deg);"
   data--40p-bottom="transform: rotateX(0deg);"></div>
   <div class="items">
     <div class="item wow fadeInLeft">
       <img src="images/author-guitar-man.png" alt="" style="margin-top: -30px">
       <h4>Музыкант</h4>
-      <p>Сегодня, если вы являетесь музыкантом, скорее всего вы не знаете, кто собирает деньги от вашего имени. Скорее всего этих денег вы не получите. И организация колективних управлений, не понесет ответственности за недостатки действующего устаревшего законодательства. Время начать деятельность этой системы сборов с чистого листа. Создавая новую песню, музыкальный исполнитель стремится не только к признанию и славе, но к денежному вознаграждению, ведь музыка – это его работа. Запись песни и ее дальнейшая реклама связана со значительными материальными вложениями, которые, по идее, должны возмещаться за счет получения роялти от использования этого продукта в ресторанах, развлекательных центрах, ночных клубах. И так работает система во всем мире, обеспечивая артиста доходом для жизни и дальнейшего развития.
-
+      <p>Каждый артист, создавая свой авторский продукт, пытается заработать на нем, чтобы получить прибыль для дальнейшей работы, а также в целом обеспечить свою жизнь. Он понимает, какие грандиозные перспективы и рост открывают перед ним такие вложения, поэтому идет на них. Ведь знает, что за использование его музыки он будет получать авторские отчисления, которые со временем покроют все расходы и начнут приносить прибыль. 
       </p>
     </div>
     <div class="item wow fadeInUp">
       <img src="images/author-record.png" alt="">
       <h4>Производство</h4>
-      <p>Ведь для того, чтобы придумать мелодию, написать текст, создать грамотную аранжировку, привлечь музыкантов, чтобы впоследствии записать готовую песню в студии, свести и обработать ее, артисту необходима значительная материальная база. 
+      <p>Для того, чтобы придумать мелодию, написать текст, создать грамотную аранжировку, привлечь музыкантов, чтобы впоследствии записать готовую песню в студии, свести и обработать ее, артисту необходима значительная материальная база. (это самый скромный список для создания песни)
       </p>
     </div>
     <div class="item wow fadeInRight">
-      <img src="images/author-team.png" alt="" style="width: 39%;">
+      <img src="images/author-team.png" alt="" style="width: 125px;">
       <h4>Реклама</h4>
-      <p>Как и любому другому продукту, песне нужно рекламное сопровождение. Обычно этим занимаются PR-менеджеры, которым также требуется платить заработную плату. К тому же не лишним будет спонсировать распространение и продвижение песни на радиостанциях, телевидении, в интернет-изданиях, социальных сетях и так далее. 
-
+      <p>Как и любому продукту, песне нужно реклама, пиар и другие продвижения. Обычно этим занимаются Менеджеры, которым также требуется платить заработную плату. К тому же не лишним будет спонсировать распространение песни на радиостанциях, телевидении, в интернет-изданиях, социальных сетях и так далее.
       </p>
     </div>
   </div>
@@ -117,18 +132,21 @@
 <section id="author-problem">
   <div class="wrapper">
     <div class="left wow fadeInLeft">
-      <h2><b>Артист</b> должен зарабатывать</h2>
-      <p>В нашей стране использование авторского продукта не контролируется, что приводит к значительным убыткам для музыканта.  <br><br>
-        Украинское авторское общество громко заявляет о том, что «артист должен зарабатывать», и это абсолютно справедливо. Но эта организация не справляется с обеспечением контроля над применением авторских продуктов по целому ряду причин.
-
+      <h2><b>Музыкант</b> должен зарабатывать</h2>
+      <hr  style="width: 100px;height:4px;border:none;background: #858688;margin-left: 0">
+      <p style="margin-left: 35px;">Такая система действует во всем мире, позволяя артистам зарабатывать на том продукте, который они производят, а именно, музыке.
+        <br><br>
+        <b>К сожалению, в Украине, на сегодняшний день, не функционирует четкая система контроля над использованием авторских произведений. Соответственно, артисты недополучают огромное количество денег, которые положены им на совершенно законных основаниях.</b>
       </p>
     </div>
     <div class="right">
+      <h2 style="margin-left: 50px;">Как происходит<b> У НАС</b></h2>
+      <hr style="width: 100px;height:4px;border:none;background: #858688;margin-left: 50px;">
       <div class="item wow fadeInRight">
         <div class="line"></div>
         <div class="pic no-money"></div>
         
-        <h4>Нет законодательной базы, которая четко регулирует работу Авторских сообществ.
+        <h4>МУЗЫКАНТ НЕ ЗАРАБАТЫВАЕТ НА СВОЕМ ПРОДУКТЕ
         </h4>
       </div>
       <div class="item wow fadeInRight" data-wow-delay=".2s">
@@ -136,13 +154,13 @@
         <div class="pic pocket"></div>
 
         <h4>
-          Иногда исполнителям просто не хватает денег на обеспечение своей семьи и создание новых произведений.
+          НЕТ ФИНАНСОВ НА ЕДУ И РАЗВИТИЕ
         </h4>
       </div>
       <div class="item wow fadeInRight" data-wow-delay=".4s">
         <div class="line"></div>
         <div class="pic choice"></div>
-        <h4>Система распределения роялти скажем прямо не понятна. Авторские общества не имеют прозрачную систему фиксации музыки в общественных местах.
+        <h4>ВЫБИРАЮТ ДРУГИЕ ПРОФЕССИИ
         </h4>
       </div>
     </div>
@@ -150,22 +168,30 @@
   </div>
   <section id="society-report">
 
-  <div class="accPanel">
+    <div class="accPanel">
       <a href="" class="plus" style="margin: 0;" onclick="heightbox('soc-1');openbox('pl');openbox('min'); return false">
         <span id="pl">+</span>
         <span id="min" style="display: none;">-</span>
       </a>
       <div>
-        <h4>Автоматизация процесса сбора роялти.</h4>
-        
+        <h4>Музыкант сегодня...</h4>
+        <p>Если вы являетесь музыкантом, скорее всего вы не знаете, кто собирает деньги от вашего имени.</p>
         <div id="soc-1" style="height: 0px;">
-          Организации будут обязаны постоянно отчитываться о своей деятельности, сообщать автору об использовании его произведений, причитающееся ему вознаграждение. Правообладатели смогут через свои онлайн-кабинеты иметь постоянный детализированный доступ к ежегодным отчетам, которые будут общедоступными на сайтах этих организаций
-        </div>
-      </div>
-      
-    </div>
-</section>
-  
+         Скорее всего этих денег вы не получите. И организация колективних управлений, не понесет ответственности за недостатки действующего устаревшего законодательства. Создавая новую песню, музыкальный исполнитель стремится не только к признанию и славе, но к денежному вознаграждению, ведь музыка – это его работа. Запись песни и ее дальнейшая реклама связана со значительными материальными вложениями, которые, по идее, должны возмещаться за счет получения роялти от использования этого продукта в ресторанах, развлекательных центрах, ночных клубах. И так работает система во всем мире, обеспечивая артиста доходом для жизни и дальнейшего развития.
+         <br><br>
+         Пользователи имеют много оперативных способов использования музыкального контента — стриминг, дискотеки, бары, караоке, концерты, публичное сообщение. Украинская музыка популярна в мире, особенно в тех странах, где присутствуют крупные украинские диаспоры. Произведения отечественных авторов звучат не только во время концертных туров — их используют в секторе HoReCa, их ставят на спортивных мероприятиях и тому подобное. За эту музыку местные ОКУ собирают авторское вознаграждение, однако часто, так и не дождавшись своего владельца, роялти «сгорают» в этих организациях, как невостребованные средства.
+         <br><br>
+         Нет законодательной базы, которая четко регулирует работу Авторских сообществ. <br>
+         Часто исполнителям просто не хватает денег на обеспечение своей семьи и создание новых произведений.
+         Система распределения роялти скажем прямо не понятна. Авторские общества не имеют прозрачную систему фиксации музыки в общественных местах.
+         <br><br>
+         Говоря в целом, можно отметить, что артисты вообще не зарабатывают на своих творениях, нередко при всей популярности и востребованности их доходы минимальны, и даже не покрывают расходов на банальные бытовые потребности. Соответственно артист утрачивает смысл развиваться и делать вклад в развитие национальной культуры.
+       </div>
+     </div>
+
+   </div>
+ </section>
+
 </section> 
 <section id="author-decision" class="perspective">
 
@@ -174,25 +200,40 @@
   <hr class=" wow fadeInRight">
   <div class="ipad class="window myBox" data--5p-bottom="transform: rotateX(-90deg);"
   data--20p-bottom="transform: rotateX(0deg);">
-    <div><video src="images/decision.mp4" loop autoplay></video></div>
+  <div><video src="images/decision.mp4" loop autoplay></video></div>
 
-  <!-- <p style="text-align:justify;"">
-    Чтобы справиться с незаконным использованием авторского продукта в заведениях, клубах и торговых центрах, необходимо использовать современные ресурсы, которые не подвержены вмешательству человека. Лучшим решением для этих целей станет программно-аппаратный комплекс, функционирующий в режиме реального времени. Такую систему создала известная компания DikoTech, и установка их оборудования возможна уже сейчас. <br>
-    В ее функциональное наполнение входит подсчет используемых произведений, на основании чего, ресторан или кафе выплачивает определенную сумму, часть из которой предназначена для государства, как налог, а остальные деньги предоставляются исполнителю, за право использования его продукта.  
-  </p> -->
 </div>
 </section>
-<button class="after-decision wow fadeInUp" style="margin-top: 20%" onclick="location.href='scanner.html'">Узнать больше</button>
+<section id="society-report" style="    width: 60%;
+margin: 0 auto;">
+<div class="accPanel">
+  <a href="" class="plus" onclick="heightbox('soc-2');openbox('pl1');openbox('min1'); return false">
+    <span id="pl1">+</span>
+    <span id="min1" style="display: none;">-</span>
+  </a>
+  <div>
+    <h4>Ответ на этот вопрос…</h4>
+    <p>Чтобы справиться с незаконным использованием авторского продукта в заведениях, клубах и торговых центрах,</p>
+    <div id="soc-2" style="height: 0px;">
+     необходимо использовать современные ресурсы, которые не подвержены вмешательству человека. Лучшим решением для этих целей станет программно-аппаратный комплекс, функционирующий в режиме реального времени.
+     <br><br>
+     В ее функциональное наполнение входит подсчет используемых произведений, на основании чего, ресторан или кафе выплачивает определенную сумму, часть из которой предназначена для государства, как налог, а остальные деньги предоставляются исполнителю, за право использования его продукта.
+   </div>
+ </div>
+
+</div>
+</section>
+<button class="after-decision wow fadeInUp" style="margin-top: 0%" onclick="location.href='scanner.html'">Узнать больше</button>
 <section id="author-benefit">
   <h2 class="wow fadeInUp"><b>Выгода</b> музыканта</h2>
   <hr class="wow fadeInLeft">
   <hr class="wow fadeInRight">
-  <p class="wow fadeInUp">
-    Музыкант обретает уверенность, что его музыкальный продукт будет использоваться исключительно на законных основаниях. 
+  <p class="wow fadeInUp text-left">
+    - Музыкант обретает уверенность, что его музыкальный продукт будет использоваться исключительно на законных основаниях. 
     <br><br>
-    Получит доступ к личному кабинету, чтобы в любое время оценить, где его репертуар является наиболее востребованным, сколько заработал его музыкальный контент, что немаловажно для того, чтобы понимать, как действовать дальше, и видеть свои творческие перспективы.
+    - Получит доступ к личному кабинету, чтобы в любое время оценить, где его репертуар является наиболее востребованным, сколько заработал его музыкальный контент, что немаловажно для того, чтобы понимать, как действовать дальше, и видеть свои творческие перспективы. 
     <br><br>
-    Получая свои авторские начисления, артист сможет больше вкладывать в свою музыку, клипы, раскрутку и в дальнейшем выходить на мировые арены.
+    - Получая свои авторские начисления, артист сможет больше вкладывать в свою музыку, клипы, раскрутку и в дальнейшем выходить на мировые арены.
 
   </p>
   <div class="window wow fadeInUp">
@@ -202,48 +243,61 @@
 
 
 <footer id="footer">
-  <div class="container footer-container">
-    <div class="row">
-      <div class="col-md-3">
-        <img class="logo" src="images/logo.png" alt="">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos in nemo fuga modi voluptatum. </p>
-        <!-- <a href="#" class="app_download"><img src="images/app-store-download.png" alt=""></a> -->
-        <ul class="socials">
-          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-          <li><a href="#"><i class="fa fa-tumblr"></i></a></li>
-          <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-        </ul>
+    <div class="container footer-container">
+      <div class="row">
+        <div class="col-md-3">
+          <img class="logo" src="images/logo.png" alt="">
+          <p>Вы можете связаться с нами любым удобным для Вас способом. </p>
+          
+          <ul class="socials">
+
+            <li><a href="https://www.facebook.com/dikotech/"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCxAfLILqApy9Yjt1RJWKIwQ?view_as=subscriber"><i class="fa fa-youtube"></i></a></li>
+            <li><a href=" https://vk.com/dikotech"><i class="fa fa-vk"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-md-7 col-sm-7 col-xs-12 form">
+         <div class="title">
+          <h4>Обратная связь</h4>
+        </div>
+        <form action="contact.php" method="POST" id="feedback-form">
+          <div class="row">
+            <div class="col-md-12">
+              <label for="author">Имя<span class="required">*</span></label>
+              <input id="name" class="form-control" name="contactFF" type="text">
+            </div>
+            <div class="col-md-12">
+              <label for="email">Email<span class="required">*</span></label>
+              <input id="email" class="form-control" name="contactFF" type="text">
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <label for="comment">Ваше сообщение</label>
+              <textarea id="message" class="form-control" name="messageFF"></textarea>
+              <div id="notification"></div>
+              <input name="submit" type="submit" id="submit" class="def-button" value="Отправить сообщение" style="    margin: 20px 0;
+              border-radius: 15px;
+              background: #00000071;
+              border: none;
+              padding: 5px 20px;">
+            </div>
+          </div>
+        </form>
       </div>
-      <div class="col-md-2 col-md-offset-3 col-sm-4 col-xs-6 footer-links">
+      <div class="col-md-2 col-sm-2 col-xs-12 footer-links">
         <ul>
-          <li><p class="title">Узнать детальнее</p></li>
-          <li><a href="#">Как это работает?</a></li>
-          <li><a href="#">Политика конфиденциальности</a></li>
-          <li><a href="#">Мы в сетях</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li><p class="title">Дикосканнер</p></li>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="govern.html">Государству</a></li>
+          <li><a href="society.html">Авторскому сообществу</a></li>
+          <li><a href="author.html">Музыканту</a></li>
+          <li><a href="business.html">Заведению</a></li>
+          <li><a href="scanner.html"><b>Дикосканнер</b></a></li>
         </ul>
       </div>
-      <div class="col-md-2 col-sm-4 col-xs-6 footer-links">
-        <ul>
-          <li><p class="title">О нас</p></li>
-          <li><a href="#">О проекте</a></li>
-          <li><a href="#">Возможности</a></li>
-          <li><a href="#">Вопросы | ответы</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-      </div>
-      <div class="col-md-2 col-sm-4 col-xs-6 footer-links">
-        <ul>
-          <li><p class="title">Поддержка</p></li>
-          <li><a href="#">F.A.Q.</a></li>
-          <li><a href="#">Контакты</a></li>
-          <li><a href="#">FB chat</a></li>
-          <li><a href="#">Позвони нам</a></li>
-        </ul>
-      </div>
+
     </div>
   </div>
   <div class="container copyright-container">
@@ -263,25 +317,25 @@
 <!-- buttons -->
 <div id="top"></div>
 <div id="facebook-call-back" onclick="openbox('facebook-form'); return false"></div>
-  <!-- Facebook -->
+<!-- Facebook -->
 <div id="facebook-form" class="fb-page" style="display:none;position:fixed;bottom: 15%;left: 0%;z-index: 200;" data-href="https://www.facebook.com/DikoScanner-1595843727117873/" data-tabs="messages" data-width="300" data-height="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
 
   <blockquote cite="https://www.facebook.com/DikoScanner-1595843727117873/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/DikoScanner-1595843727117873/">Dikoscanner</a></blockquote>
 
 </div>
 
-  <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.12';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.12';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
 
 
 
-  </script>
+</script>
 
 <script src="js/jquery-2.1.4.min.js"></script> <!-- jQuery -->
 <script src="js/bootstrap.min.js"></script>  <!-- Bootstrap -->
@@ -363,22 +417,22 @@ cssTo: {
         }, delay);
       });
     });
-  
+
 // Правильный скролл на якоря
-     $(function(){
-    $('a[href*=#]').click(function() {
+$(function(){
+  $('a[href*=#]').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
       && location.hostname == this.hostname) {
-        var $target = $(this.hash);
-        $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
-        if ($target.length) {
+      var $target = $(this.hash);
+    $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+    if ($target.length) {
           var targetOffset = $target.offset().top - ($("#main-nav").outerHeight(true)+ 0); //#main-header - заменить на ваш элемент
           $('html,body').animate({scrollTop: targetOffset}, 700);
           return false;
         }
       }
     });
-  });
+});
 </script>
 </body>
 </html>

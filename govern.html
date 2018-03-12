@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dikoscanner</title>
+  <title>Dikoscanner | Государство</title>
   <!-- <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700,500' rel='stylesheet' type='text/css'> -->
   <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css"> <!-- Font Awesome -->
   <link rel="stylesheet" href="css/normalize.css"> <!-- CSS reset -->
@@ -20,13 +20,15 @@
   <header id="main-nav">
     <div class="container">
 
-      <a id="navigation" href="#" onclick="document.querySelector('.row').style.transition='.4s';document.querySelector('.row').style.left='150px';return false"><i class="fa fa-bars"></i></a>
+      <a id="navigation" href="#" onclick="document.querySelector('.row').style.transition='.4s';document.querySelector('.row').style.left='150px';document.querySelector('#footer').style.transition='.4s';document.querySelector('#footer').style.left='250px';return false"><i class="fa fa-bars"></i></a>
 
       <div id="slide_out_menu">
-        <a href="#" class="menu-close" onclick="document.querySelector('.row').style.left='0';document.querySelector('.row').style.transition='.4s';return false"><i class="fa fa-times"></i></a>
+        <a href="#" class="menu-close" onclick="document.querySelector('.row').style.left='0';document.querySelector('.row').style.transition='.4s';document.querySelector('#footer').style.left='0';return false"><i class="fa fa-times"></i></a>
         <!-- <div class="logo"><img src="images/logo-white.png" alt=""></div> -->
         <ul>
-          <li><a href="#" class="side-world"></a></li>
+          <li><a href="#" class="side-world">
+            <video src="images/left-world.mp4"></video>
+          </a></li>
           <li><a href="#govern-problems" class="side-ukr"></a></li>
           <li><a href="#govern-decision" class="side-decision"></a></li>
           <li><a href="#govern-benefit" class="side-benefit"></a></li>
@@ -53,7 +55,7 @@
       <div class="row">
         <div class="col-md-7 visible-md visible-lg">
           <ul class="left row">
-            <li class="col-md-2"><a href="govern.html" class="govern-link"  style="background:#000;border-radius: 20px;box-shadow: 0 0 22px #111;">
+            <li class="col-md-2"><a href="govern.html" class="govern-link"  style="background:#000;border-radius: 20px;box-shadow: 0 0 22px #111;height: auto;">
               <img src="images/govern.png" alt="">
               <video src="images/govern-header.mp4" autoplay="autoplay" loop></video>
             </a></li>
@@ -120,83 +122,107 @@
         <!-- <h3>Прокрутите еще</h3> -->
       </div>
       <ul class="nav nav-tabs">
-        <li class="active"><a data-toggle="tab" href="#panel1">Международные конфедерации</a></li>
-        <li><a data-toggle="tab" href="#panel2">КОНТРОЛЬ</a></li>
-        <li><a data-toggle="tab" href="#panel3">РОЯЛТИ</a></li>
+        <li class="active"><a data-toggle="tab" href="#panel1">МИР</a></li>
+        <li><a data-toggle="tab" href="#panel2">ГОСУДАРСТВО</a></li>
+        <li><a data-toggle="tab" href="#panel3">ГРАЖДАНИН</a></li>
       </ul>
       <div class="tab-content">
         <div id="panel1" class="tab-pane fade in active">
           <div class="left"></div>
           <div class="right">
-            <h2> <b>контроль</b> авторских отчислений </h2>
-            <hr>
             <p>
-              Международной конфедерации обществ авторов и композиторов (CISAC), которая объединяет 239 авторско-правовых обществ в 123 странах мира показывает стремительную динамику роста сборов и выплат роялти. <br>
-              Глобальные сборы роялти для создателей достигли рекордного уровня в 9,2 млрд. Евро (10,1 млрд. Долларов США) в год, что на 6% больше, чем в предыдущем году, согласно новым данным, опубликованным Международной конфедерацией обществ авторов и композиторов (CISAC). <br>
-              В то же время, суммы вознаграждений, которые были собраны организациями коллективного управления остаются крайне низкими. Например, только одна организация коллективного управления музыкальными правами в Польше собрала в 2017 году около € 64 млн, в Румынии - € 16500000. В Украине все ОКУ собрали только € 3400000. <br>
-              Государственная организация УААСП едва достигла отметку в 62 млн. грн сборов авторского вознаграждения за 2017 год. С автоматизированной системой эти цифры могли бы быть существенно больше.
+             "Международной конфедерации обществ авторов и композиторов (CISAC), которая объединяет 239 авторско-правовых обществ в 123 странах мира показывает стремительную динамику роста сборов и выплат роялти. 
+             <br>
+             <br>
+             Глобальные сборы роялти для создателей достигли рекордного уровня в 9,2 млрд. Евро (10,1 млрд. Долларов США) в год, что на 6% больше, чем в предыдущем году, согласно новым данным, опубликованным Международной конфедерацией обществ авторов и композиторов (CISAC). "
 
-            </p>
-          </div>
-        </div>
-        <div id="panel2" class="tab-pane fade">
+           </p>
+         </div>
+       </div>
+       <div id="panel2" class="tab-pane fade">
+         <div class="left"></div>
+         <div class="right">
           <p>
-            В связи с отсутствием четко регламентированных законном порядков сбора и распределения роялти и отсутствия законодательной базы. Контроль практически невозможен. В нашей стране отсутствует четкая система, которая дает возможность на регулярной основе отслеживать применение интеллектуальной собственности, в частности музыкальных продуктов.  А существующие механизмы, такие как Организации Коллективного Управления, считаются коррумпированными, действуют практически бесконтрольно и не справляются с возложенными на них обязанностями.
-          </p>
-        </div>
-        <div id="panel3" class="tab-pane fade">
-          <p>
-            Для контроля авторских отчислений существуют организации: авторские общества «АО», которые занимаются сборами авторских отчислений с различных заведений и распределяют их между авторами. Все авторские общества связанны между собой и образуют так называемую сеть авторской зоны. В ней все артисты и государство получают доход со всего мира, где используется их уникальный авторский продукт. <br>
-            По статистике каждый житель Земли в среднем за 2016 год выплатил 1,48 евро авторского вознаграждения. Больше всего, традиционно, платят граждане Швейцарии — 28,5 евро в год. Среди лидеров в этом списке находятся даже соседние государства: Венгрия – 6,3€ и Польша – 2,7€. <br>
-            А вот Украина в этот рейтинг не включена, поскольку у нас отсутствует четкая система, благодаря которой могло бы контролироваться использование авторского контента, и устанавливались фиксированные выплаты за это. 
-
-          </p>
-        </div>
-      </div>
-
-
-    </div>
-    
-    <!-- adaptive -->
-    <ul class="nav nav-tabs smart">
-      <li class="active"><a data-toggle="tab" href="#panel11">В мире</a></li>
-      <li><a data-toggle="tab" href="#panel12">КОНТРОЛЬ</a></li>
-      <li><a data-toggle="tab" href="#panel13">РОЯЛТИ</a></li>
-    </ul>
-    <div class="tab-content smart">
-      <div id="panel11" class="tab-pane fade in active">
-        <div class="left"></div>
-        <div class="right">
-          <h2> <b>контроль</b> авторских отчислений </h2>
-          <hr>
-          <p>
-            Международной конфедерации обществ авторов и композиторов (CISAC), которая объединяет 239 авторско-правовых обществ в 123 странах мира показывает стремительную динамику роста сборов и выплат роялти. <br>
-            Глобальные сборы роялти для создателей достигли рекордного уровня в 9,2 млрд. Евро (10,1 млрд. Долларов США) в год, что на 6% больше, чем в предыдущем году, согласно новым данным, опубликованным Международной конфедерацией обществ авторов и композиторов (CISAC). <br>
-            В то же время, суммы вознаграждений, которые были собраны организациями коллективного управления остаются крайне низкими. Например, только одна организация коллективного управления музыкальными правами в Польше собрала в 2017 году около € 64 млн, в Румынии - € 16500000. В Украине все ОКУ собрали только € 3400000. <br>
-            Государственная организация УААСП едва достигла отметку в 62 млн. грн сборов авторского вознаграждения за 2017 год. С автоматизированной системой эти цифры могли бы быть существенно больше.
+            "Во всех цивилизованных странах существует строгая система, позволяющая контролировать использование интеллектуальной авторской собственности. Она дает возможность обеспечить достойную выплату авторам, которые делали бы отчисления государству в виде налогов на прибыль, и это могло бы значительно увеличить бюджет страны в целом. 
+            <br>
+            <br>
+            Официально минимальный объем рынка авторских и смежных прав в Украине в 2016 году составил около 80 млн грн. Для сравнения: в Великобритании этот рынок составляет 714 млн евро (в 310 раз больше), во Франции – 1,109 млрд евро (в 410 раз больше). Логично, что в Украине при должной борьбе с нелегальным распространением контента рынок авторских прав потенциально составляет более 8–10 млрд грн."
 
           </p>
         </div>
       </div>
-      <div id="panel12" class="tab-pane fade">
+      <div id="panel3" class="tab-pane fade">
+       <div class="left"></div>
+       <div class="right">
         <p>
-          В связи с отсутствием четко регламентированных законном порядков сбора и распределения роялти и отсутствия законодательной базы. Контроль практически невозможен. В нашей стране отсутствует четкая система, которая дает возможность на регулярной основе отслеживать применение интеллектуальной собственности, в частности музыкальных продуктов.  А существующие механизмы, такие как Организации Коллективного Управления, считаются коррумпированными, действуют практически бесконтрольно и не справляются с возложенными на них обязанностями.
-        </p>
-      </div>
-      <div id="panel13" class="tab-pane fade">
-        <p>
-          Для контроля авторских отчислений существуют организации: авторские общества «АО», которые занимаются сборами авторских отчислений с различных заведений и распределяют их между авторами. Все авторские общества связанны между собой и образуют так называемую сеть авторской зоны. В ней все артисты и государство получают доход со всего мира, где используется их уникальный авторский продукт. <br>
-          По статистике каждый житель Земли в среднем за 2016 год выплатил 1,48 евро авторского вознаграждения. Больше всего, традиционно, платят граждане Швейцарии — 28,5 евро в год. Среди лидеров в этом списке находятся даже соседние государства: Венгрия – 6,3€ и Польша – 2,7€. <br>
-          А вот Украина в этот рейтинг не включена, поскольку у нас отсутствует четкая система, благодаря которой могло бы контролироваться использование авторского контента, и устанавливались фиксированные выплаты за это. 
+          "Для контроля авторских отчислений существуют организации: авторские общества «коллективное управление», которые занимаются сборами авторских отчислений с различных заведений и распределяют их между авторами. Все авторские общества связанны между собой и образуют так называемую сеть авторской зоны. В ней все артисты и государство получают доход со всего мира, где используется их уникальный авторский продукт. 
+          <br>
+          <br>
+          По статистике каждый житель Земли в среднем за 2016 год выплатил 1,48 евро авторского вознаграждения. Больше всего, традиционно, платят граждане Швейцарии — 28,5 евро в год. Среди лидеров в этом списке находятся даже соседние государства: Венгрия – 6,3€ и Польша – 2,7€. 
+          <br>
+          <br>
+          Украина в этот рейтинг не включена, поскольку у нас отсутствует четкая система, благодаря которой могло бы контролироваться использование авторского контента, и устанавливались фиксированные выплаты за это."
 
         </p>
       </div>
     </div>
-
-    <!-- adaptive -->
-
   </div>
-  <!-- 3d -->
+
+
+</div>
+
+<!-- adaptive -->
+<ul class="nav nav-tabs smart">
+  <li class="active"><a data-toggle="tab" href="#panel11">МИР</a></li>
+  <li><a data-toggle="tab" href="#panel12">ГОСУДАРСТВО</a></li>
+  <li><a data-toggle="tab" href="#panel13">ГРАЖДАНИН</a></li>
+</ul>
+<div class="tab-content smart">
+  <div id="panel11" class="tab-pane fade in active">
+    <div class="left"></div>
+    <div class="right">
+      <p>
+       "Международной конфедерации обществ авторов и композиторов (CISAC), которая объединяет 239 авторско-правовых обществ в 123 странах мира показывает стремительную динамику роста сборов и выплат роялти. 
+       <br>
+       <br>
+       Глобальные сборы роялти для создателей достигли рекордного уровня в 9,2 млрд. Евро (10,1 млрд. Долларов США) в год, что на 6% больше, чем в предыдущем году, согласно новым данным, опубликованным Международной конфедерацией обществ авторов и композиторов (CISAC). "
+
+     </p>
+   </div>
+ </div>
+ <div id="panel12" class="tab-pane fade">
+  <div class="left"></div>
+  <div class="right">
+    <p>
+      "Во всех цивилизованных странах существует строгая система, позволяющая контролировать использование интеллектуальной авторской собственности. Она дает возможность обеспечить достойную выплату авторам, которые делали бы отчисления государству в виде налогов на прибыль, и это могло бы значительно увеличить бюджет страны в целом. 
+      <br>
+      <br>
+      Официально минимальный объем рынка авторских и смежных прав в Украине в 2016 году составил около 80 млн грн. Для сравнения: в Великобритании этот рынок составляет 714 млн евро (в 310 раз больше), во Франции – 1,109 млрд евро (в 410 раз больше). Логично, что в Украине при должной борьбе с нелегальным распространением контента рынок авторских прав потенциально составляет более 8–10 млрд грн."
+
+    </p>
+  </div>
+</div>
+<div id="panel13" class="tab-pane fade">
+ <div class="left"></div>
+ <div class="right">
+  <p>
+    "Для контроля авторских отчислений существуют организации: авторские общества «коллективное управление», которые занимаются сборами авторских отчислений с различных заведений и распределяют их между авторами. Все авторские общества связанны между собой и образуют так называемую сеть авторской зоны. В ней все артисты и государство получают доход со всего мира, где используется их уникальный авторский продукт. 
+    <br>
+    <br>
+    По статистике каждый житель Земли в среднем за 2016 год выплатил 1,48 евро авторского вознаграждения. Больше всего, традиционно, платят граждане Швейцарии — 28,5 евро в год. Среди лидеров в этом списке находятся даже соседние государства: Венгрия – 6,3€ и Польша – 2,7€. 
+    <br>
+    <br>
+    Украина в этот рейтинг не включена, поскольку у нас отсутствует четкая система, благодаря которой могло бы контролироваться использование авторского контента, и устанавливались фиксированные выплаты за это."
+
+  </p>
+</div>
+</div>
+</div>
+
+<!-- adaptive -->
+
+</div>
+<!-- 3d -->
 </section><!-- //Map Feature -->
 
 <section id="govern-problems">
@@ -209,11 +235,11 @@
 
         <ul class="nav nav-tabs">
           <li><a data-toggle="tab" href="#panel9"  class="circle law wow fadeInLeft" onclick="document.querySelector('.govern-problems-detailed-tabs').style.left='5vw';return false"><h4>Закон</h4></a></li>
-          <li><a data-toggle="tab" href="#panel4" class="circle profit wow fadeInLeft" onclick="document.querySelector('.govern-problems-detailed-tabs').style.left='-20vw';return false"><h4>Налоги</h4></a></li>
-          <li class="active"><a data-toggle="tab" href="#panel5" class="circle world wow fadeInUp" onclick="document.querySelector('.govern-problems-detailed-tabs').style.left='-40vw';return false"><h4>Мир</h4></a></li>
-          <li><a data-toggle="tab" href="#panel6" class="circle society wow fadeInUp" onclick="document.querySelector('.govern-problems-detailed-tabs').style.left='-60vw';return false"><h4>Общественность</h4></a></li>
-          <li><a data-toggle="tab" href="#panel7" class="circle features wow fadeInRight" onclick="document.querySelector('.govern-problems-detailed-tabs').style.left='-80vw';return false"><h4>Механика</h4></a></li>
-          <li><a data-toggle="tab" href="#panel8"  class="circle water wow fadeInRight" onclick="document.querySelector('.govern-problems-detailed-tabs').style.left='-100vw';return false"> <h4>Усилия</h4></a></li>
+          <li><a data-toggle="tab" href="#panel4" class="circle profit wow fadeInLeft" onclick="document.querySelector('.govern-problems-detailed-tabs').style.left='-20vw';return false"><h4>Контроль</h4></a></li>
+          <li class="active"><a data-toggle="tab" href="#panel5" class="circle world wow fadeInUp" onclick="document.querySelector('.govern-problems-detailed-tabs').style.left='-40vw';return false"><h4>Сборы</h4></a></li>
+          <li><a data-toggle="tab" href="#panel6" class="circle society wow fadeInUp" onclick="document.querySelector('.govern-problems-detailed-tabs').style.left='-60vw';return false"><h4>Международные требования</h4></a></li>
+          <li><a data-toggle="tab" href="#panel7" class="circle features wow fadeInRight" onclick="document.querySelector('.govern-problems-detailed-tabs').style.left='-80vw';return false"><h4>Риски</h4></a></li>
+          <li><a data-toggle="tab" href="#panel8"  class="circle water wow fadeInRight" onclick="document.querySelector('.govern-problems-detailed-tabs').style.left='-100vw';return false"> <h4>Население</h4></a></li>
         </ul>
       </div>
     </div>
@@ -223,7 +249,7 @@
 
     <div class="tab-content govern-problems-detailed-tabs">
       <div id="panel9" class="tab-pane fade quote">
-        <p>Международные требования</p>
+        <p>В связи с отсутствием четко регламентированных законном порядков сбора и распределения роялти и отсутствия ...</p>
         <a href="" data-toggle="modal" data-target="#pan3">Читать дальше</a>
         <div id="pan3" class="modal fade" role="dialog">
           <div class="modal-dialog" style="transform: translate(0,100%);width: 50vw;">
@@ -232,8 +258,7 @@
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
               </div>
               <div class="modal-body">
-               Сфера авторского права в Украине находится почти в зачаточном состоянии, что обусловлено отсутствием действенных механизмов контроля и наказания нарушителей, а также бедностью потребителей на внутреннем рынке. Украина традиционно входит в число мировых лидеров по распространению нелегального контента.    <br>
-               На сегодняшний день Украина рискует потерять доступ к генерализованной системе преференции (GSP) США. И это, в свою очередь, может привести к экономическим убыткам для страны в целом. Кроме того, после принятия Директивы Европейского парламента №2014/26/ЕС появилась необходимость изменить модель работы организаций коллективного управления. <br> А именно разработать методы контроля и обеспечить максимальную прозрачность в их деятельности.  Для этого был разработан законопроект №7466 и в него можно и нужно внести соответствующие правки что бы изменить ситуацию в корне.
+               В связи с отсутствием четко регламентированных законном порядков сбора и распределения роялти и отсутствия законодательной базы. Контроль практически невозможен. В нашей стране отсутствует четкая система, которая дает возможность на регулярной основе отслеживать применение интеллектуальной собственности, в частности музыкальных продуктов. А существующие механизмы, такие как Организации Коллективного Управления, считаются коррумпированными, действуют практически бесконтрольно и не справляются с возложенными на них обязанностями.
 
                
 
@@ -244,7 +269,7 @@
        </div>
      </div>
      <div id="panel4" class="tab-pane fade quote">
-      <p>Система контроля</p>
+      <p>Украинским законодательством за использование авторских прав определены выплаты в размере ... </p>
       <a href="" data-toggle="modal" data-target="#pan4">Читать дальше</a>
       <div id="pan4" class="modal fade" role="dialog">
         <div class="modal-dialog" style="transform: translate(0,100%);width: 50vw;">
@@ -253,9 +278,8 @@
               <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
             <div class="modal-body">
-              Во всех цивилизованных странах существует строгая система, позволяющая контролировать использование интеллектуальной авторской собственности. Она дает возможность обеспечить достойную выплату авторам, которые делали бы отчисления государству в виде налогов на прибыль, и это могло бы значительно увеличить бюджет страны в целом.
-              <br>
-              Официально минимальный объем рынка авторских и смежных прав в Украине в 2016 году составил около 80 млн грн. Для сравнения: в Великобритании этот рынок составляет 714 млн евро (в 310 раз больше), во Франции – 1,109 млрд евро (в 410 раз больше). Логично, что в Украине при должной борьбе с нелегальным распространением контента рынок авторских прав потенциально составляет более 8–10 млрд грн.
+              Украинским законодательством за использование авторских прав определены выплаты в размере 1 % за применение смежных прав и не менее 1 % за использование авторского продукта с оборота заведения, в котором он используется.
+              <br>  Но при этом, отсутствует четкая система органов, которая могла бы контролировать эти процессы. 
             </div>
           </div>
 
@@ -263,7 +287,7 @@
       </div>
     </div>
     <div id="panel5" class="tab-pane fade in active quote">
-     <p>Риски</p>
+     <p>Суммы вознаграждений, которые были собраны организациями коллективного управления остаются крайне низкими ... </p>
      <a href="" data-toggle="modal" data-target="#pan5">Читать дальше</a>
      <div id="pan5" class="modal fade" role="dialog">
       <div class="modal-dialog" style="transform: translate(0,100%);width: 50vw;">
@@ -272,7 +296,65 @@
             <button type="button" class="close" data-dismiss="modal">&times;</button>
           </div>
           <div class="modal-body">
-           В конце 2017 Украине было предоставлено 120 дней (до конца апреля 2018) для совершенствования деятельности организаций коллективного управления. В случае отсутствия положительных сдвигов, Украина грозит лишение права отечественных производителей беспошлинного ввоза на территорию CША продукции по 155 товарным позициям украинского экспорта.
+            Суммы вознаграждений, которые были собраны организациями коллективного управления остаются крайне низкими. Например, только одна организация коллективного управления музыкальными правами в Польше собрала в 2017 году около € 64 млн, в Румынии - € 16500000. В Украине все ОКУ собрали только € 3400000. <br><br>
+            Государственная организация УААСП едва достигла отметку в 62 млн. грн сборов авторского вознаграждения за 2017 год. С автоматизированной системой эти цифры могли бы быть существенно больше.
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div id="panel6" class="tab-pane fade quote">
+    <p>Сфера авторского права в Украине находится почти в зачаточном состоянии, что обусловлено отсутствием действенных ...</p>
+    <a href="" data-toggle="modal" data-target="#pan6">Читать дальше</a>
+    <div id="pan6" class="modal fade" role="dialog">
+      <div class="modal-dialog" style="transform: translate(0,100%);width: 50vw;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            Сфера авторского права в Украине находится почти в зачаточном состоянии, что обусловлено отсутствием действенных механизмов контроля и наказания нарушителей, а также бедностью потребителей на внутреннем рынке. Украина традиционно входит в число мировых лидеров по распространению нелегального контента. <br>
+            На сегодняшний день Украина рискует потерять доступ к генерализованной системе преференции (GSP) США. И это, в свою очередь, может привести к экономическим убыткам для страны в целом. Кроме того, после принятия Директивы Европейского парламента №2014/26/ЕС появилась необходимость изменить модель работы организаций коллективного управления. <br>
+            А именно разработать методы контроля и обеспечить максимальную прозрачность в их деятельности. Для этого был разработан законопроект №7466 и в него можно и нужно внести соответствующие правки что бы изменить ситуацию в корне.
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div id="panel7" class="tab-pane fade quote">
+    <p>В конце 2017 Украине было предоставлено 120 дней (до конца апреля 2018) для совершенствования ...
+    </p>
+    <a href="" data-toggle="modal" data-target="#pan7">Читать дальше</a>
+    <div id="pan7" class="modal fade" role="dialog">
+      <div class="modal-dialog" style="transform: translate(0,100%);width: 50vw;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            В конце 2017 Украине было предоставлено 120 дней (до конца апреля 2018) для совершенствования деятельности организаций коллективного управления. В случае отсутствия положительных сдвигов, Украина грозит лишение права отечественных производителей беспошлинного ввоза на территорию CША продукции по 155 товарным позициям украинского экспорта.
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div id="panel8" class="tab-pane fade quote">
+    <p>Благодаря тому, что Украина не входит в международную структуру CISAC ...</p>
+    <a href="" data-toggle="modal" data-target="#pan8">Читать дальше</a>
+    <div id="pan8" class="modal fade" role="dialog">
+      <div class="modal-dialog" style="transform: translate(0,100%);width: 50vw;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+           Благодаря тому, что Украина не входит в международную структуру CISAC, выступления всемирно популярных артистов у нас становятся практически невозможными. А если звезды и посещают нашу страну, то это превращается в небывалое событие, при этом стоимость билетов является очень высокой, в связи с рекордными суммами выплат по роялти.
 
          </div>
        </div>
@@ -280,61 +362,6 @@
      </div>
    </div>
  </div>
- <div id="panel6" class="tab-pane fade quote">
-  <p>Возмущение граждан</p>
-  <a href="" data-toggle="modal" data-target="#pan6">Читать дальше</a>
-  <div id="pan6" class="modal fade" role="dialog">
-    <div class="modal-dialog" style="transform: translate(0,100%);width: 50vw;">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        <div class="modal-body">
-          Именно благодаря тому, что Украина не входит в международную структуру CISAC, выступления всемирно популярных артистов у нас становятся практически невозможными. А если звезды и посещают нашу страну, то это превращается в небывалое событие, при этом стоимость билетов является очень высокой, в связи с рекордными суммами выплат по роялти. 
-
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
-<div id="panel7" class="tab-pane fade quote">
-  <p>Пути решения этой задачи</p>
-  <a href="" data-toggle="modal" data-target="#pan7">Читать дальше</a>
-  <div id="pan7" class="modal fade" role="dialog">
-    <div class="modal-dialog" style="transform: translate(0,100%);width: 50vw;">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        <div class="modal-body">
-          Оптимальным путем создания простой и понятной системы урегулирования отчислений за пользование авторским контентом, является применение автоматической системы, которая будет применяться во всех общественных местах. С ее помощью можно отследить каждый авторский продукт, который был воспроизведен в общественном месте. При этом она надежно защищена от так называемого «человеческого фактора», позволяет честно подсчитать роялти и определить сумму выплаты, которая должна поступить в бюджет страны от каждого конкретного заведения. 
-
-
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
-<div id="panel8" class="tab-pane fade quote">
-  <p>Достижения?</p>
-  <a href="" data-toggle="modal" data-target="#pan8">Читать дальше</a>
-  <div id="pan8" class="modal fade" role="dialog">
-    <div class="modal-dialog" style="transform: translate(0,100%);width: 50vw;">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        <div class="modal-body">
-         В то же время, суммы вознаграждений, которые были собраны организациями коллективного управления остаются крайне низкими. Например, только одна организация коллективного управления музыкальными правами в Польше собрала в 2017 году около € 64 млн, в Румынии - € 16500000. В Украине все ОКУ собрали только € 3400000.
-
-       </div>
-     </div>
-
-   </div>
- </div>
-</div>
 </div>
 
 
@@ -355,7 +382,24 @@
   </p> -->
 </div>
 </section>
-<button class="after-decision wow fadeInUp" onclick="location.href='scanner.html'">Узнать больше</button>
+<section id="society-report" style="    width: 60%;
+    margin: 0 auto;">
+  <div class="accPanel">
+    <a href="" class="plus" onclick="heightbox('soc-1');openbox('pl');openbox('min'); return false">
+      <span id="pl">+</span>
+      <span id="min" style="display: none;">-</span>
+    </a>
+    <div>
+      <h4>Наше решение данной задачи…</h4>
+      <p>Оптимальным путем создания простой и понятной системы урегулирования отчислений за пользование авторским контентом, является </p>
+      <div id="soc-1" style="height: 0px;">
+       применение автоматической системы, которая будет применяться во всех общественных местах. С ее помощью можно отследить каждый авторский продукт, который был воспроизведен в общественном месте. При этом она надежно защищена от так называемого «человеческого фактора», позволяет честно подсчитать роялти и определить сумму выплаты, которая должна поступить в бюджет страны от каждого конкретного заведения.
+     </div>
+   </div>
+
+ </div>
+</section>
+<button class="after-decision wow fadeInUp" onclick="location.href='scanner.html'" style="margin-top: 0;">Узнать больше</button>
 
 <section id="govern-benefit">
   <figure>
@@ -366,37 +410,63 @@
       <h2><b>Выгода</b> государства</h2>
       <hr>
       <p>
-        Такие изменения помогут усовершенствовать процесс управления имущественными правами субъектов авторского права и смежных прав, что приведет к увеличению сборов вознаграждения для творцов, будет способствовать улучшению имиджа Украины на международной арене. <br><br>
-        Государство начнет автоматизировано и прозрачно получать налоги.
-        Страна окажется в мировой авторской зоне, соответственно будет получать выплаты с выступлений зарубежных артистов у нас и отечественных исполнителей за рубежом. <br><br>
-        Для поднятия культуры можно будет сделать украинские песни несколько дешевле для предпринимателей, а значит, они будут чаще использовать в заведениях. <br><br>
-        Данная сфера перестанет быть коррумпированной, будет устранен «человеческий» фактор, который мешал проведению честной политики по отношению к исполнителям, владельцам заведений и государству.
+        "Изменения помогут усовершенствовать процесс управления имущественными правами субъектов авторского права и смежных прав, что приведет к увеличению сборов вознаграждения для творцов, будет способствовать улучшению имиджа Украины на международной арене. 
+<br><br>
+        - Государство начнет автоматизировано и прозрачно получать налоги.
+        <br>
+        - Страна окажется в мировой авторской зоне, соответственно будет получать выплаты с выступлений зарубежных артистов у нас и отечественных исполнителей за рубежом. <br>
+        - Для поднятия культуры можно будет сделать украинские песни несколько дешевле для предпринимателей, а значит, они будут чаще использовать в заведениях. <br>
+        - Данная сфера перестанет быть коррумпированной, будет устранен «человеческий» фактор, который мешал проведению честной политики по отношению к исполнителям, владельцам заведений и государству."
 
       </p>
     </div>
   </div>
 </section>
 <footer id="footer">
-  <div class="container footer-container">
-    <div class="row">
-      <div class="col-md-3">
-        <img class="logo" src="images/logo.png" alt="">
-        <p>Вы можете связаться с нами любым удобным для Вас способом. </p>
-        <a href="tel:0930000000" style="text-decoration: none; color: #8c8f94;">+38 093 000 00 00</a>
-        <a href="mailto:mail@diko.com" style="text-decoration: none; color: #8c8f94;">mail@diko.com</a>
-        <ul class="socials">
-          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-          <li><a href="#"><i class="fa fa-tumblr"></i></a></li>
-          <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-        </ul>
-      </div>
-      <div class="col-md-6 col-sm-6 col-xs-12">
+    <div class="container footer-container">
+      <div class="row">
+        <div class="col-md-3">
+          <img class="logo" src="images/logo.png" alt="">
+          <p>Вы можете связаться с нами любым удобным для Вас способом. </p>
+          
+          <ul class="socials">
 
+            <li><a href="https://www.facebook.com/dikotech/"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCxAfLILqApy9Yjt1RJWKIwQ?view_as=subscriber"><i class="fa fa-youtube"></i></a></li>
+            <li><a href=" https://vk.com/dikotech"><i class="fa fa-vk"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-md-7 col-sm-7 col-xs-12 form">
+         <div class="title">
+          <h4>Обратная связь</h4>
+        </div>
+        <form action="contact.php" method="POST" id="feedback-form">
+          <div class="row">
+            <div class="col-md-12">
+              <label for="author">Имя<span class="required">*</span></label>
+              <input id="name" class="form-control" name="contactFF" type="text">
+            </div>
+            <div class="col-md-12">
+              <label for="email">Email<span class="required">*</span></label>
+              <input id="email" class="form-control" name="contactFF" type="text">
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <label for="comment">Ваше сообщение</label>
+              <textarea id="message" class="form-control" name="messageFF"></textarea>
+              <div id="notification"></div>
+              <input name="submit" type="submit" id="submit" class="def-button" value="Отправить сообщение" style="    margin: 20px 0;
+              border-radius: 15px;
+              background: #00000071;
+              border: none;
+              padding: 5px 20px;">
+            </div>
+          </div>
+        </form>
       </div>
-      <div class="col-md-3 col-sm-6 col-xs-12 footer-links">
+      <div class="col-md-2 col-sm-2 col-xs-12 footer-links">
         <ul>
           <li><p class="title">Дикосканнер</p></li>
           <li><a href="index.html">Главная</a></li>
@@ -458,6 +528,26 @@
 <script type="text/javascript">
   var s = skrollr.init();
 
+  
+  function openbox(id){
+    display = document.getElementById(id).style.display;
+
+    if(display=='none'){
+      document.getElementById(id).style.display='block';
+    }else{
+      document.getElementById(id).style.display='none';
+    }
+  }
+  function heightbox(id){
+    height = document.getElementById(id).style.height;
+
+    if(height=='0px'){
+      document.getElementById(id).style.height='auto';
+    }else{
+      document.getElementById(id).style.height='0px';
+    }
+  }
+
   $('#govern-problems').scroolly([
   {
 //                    from: 'doc-top',
@@ -510,22 +600,11 @@ cssTo: {
       });
     });
 
-// Правильный скролл на якоря
-     $(function(){
-    $('a[href*=#]').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-      && location.hostname == this.hostname) {
-        var $target = $(this.hash);
-        $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
-        if ($target.length) {
-          var targetOffset = $target.offset().top - ($("#main-nav").outerHeight(true)+ 0); //#main-header - заменить на ваш элемент
-          $('html,body').animate({scrollTop: targetOffset}, 700);
-          return false;
-        }
-      }
-    });
-  });
-  </script>
+var h = document.querySelector('#main-nav');
+        var height = window.getComputedStyle(h, null).height;
+        document.querySelector('#govern-header').style.paddingTop=height;
+
+</script>
 
 </body>
 </html>

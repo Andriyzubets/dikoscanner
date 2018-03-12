@@ -20,24 +20,25 @@
   <header id="main-nav">
     <div class="container">
 
-      <a style="display: none;" id="navigation" href="#" onclick="document.querySelector('.row').style.transition='.4s';document.querySelector('.row').style.left='150px';return false"><i class="fa fa-bars"></i></a>
+     <a id="navigation" href="#" style="display: none;" onclick="document.querySelector('.row').style.transition='.4s';document.querySelector('.row').style.left='150px';document.querySelector('#footer').style.transition='.4s';document.querySelector('#footer').style.left='250px';return false"><i class="fa fa-bars"></i></a>
 
       <div id="slide_out_menu">
-        <a href="#" class="menu-close" onclick="document.querySelector('.row').style.left='0';document.querySelector('.row').style.transition='.4s';return false"><i class="fa fa-times"></i></a>
+        <a href="#" class="menu-close" onclick="document.querySelector('.row').style.left='0';document.querySelector('.row').style.transition='.4s';document.querySelector('#footer').style.left='0';return false"><i class="fa fa-times"></i></a>
         <!-- <div class="logo"><img src="images/logo-white.png" alt=""></div> -->
-        <ul>
-          <li><a href="#" class="side-world"></a></li>
-          <li><a href="#" class="side-ukr"></a></li>
-          <li><a href="#" class="side-decision"></a></li>
-          <li><a href="#" class="side-benefit"></a></li>
-          <li><a href="#" class="side-contacts"></a></li>
+        <ul class="smart">
+          <li><a href="govern.html"><p>Государству</p></a></li>
+          <li><a href="society.html"><p>Авторскому обществу</p></a></li>
+          <li><a href="author.html"><p>Музыканту</p></a></li>
+          <li><a href="business.html"><p>Заведению</p></a></li>
+          <li><a href="scanner.html"><p>Дикосканнер</p></a></li>
+          <li><a href="index.html"><p>Главная</p></a></li>
         </ul>
 
         
       </div>
 
       <div class="row">
-        <div class="col-md-7">
+        <div class="col-md-7 visible-md visible-lg">
           <ul class="left row">
             <li class="col-md-2"><a href="govern.html" class="govern-link">
               <img src="images/govern.png" alt="">
@@ -57,13 +58,13 @@
             </a></li>
           </ul>
         </div>
-        <div class="col-md-3 col-md-offset-2 text-right right">
-          <a href="scanner.html" class="scanner scanner-link">
-            <img src="images/final.png" alt="">
+        <div class="col-md-3 col-md-offset-2 text-right col-xs-12 right">
+          <a href="scanner.html" class="scanner scanner-link" style="background:#000;border-radius: 20px;box-shadow: 0 0 22px #111;height: auto;">
+            <img src="images/final.png" alt="" style="width: 100%;margin: 0">
              <video src="images/dikoscanner.mp4" autoplay="autoplay" loop></video>
           </a>
           <a href="index.html" class="logo logo-link">
-            <img src="images/logo-white.png" alt="">
+            <img src="images/logo-white.png" alt="" style="width: 100%;margin: 0">
             <video src="images/logo-header.mp4" autoplay="autoplay" loop></video>
           </a>
         </div>
@@ -256,11 +257,11 @@
     margin-left: -15px;
     display: flex;
     justify-content: space-between;
-    align-items: center;">
-    <div class="col-md-6 wow fadeInLeft">
+    align-items: center;flex-wrap: wrap;">
+    <div class="col-md-6 col-xs-12 wow fadeInLeft">
       <img src="images/scanner-green.png" class="scanner" alt="">
     </div>
-    <div class="col-md-6 wow fadeInRight">
+    <div class="col-md-6 col-xs-12 wow fadeInRight">
       <h2>
         100% <b>КОНТРОЛЬ</b>
       </h2>
@@ -285,7 +286,7 @@
 
       <img src="images/play-btn.png" alt="play" data-toggle="modal" data-target="#myModal">
       <div id="myModal" class="modal fade" role="dialog">
-        <div class="modal-dialog" style="transform: translate(0,10%);width: 80vw;height: 80vh;">
+        <div class="modal-dialog" style="transform: translate(0,10%);width: 80vw;height: 80vh;margin: 0 auto;">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -328,48 +329,61 @@
 
 
 <footer id="footer">
-  <div class="container footer-container">
-    <div class="row">
-      <div class="col-md-3">
-        <img class="logo" src="images/logo.png" alt="">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos in nemo fuga modi voluptatum. </p>
-        <!-- <a href="#" class="app_download"><img src="images/app-store-download.png" alt=""></a> -->
-        <ul class="socials">
-          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-          <li><a href="#"><i class="fa fa-tumblr"></i></a></li>
-          <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-        </ul>
+    <div class="container footer-container">
+      <div class="row">
+        <div class="col-md-3">
+          <img class="logo" src="images/logo.png" alt="">
+          <p>Вы можете связаться с нами любым удобным для Вас способом. </p>
+          
+          <ul class="socials">
+
+            <li><a href="https://www.facebook.com/dikotech/"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCxAfLILqApy9Yjt1RJWKIwQ?view_as=subscriber"><i class="fa fa-youtube"></i></a></li>
+            <li><a href=" https://vk.com/dikotech"><i class="fa fa-vk"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-md-7 col-sm-7 col-xs-12 form">
+         <div class="title">
+          <h4>Обратная связь</h4>
+        </div>
+        <form action="contact.php" method="POST" id="feedback-form">
+          <div class="row">
+            <div class="col-md-12">
+              <label for="author">Имя<span class="required">*</span></label>
+              <input id="name" class="form-control" name="contactFF" type="text">
+            </div>
+            <div class="col-md-12">
+              <label for="email">Email<span class="required">*</span></label>
+              <input id="email" class="form-control" name="contactFF" type="text">
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <label for="comment">Ваше сообщение</label>
+              <textarea id="message" class="form-control" name="messageFF"></textarea>
+              <div id="notification"></div>
+              <input name="submit" type="submit" id="submit" class="def-button" value="Отправить сообщение" style="    margin: 20px 0;
+              border-radius: 15px;
+              background: #00000071;
+              border: none;
+              padding: 5px 20px;">
+            </div>
+          </div>
+        </form>
       </div>
-      <div class="col-md-2 col-md-offset-3 col-sm-4 col-xs-6 footer-links">
+      <div class="col-md-2 col-sm-2 col-xs-12 footer-links">
         <ul>
-          <li><p class="title">Узнать детальнее</p></li>
-          <li><a href="#">Как это работает?</a></li>
-          <li><a href="#">Политика конфиденциальности</a></li>
-          <li><a href="#">Мы в сетях</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li><p class="title">Дикосканнер</p></li>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="govern.html">Государству</a></li>
+          <li><a href="society.html">Авторскому сообществу</a></li>
+          <li><a href="author.html">Музыканту</a></li>
+          <li><a href="business.html">Заведению</a></li>
+          <li><a href="scanner.html"><b>Дикосканнер</b></a></li>
         </ul>
       </div>
-      <div class="col-md-2 col-sm-4 col-xs-6 footer-links">
-        <ul>
-          <li><p class="title">О нас</p></li>
-          <li><a href="#">О проекте</a></li>
-          <li><a href="#">Возможности</a></li>
-          <li><a href="#">Вопросы | ответы</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-      </div>
-      <div class="col-md-2 col-sm-4 col-xs-6 footer-links">
-        <ul>
-          <li><p class="title">Поддержка</p></li>
-          <li><a href="#">F.A.Q.</a></li>
-          <li><a href="#">Контакты</a></li>
-          <li><a href="#">FB chat</a></li>
-          <li><a href="#">Позвони нам</a></li>
-        </ul>
-      </div>
+
     </div>
   </div>
   <div class="container copyright-container">
@@ -445,6 +459,17 @@
   }
 </script>
 <script>
+
+
+  function openbox(id){
+    display = document.getElementById(id).style.display;
+
+    if(display=='none'){
+      document.getElementById(id).style.display='block';
+    }else{
+      document.getElementById(id).style.display='none';
+    }
+  }
 
   window.onscroll = function() {
     var scrolled = window.pageYOffset || document.documentElement.scrollTop;

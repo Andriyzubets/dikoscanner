@@ -160,12 +160,13 @@ ul > li {
 input[type="text"],
 input[type="email"] {
   width: 502px;
-  height: 50px;
+  /*height: 50px;*/
   max-width: 100%;
   border: 1px solid rgba(38, 39, 45, 0.2);
   padding: 16px 26px;
   font-size: 16px;
-  background-color: transparent;
+  background-color: #00000073;
+  color: #fff;
   padding-right: 148px;
   border-radius: 30px;
   -moz-border-radius: 30px;
@@ -175,7 +176,12 @@ input[type="email"] {
 input[type="text"]:focus,
 input[type="email"]:focus {
   outline: none;
-  color: #26272d;
+  color: #ffffff;
+}
+textarea.form-control {
+  background: #00000073;
+  color: #fff;
+  border:none;
 }
 
 /*****************************************************
@@ -203,7 +209,7 @@ input[type="email"]:focus {
   position: fixed;
   left: 0;
   top: 0;
-  width: 100%;
+  width: 100vw;
   /*padding: 10px 0;*/
   font-size: 16px;
   z-index: 10;
@@ -310,7 +316,7 @@ input[type="email"]:focus {
   left: -380px;
   top: 0;
   padding: 10px;
-  z-index: 50;
+  z-index: 101;
   background: #26272d;
   transition: left 0.7s cubic-bezier(0.545, 0, 0.05, 1);
 }
@@ -341,12 +347,19 @@ input[type="email"]:focus {
   margin: 0 auto 0%;
 
 }
-#main-nav #slide_out_menu ul a:hover {
-  opacity: .6;
-  transition: .4s;
-  /*filter: drop-shadow(0px 0px 5px #fff);*/
+#main-nav #slide_out_menu video {
+  display: none;
 }
-#main-nav #slide_out_menu p {
+#main-nav #slide_out_menu ul a:hover {
+  /*background: transparent;*/
+  opacity: .5;
+  transition: .4s;
+}
+/*#main-nav #slide_out_menu ul a:hover video {
+  display: block;
+  width: 100%;
+}*/
+/*#main-nav #slide_out_menu p {
   position: relative;
   bottom: -105%;
   color: #fff;
@@ -354,7 +367,7 @@ input[type="email"]:focus {
 }
 #main-nav #slide_out_menu p span {
   text-transform: uppercase;
-}
+}*/
 #main-nav #slide_out_menu .menu-close {
   position: absolute;
   color: #ffffff;
@@ -674,9 +687,9 @@ input[type="email"]:focus {
 *** Govern ***
 *****************************************************/
 #main-video {
-  padding: 210px 0 0;
+  padding: 130px 0 0;
   height: 100vh;
-  background: #25262c url(../images/index-layer.png) 50% -30% no-repeat;
+  background: #25262c url(../images/index-layer.png) 50% no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
 }
@@ -687,7 +700,7 @@ input[type="email"]:focus {
   background-size: contain;
   position: absolute;
   left: 44%;
-  top: 55%;
+  top: 48%;
 }
 .modal-content {
   background: #242424;
@@ -714,6 +727,7 @@ input[type="email"]:focus {
   font-size: 16px;
   color: #d16a6a;
   margin-bottom: 20px;
+  margin-top: 50px;
 }
 #main-video h2 {
   font-size: 24px;
@@ -830,7 +844,7 @@ input[type="email"]:focus {
 #govern-feature li a {
   background: #fff;
   color: #444c51;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 100;
   text-transform: uppercase;
   text-decoration: none;
@@ -843,7 +857,7 @@ input[type="email"]:focus {
 #govern-feature li.active a {
   background: #444c51;
   color: #fff;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 100;
   text-transform: uppercase;
   text-decoration: none;
@@ -857,27 +871,41 @@ input[type="email"]:focus {
   background: #444c51;
   padding: 40px 30px;
 }
-#govern-feature .tab-pane {
-/*  display: -webkit-flex;
+#govern-feature .tab-content>.active {
+  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  justify-content: space-between;*/
+  justify-content: space-between;
+}
 
-}
-#govern-feature .tab-pane > div {
-  width: 45%;
-}
 #govern-feature .tab-pane .right {
-  width: auto;
+  width:100%;
 }
-#govern-feature .tab-pane .left {
-  background: #30363b url(../images/govern-girl.png) no-repeat;
-  background-size: cover;
+#govern-feature #panel1 .left {
+  background: #dcdcdd url(../images/govern-world.png) 50% no-repeat;
+  background-size: 70%;
   height: 240px;
   float: left;
   margin: 0 10px 10px 0;
+  width: 100%;
+}
+#govern-feature #panel2 .left {
+  background: #dcdcdd url(../images/govern-coutry.png) 100% 0% no-repeat;
+  background-size: 110%;
+  height: 240px;
+  float: left;
+  margin: 0 10px 10px 0;
+  width: 100%;
+}
+#govern-feature #panel3 .left {
+  background: #dcdcdd url(../images/govern-citizen.png) 35% no-repeat;
+  background-size: 110%;
+  height: 240px;
+  float: left;
+  margin: 0 10px 10px 0;
+  width: 100%;
 }
 #govern-feature .tab-pane .right h2 {
   color: #fff;
@@ -936,15 +964,15 @@ input[type="email"]:focus {
     width: 125px;
     height: 125px;
     border-radius: 100%;
-    border: 5px solid #fff;
     margin: 0 auto;
     transition: .4s;
     text-decoration: none;
     padding: 0;
+    border: none;
   }
 
   #govern-problems .icons li:hover .circle, #govern-problems .icons li.active .circle{
-    border: 5px solid #50b79f;
+    border:none;
     transition: .4s;
   }
   #govern-problems .icons li:hover h4 {
@@ -952,60 +980,64 @@ input[type="email"]:focus {
     transition: .4s;
   }
   #govern-problems .icons .law {
-    background: url(../images/weights-white.png) 50% no-repeat;
-    background-size: 90%;
+    background: #ffffff url(../images/govern-weight-green.png) 50% no-repeat;
+    background-size: 70%;
   }
   #govern-problems .icons li:hover  .law, #govern-problems .icons li.active .law{
-    background: url(../images/weights-hover.png) 50% no-repeat;
-    background-size: 90%;
+    background: #444c51 url(../images/govern-weight-white.png) 50% no-repeat;
+    background-size: 70%;
   }
   #govern-problems .icons .profit {
-    background: url(../images/funds-white.png) 50% no-repeat;
-    background-size: 90%;
+    background: #ffffff  url(../images/govern-mix-green.png) 50% no-repeat;
+    background-size: 50%;
   }
   #govern-problems .icons .profit:hover, #govern-problems .icons li.active .profit{
-    background: url(../images/funds-hover.png) 50% no-repeat;
-    background-size: 90%;
+    background: #444c51 url(../images/govern-mix-white.png) 50% no-repeat;
+    background-size: 50%;
   }
   #govern-problems .icons .world {
-    background: url(../images/no-globe-white.png) 50% no-repeat;
-    background-size: 90%;
+    background: #ffffff url(../images/govern-credit-green.png) 50% no-repeat;
+    background-size: 80%;
   }
   #govern-problems .icons .world:hover, #govern-problems .icons li.active .world {
-    background: url(../images/no-globe-hover.png) 50% no-repeat;
-    background-size: 90%;
+    background: #444c51 url(../images/govern-credit-white.png) 50% no-repeat;
+    background-size: 80%;
   }
   #govern-problems .icons .society {
-    background: url(../images/interest-white.png) 50% no-repeat;
-    background-size: 55%;
+    background:  #ffffff url(../images/govern-list-green.png) 50% no-repeat;
+    background-size: 70%;
   }
   #govern-problems .icons .society:hover, #govern-problems .icons li.active .society {
-    background: url(../images/interest-hover.png) 50% no-repeat;
-    background-size: 55%;
+    background: #444c51 url(../images/govern-list-white.png) 50% no-repeat;
+    background-size: 70%;
   }
   #govern-problems .icons .features {
-    background: url(../images/no-wheel-white.png) 50% no-repeat;
+    background:#ffffff url(../images/govern-risk-green.png) 50% -70%no-repeat;
     background-size: 90%;
   }
   #govern-problems .icons .features:hover, #govern-problems .icons li.active .features {
-    background: url(../images/no-wheel-hover.png) 50% no-repeat;
+    background: #444c51 url(../images/govern-risk-white.png) 50% -70%no-repeat;
     background-size: 90%;
   }
   #govern-problems .icons .water {
-    background: url(../images/water-white.png) 50% no-repeat;
-    background-size: 40%;
+    background: #ffffff url(../images/govern-interest-green.png) 50% no-repeat;
+    background-size: 85%;
   }
   #govern-problems .icons .water:hover, #govern-problems .icons li.active .water {
-    background: url(../images/water-hover.png) 50% no-repeat;
-    background-size: 40%;
+    background: #444c51 url(../images/govern-interest-white.png) 50% no-repeat;
+    background-size: 85%;
   }
   #govern-problems .icons h4 {
     color: #9fabba;
     text-align: center;
     font-size: 17px;
+    line-height: 1.2em;
     transition: .4s;
-    top: 115px;
+    top: 125px;
     position: relative;
+  }
+  #govern-problems .icons li:hover h4, #govern-problems .icons li.active h4 {
+    color: #ffffff;
   }
   #govern-problems .icons .nav-tabs {
     width: 100%;
@@ -1097,7 +1129,7 @@ input[type="email"]:focus {
 #govern-decision {
   /*background: #444c51  url(../images/govern-grafics.gif) 50% no-repeat;*/
   background-size: contain;
-  height: 425px;
+  height: 40vw;
   padding: 2% 0;
   color: #fff;
 }
@@ -1518,11 +1550,11 @@ input[type="email"]:focus {
   font-size: 14px;
   margin: 0;
 }
-#society-report p, #society-report #soc-1 {
+#society-report p, #society-report #soc-1, #society-report #soc-2, #society-report #soc-3  {
   color: #767677;
   font-size: 14px;
 }
-#society-report #soc-1 {
+#society-report #soc-1, #society-report #soc-2,  #society-report #soc-3  {
   overflow: hidden;
   transition: .4s;
 }
@@ -1574,17 +1606,24 @@ input[type="email"]:focus {
 }
 #author-header .monitor {
   width: 70%;
-  height: 350px;
-  background:  url(../images/author-header-lay.gif) 50% no-repeat, url(../images/author-header-pc.png) no-repeat;
+  /*height: 350px;*/
+  background: url(../images/author-header-pc.png) no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
   margin: 0 auto;
+  padding: 2.9vw 3.2vw;
+}
+#author-header .monitor .inner {
+  background: url(../images/author-header-lay.gif) 0 no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
 }
 #author-header .monitor img {
   display: block;
   margin: 0 auto;
-  padding-top: 10%;
+  padding-top: 10vw;
   animation: pulses 1s ease infinite;
+  width: 15vw;
 }
 @keyframes pulses {
   0% {
@@ -1624,10 +1663,10 @@ input[type="email"]:focus {
 #author-practice .map {
   width: 80%;
   height: 230px;
-  background: url(../images/author-map.png) no-repeat;
+  background: url(../images/author-map.png) 50% no-repeat;
   -webkit-background-size: contain;
   background-size: contain;
-  margin: 0 auto;
+  margin: 3% auto 0;
 }
 #author-practice .items {
   display: -webkit-flex;
@@ -1723,15 +1762,15 @@ input[type="email"]:focus {
 }
 #author-problem .wrapper .right .no-money {
   background: url(../images/author-no-money.png) 50% no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 #author-problem .wrapper .right .pocket {
-  background: url(../images/author-pocket.png) 50% no-repeat;
-  background-size: cover;
+  background: url(../images/author-no-money2.png) 50% no-repeat;
+  background-size: contain;
 }
 #author-problem .wrapper .right .choice {
-  background: url(../images/author-choise.png) 50% no-repeat;
-  background-size: cover;
+  background: url(../images/author-choice.png) 50% no-repeat;
+  background-size: contain;
 }
 #author-problem .wrapper .right h4 {
   font-size: 20px;
@@ -1751,7 +1790,7 @@ input[type="email"]:focus {
 #author-problem .wrapper .right .line:after {
   content: "";
   width: 2px;
-  height: 71px;
+  height: 54px;
   background: #ccc;
   display: block;
   position: relative;
@@ -1766,7 +1805,8 @@ input[type="email"]:focus {
   background: #2b2c32 url(../images/author-decision-lay-2.png);
   background-size: cover;
   padding: 2% 0;
-  height: 340px;
+  height: 25vw;
+  margin-bottom: 17vw;
   box-shadow: inset 0 0 24px #111111;
 }
 #author-decision h2 {
@@ -1785,7 +1825,7 @@ input[type="email"]:focus {
 #author-decision .ipad {
   width: 50vw;
   height: 30vw;
-  padding: 43px 56px 39px 55px;
+  padding: 3.6% 4.8%;
   margin: 30px auto;
   background: url(../images/author-ipad.png) no-repeat;
   background-size: cover;
@@ -1987,7 +2027,7 @@ input[type="email"]:focus {
     color: #78b272;
     text-decoration: none;
   }
-  #business-problem p.right:before {
+/*  #business-problem p.right:before {
     content: "";
     display: block;
     position: absolute;
@@ -2004,67 +2044,68 @@ input[type="email"]:focus {
     height: 20px;
     background: #f9fafa;
     transform: rotate(38deg) skew(-22deg) translate(200px,-352px);
-  }
-  #business-decision {
-    height: 345px;
-    padding: 5px 0;
-    background: url(../images/business-decision-lay.jpg) no-repeat;
-    background-size: cover;
-  }
-  #business-decision h2 {
-    color: #fff;
-    font-size: 36px;
-  }
-  #business-decision hr {
-    width: 95px;
-    background: #c8cdd3;
-    height: 4px;
-    border: none;
-  }
-  #business-decision hr:nth-child(2n+1) {
-    width: 65px;
-  }
-  #business-decision .window {
-    width: 52vw;
-    height: 30vw;
-    padding: 3vw 7vw 4vw;
-    margin: 0 auto;
-    background: url(../images/business-macbook.png) no-repeat;
-    background-size: cover;
+    }*/
+    #business-decision {
+      height: 32vw;
+      margin-bottom: 10vw;
+      padding: 5px 0;
+      background: url(../images/business-decision-lay.jpg) no-repeat;
+      background-size: cover;
+    }
+    #business-decision h2 {
+      color: #fff;
+      font-size: 36px;
+    }
+    #business-decision hr {
+      width: 95px;
+      background: #c8cdd3;
+      height: 4px;
+      border: none;
+    }
+    #business-decision hr:nth-child(2n+1) {
+      width: 65px;
+    }
+    #business-decision .window {
+      width: 52vw;
+      height: 30vw;
+      padding: 3vw 7vw 4vw;
+      margin: 0 auto;
+      background: url(../images/business-macbook.png) no-repeat;
+      background-size: cover;
 
-  }
-  #business-decision .window div  {
-    /*padding: 14px 0 0;*/
-  }
-  #business-benefit {
-    padding: 10% 10% 0;
-  }
-  #business-benefit h2{
-    color: #314052;
-    font-size: 30px;
-  }
-  #business-benefit hr {
-    width: 100px;
-    height: 4px;
-    border: none;
-    background: #79818b;
-    margin-left: 0;
+    }
+    #business-decision .window div  {
+      /*padding: 14px 0 0;*/
+    }
+    #business-benefit {
+      padding: 10% 10% 0;
+    }
+    #business-benefit h2{
+      color: #314052;
+      font-size: 30px;
+    }
+    #business-benefit hr {
+      width: 100px;
+      height: 4px;
+      border: none;
+      background: #79818b;
+      margin-left: 0;
 
-  }
-  #business-benefit p{
-    color: #939393;
-  }
-  #business-benefit .window {
-   width: 60vw;
-   height: 35vw;
-   background: url(../images/business-benefit-window.png) no-repeat;
-   -webkit-background-size: cover;
-   background-size: cover;
-   position: relative;
-   transform: translate(30vw,0);
-   margin-top: 7%;
-   opacity: .2;
- }
+    }
+    #business-benefit p{
+      color: #939393;
+    }
+    #business-benefit .window {
+     width: 60vw;
+     height: 35vw;
+     background: url(../images/business-benefit-window.png) no-repeat;
+     -webkit-background-size: cover;
+     background-size: cover;
+     position: relative;
+     transform: translate(30vw,0);
+     margin-top: 7%;
+     opacity: .2;
+   }
 /*****************************************************
 *** Map Feature ***
 *****************************************************/
@@ -2436,20 +2477,20 @@ a.plus1 {
   height: 20px;
   left: 20px;
 }
-#customers .carousel-indicators li.active {
+#customers .carousel-indicators li.active, #customers .carousel-indicators li:hover {
   border: 2px solid #cc554d;
 }
 #customers .vor {
   background: url(../images/vor.png) 50% no-repeat;
 }
-#customers .carousel-indicators li.active.vor {
+#customers .carousel-indicators li.active.vor, #customers .carousel-indicators li.vor:hover {
   background: url(../images/vor-hover.png) 50% no-repeat;
 }
 #customers .stop {
   background: url(../images/stop.png) 35% 40% no-repeat;
   background-size: 90%;
 }
-#customers .carousel-indicators li.active.stop {
+#customers .carousel-indicators li.active.stop, #customers .carousel-indicators li.stop:hover {
   background: url(../images/stop-hover.png) 35% 40% no-repeat;
   background-size: 90%;
 }
@@ -2457,7 +2498,7 @@ a.plus1 {
   background: url(../images/no-control.png) 50% no-repeat;
   background-size: 90%;
 }
-#customers .carousel-indicators li.active.no-control {
+#customers .carousel-indicators li.active.no-control, #customers .carousel-indicators li.no-control:hover {
   background: url(../images/no-control-hoveer.png) 50% no-repeat;
   background-size: 90%;
 }
@@ -2465,14 +2506,14 @@ a.plus1 {
   background: url(../images/incognito.png) 50% no-repeat;
   background-size: 80%;
 }
-#customers .carousel-indicators li.active.incognito {
+#customers .carousel-indicators li.active.incognito, #customers .carousel-indicators li.incognito:hover {
   background: url(../images/incognito-hover.png) 50% no-repeat;
   background-size: 80%;
 }
 #customers .list {
   background: url(../images/list.png) 50% no-repeat;
 }
-#customers .carousel-indicators li.active.list {
+#customers .carousel-indicators li.active.list, #customers .carousel-indicators li.list:hover {
   background: url(../images/list-hover.png) 50% no-repeat;
 }
 #customers hr {
@@ -2488,7 +2529,8 @@ a.plus1 {
 #society-decision {
   background: #c8c9cb url(../images/society-decision-layout-2.png);
   box-shadow: inset 0 0 24px #111111;
-  height: 290px;
+  height: 22vw;
+  margin-bottom: 11vw;
 }
 #society-decision h2 {
   color: #cc544d;
@@ -2890,8 +2932,9 @@ a.plus1 {
   color: #fff;
   font-size: 16px;
   background: #26272d;
-  z-index: 9999;
+  z-index: 99;
   padding: 2% 0 0 ;
+  position: relative;
 }
 
 #footer .footer-container {
@@ -2917,15 +2960,16 @@ a.plus1 {
   margin-top: 6px;
 }
 
-#footer ul li .title {
+#footer ul li .title, #footer .form h4 {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: #fff;
   font-size: 12px;
+  margin-bottom: 5px;
 }
 
-#footer ul li a {
+#footer ul li a, #footer .form label {
   color: #8c8f94;
   text-decoration: none;
   line-height: 36px;
@@ -2992,16 +3036,24 @@ a.plus1 {
   margin: 0 auto;
   padding: 30px 0;
 }
+.scan-small-menu {
+  display: none;
+}
 /*.header-video {
   background: url(../images/lay.png);
   }*/
 /*****************************************************
 Responsive Styles
 *****************************************************/
+@media only screen and (max-width: 1300px) {
+  #customers .carousel-indicators li:before {
+    display: none;
+  }
+}
 @media only screen and (max-width: 992px) {
   /*** Main Nav ***/
   #main-video div {
-    top: 49%;
+    /*top: 49%;*/
   }
 
   #main-nav .col-md-4:first-child,
@@ -3164,13 +3216,17 @@ Responsive Styles
   #main-nav #slide_out_menu ul a {
     height: auto;
   }
-  #govern-header .parall-container {
+  #govern-header .parall-container, #society-header .parall-container, #business-header .parall-container {
     display: none;
   }
   #govern-header {
     background: url(../images/govern-header.jpg) no-repeat;
     background-size: cover;
     padding: 25%;
+  }
+  #business-header {
+    background: #6a7382 url(../images/business-header.png) no-repeat;
+    background-size: cover;
   }
   #govern-feature .tab-content {
     padding: 5px 10px;
@@ -3199,11 +3255,26 @@ Responsive Styles
     content: "";
     display: none;
   }
+  #society-header {
+    background: #7d8a8a url(../images/society-header-layout.png) no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding: 25% 0 10% ;
+  }
+  #author-practice > p {
+    width: 90% !important;
+  }
+  #author-problem .wrapper .right .line {
+    display: none;
+  }
+  .scan-small-menu {
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   /*** iPhone Screens ***/
-  #main-video div {
+  #main-video .play {
     width: 17vw;
     height: 17vw;
     left: 41.5%;
@@ -3256,6 +3327,92 @@ Responsive Styles
   #govern-benefit figure {
     display: none;
   }
+  #society-benefit .wrapper .center {
+    display: none;
+  }
+  #society-benefit .wrapper {
+    height: 100%;
+    -ms-align-items: flex-start;
+    align-items: flex-start;
+  }
+  #society-benefit .wrapper h4, #author-problem .wrapper .right h4 {
+    width: 100%;
+  }
+  #author-practice .items {
+    flex-direction: column;
+  }
+  #author-practice .item {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto 5%;
+  }
+  #author-problem .wrapper, #author-problem .wrapper .right .item {
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+  }
+  #author-problem .wrapper .left, #author-problem .wrapper .right {
+    width: 100%;
+  }
+  #author-problem .wrapper .right .pic {
+    height: 150px;
+    margin: 0 auto;
+  }
+  #author-decision .ipad {
+    width: 87vw;
+    height: 54vw;
+  }
+  #business-header .geo {
+    display: none;
+  }
+  #business-header .images {
+    justify-content: center;
+  }
+  #business-header h1 {
+    text-align: center;
+    line-height: 1.2em;
+  }
+  #business-feature ul.nav-tabs {
+    width: 25%;
+  }
+  #business-problem .double {
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+  }
+  #business-problem .double:last-child {
+    -webkit-flex-direction: column-reverse;
+    -moz-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    -o-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+  #business-problem .double div {
+    margin-bottom: 5%;
+  }
+  #business-problem .double p {
+    padding: 20px;
+    width: 100%;
+  }
+  #business-decision .window {
+    width: 92vw;
+    height: 54vw;
+    padding: 6vw 11vw 4vw 12.5vw;
+  }
+  #canvas-wrapper {
+    display: none !important;
+  }
+  #main-nav .scanner-link {
+    width: 10%;
+
+  }
+  #main-nav .logo {
+    width: 20%;
+  }
 }
 
 @media only screen and (max-width: 575px) {
@@ -3267,11 +3424,7 @@ Responsive Styles
   #header {
     padding: 160px 0 460px;
   }
-  #header .header_iphone {
-    bottom: -220px;
-    margin-left: -140px;
-    width: 280px;
-  }
+
   /*** Ready to Buy  ***/
   #ready-to-buy .form-group .btn,
   #subscribe .form-group .btn {
@@ -3321,17 +3474,60 @@ Responsive Styles
   }
   #govern-problems .icons .nav-tabs li {
     width: 47%;
+  } 
+  #customers .carousel-indicators {
+    display: none;
+  }
+  #customers .testimonial {
+    padding-top: 0;
+  }
+  #business-feature .row {
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+  }
+  #business-feature ul.nav-tabs {
+    width: 100%;
+  }
+  #business-feature .tab-content {
+    width: 90%;
+  }
+  #header .header_iphone {
+    display: none;
+  }
+  #control img {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+  }
+  #non-bugger figure {
+    display: none;
   }
 }
 @media screen and (max-width: 480px) {
   #main-nav .scanner-link {
     display: none;
   }
-  #main-video div {
+  #control .pointed {
+
+    margin: 0 0 0 12%;
+  }
+  #non-bugger .row {
+    padding: 0 0 20px;
+  }
+  #main-video .play {
     width: 26vw;
     height: 26vw;
     left: 37.5%;
     top: 48%;
+    transform: none !important;
+    animation: none !important;
+
+  }
+  #business-header .globe {
+    animation: none;
   }
   #govern-problems .icons .nav-tabs {
     display: none;
@@ -3353,6 +3549,54 @@ Responsive Styles
     transform: translate(0,10%) !important;
     width: 95vw  !important;
   }
+  #society-header {
+    height: auto;
+    padding-top: 150px;
+  }
+  #customers .testimonial:before {
+    display: none;
+  }
+  #customers .testimonial {
+    margin-left: 0;
+  }
+  #main-video .play {
+    width: 12rem;
+    height: 12rem;
+    background: url(../images/play.png) 50% no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 35%;
+    top: 55%;
+  }
+  #society-decision .window {
+    width: 90vw;
+    height: 65vw;
+    margin: 30px auto;
+    background: url(../images/society-window-video.png) 50% no-repeat;
+    background-size: contain;
+    filter: drop-shadow(0px 5px 10px #000);
+    padding: 12vw 1.3vw;
+  }
+  #society-benefit .wrapper .item {
+    width: 90%;
+
+    margin: 0 auto;
+  }
+  #author-header .monitor .inner {
+    background: none;
+  }
+  #author-practice .map {
+    margin-top: 15%;
+  }
+  #author-decision {
+    background: #2b2c32;
+  }
+  #author-benefit {
+    width: 90%;
+  }
+  #catalogues .left {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
 
@@ -3369,6 +3613,7 @@ Responsive Styles
   border-radius: 50%;
   background: #dd4430;
   z-index: 100;
+  display: none;
 }
 #top:before {
   content: "";
@@ -3413,11 +3658,12 @@ Responsive Styles
   position: relative;
   opacity: 0;
   font-family: "oswald", helvetica, sans-serif;
-  font-size: 17px;
-  width: 120px;
-  right: -60px;
-  top: -25px;
+  font-size: 22px;
+  width: 200px;
+  right: -80px;
+  top: -40px;
   animation: text 10s linear infinite;
+  text-shadow: 0 0 blur #000;
 }
 #facebook-call-back:before {
   content: "";
@@ -3425,9 +3671,10 @@ Responsive Styles
   position: relative;
   background: url(../images/Facebook_Messenger.png
     ) no-repeat;
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   background-size: 100%;
+  filter: drop-shadow(0 0 5px #000);
   left: 5px;
   top: 5px;
   animation: rotate 10s linear infinite;
@@ -3476,39 +3723,47 @@ Responsive Styles
      background-size: 100%;
      left: 5px;
      top: 5px;
-   }*/
+     }*/
 
 
-.arrow-scroll {
-  position: absolute;
-  text-align: center;
-  z-index: 9;
-  right: 0;
-  left: 0;
-  bottom: -40px;
+     .arrow-scroll {
+      position: absolute;
+      text-align: center;
+      z-index: 9;
+      right: 0;
+      left: 0;
+      bottom: -40px;
+    }
+    .arrow-scroll__wrap {
+      display: inline-block;
+      transition: all ease-in-out 0.2s;
+      cursor: pointer;
+    }
+    .arrow-scroll__wrap:hover {
+      opacity: 0.5;
+    }
+    .arrow-scroll__wrap_animated {
+      animation: arrow-scroll 1.7s infinite ease;
+    }
+    @keyframes arrow-scroll {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-7px);
+      }
+      55% {
+        transform: translateY(-7px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+#govern-header, #govern-feature, #govern-problems, #govern-problems-detailed, #govern-decision, #society-report, #govern-benefit {
+  filter: brightness(.3);
+  transition: .4s;
 }
-.arrow-scroll__wrap {
-  display: inline-block;
-  transition: all ease-in-out 0.2s;
-  cursor: pointer;
-}
-.arrow-scroll__wrap:hover {
-  opacity: 0.5;
-}
-.arrow-scroll__wrap_animated {
-  animation: arrow-scroll 1.7s infinite ease;
-}
-@keyframes arrow-scroll {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-7px);
-  }
-  55% {
-    transform: translateY(-7px);
-  }
-  100% {
-    transform: translateY(0);
-  }
+ #govern-header:hover, #govern-feature:hover, #govern-problems:hover, #govern-problems-detailed:hover, #govern-decision:hover, #society-report:hover, #govern-benefit:hover {
+  filter: brightness(1);
 }

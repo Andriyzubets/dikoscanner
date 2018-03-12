@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dikoscanner | Главная</title>
+  <title>Dikoscanner | Главная страница</title>
   <!-- <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700,500' rel='stylesheet' type='text/css'> -->
   <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css"> <!-- Font Awesome -->
   <link rel="stylesheet" href="css/normalize.css"> <!-- CSS reset -->
@@ -65,55 +65,79 @@
             <video src="images/dikoscanner.mp4" autoplay="autoplay" loop></video>
           </a>
           <a href="index.html" class="logo logo-link">
-            <img src="images/logo-white.png" alt="" style="background:#000;border-radius: 20px;box-shadow: 0 0 22px #111;">
-          <video src="images/logo-header.mp4" autoplay="autoplay" loop></video>
-        </a>
-      </div>
-    </div>
-  </div>
-</header>
-
-<section id="main-video">
-  <p class="text-center">Автор!</p>
-  <h2 class="text-center">Получай свои авторские уже <br> <b>СЕГОДНЯ</b></h2>
-  <div class="animated pulse infinite play" data-toggle="modal" data-target="#myModal"></div>
-  <div id="myModal" class="modal fade" role="dialog">
-    <div class="modal-dialog" style="transform: translate(0,10%);width: 80vw;height: 80vh;">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        <div class="modal-body">
-          <iframe width="100%" height="500" src="https://www.youtube.com/embed/HdA9-LoCofk?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" control="none" allowfullscreen></iframe>
+            <img src="images/logo-white.png" alt="" style="background:#000;border-radius: 20px;box-shadow: 0 0 22px #111;height: auto;">
+            <video src="images/logo-header.mp4" autoplay="autoplay" loop></video>
+          </a>
         </div>
       </div>
-
     </div>
-  </div>
-</section>
+  </header>
+
+  <section id="main-video">
+    <p class="text-center">Автор!</p>
+    <h2 class="text-center">Получай свои авторские уже <br> <b>СЕГОДНЯ</b></h2>
+    <div class="animated pulse infinite play" onclick="openbox('myModal'); return false" data-toggle="modal" data-target="#myModal"></div>
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog" style="transform: translate(0,10%);width: 80vw;height: 80vh;margin: 0 auto">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <iframe width="100%" height="500" src="https://www.youtube.com/embed/jueN-Dqqayk?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
 
 
-<footer id="footer">
-  <div class="container footer-container">
-    <div class="row">
-      <div class="col-md-3">
-        <img class="logo" src="images/logo.png" alt="">
-        <p>Вы можете связаться с нами любым удобным для Вас способом. </p>
-        <a href="tel:0930000000" style="text-decoration: none; color: #8c8f94;">+38 093 000 00 00</a>
-        <a href="mailto:mail@diko.com" style="text-decoration: none; color: #8c8f94;">mail@diko.com</a>
-        <ul class="socials">
-          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-          <li><a href="#"><i class="fa fa-tumblr"></i></a></li>
-          <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-        </ul>
+  <footer id="footer">
+    <div class="container footer-container">
+      <div class="row">
+        <div class="col-md-3">
+          <img class="logo" src="images/logo.png" alt="">
+          <p>Вы можете связаться с нами любым удобным для Вас способом. </p>
+          
+          <ul class="socials">
+
+            <li><a href="https://www.facebook.com/dikotech/"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCxAfLILqApy9Yjt1RJWKIwQ?view_as=subscriber"><i class="fa fa-youtube"></i></a></li>
+            <li><a href=" https://vk.com/dikotech"><i class="fa fa-vk"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-md-7 col-sm-7 col-xs-12 form">
+         <div class="title">
+          <h4>Обратная связь</h4>
+        </div>
+        <form action="contact.php" method="POST" id="feedback-form">
+          <div class="row">
+            <div class="col-md-12">
+              <label for="author">Имя<span class="required">*</span></label>
+              <input id="name" class="form-control" name="contactFF" type="text">
+            </div>
+            <div class="col-md-12">
+              <label for="email">Email<span class="required">*</span></label>
+              <input id="email" class="form-control" name="contactFF" type="text">
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <label for="comment">Ваше сообщение</label>
+              <textarea id="message" class="form-control" name="messageFF"></textarea>
+              <div id="notification"></div>
+              <input name="submit" type="submit" id="submit" class="def-button" value="Отправить сообщение" style="    margin: 20px 0;
+              border-radius: 15px;
+              background: #00000071;
+              border: none;
+              padding: 5px 20px;">
+            </div>
+          </div>
+        </form>
       </div>
-      <div class="col-md-6 col-sm-6 col-xs-12">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22628.660573169946!2d30.588715215109197!3d50.428784407780334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c57ae29e4fad%3A0xee8865c515ad9030!2z0JHQtdGA0LXQt9C90Y_QutC4LCDQmtC40LXQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1520375332640" width="400" height="300" frameborder="0" style="border:0;filter: grayscale(1);width: 100%;" allowfullscreen></iframe>
-      </div>
-      <div class="col-md-3 col-sm-6 col-xs-12 footer-links">
+      <div class="col-md-2 col-sm-2 col-xs-12 footer-links">
         <ul>
           <li><p class="title">Дикосканнер</p></li>
           <li><a href="index.html">Главная</a></li>
@@ -142,25 +166,25 @@
 </footer>
 <!-- buttons -->
 <div id="facebook-call-back" onclick="openbox('facebook-form'); return false"></div>
-  <!-- Facebook -->
+<!-- Facebook -->
 <div id="facebook-form" class="fb-page" style="display:none;position:fixed;bottom: 15%;left: 0%;z-index: 200;" data-href="https://www.facebook.com/DikoScanner-1595843727117873/" data-tabs="messages" data-width="300" data-height="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
 
   <blockquote cite="https://www.facebook.com/DikoScanner-1595843727117873/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/DikoScanner-1595843727117873/">Dikoscanner</a></blockquote>
 
 </div>
 
-  <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.12';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.12';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
 
 
 
-  </script>
+</script>
 <script src="js/jquery-2.1.4.min.js"></script> <!-- jQuery -->
 <script src="js/bootstrap.min.js"></script>  <!-- Bootstrap -->
 <script src="js/wow.min.js"></script>  <!-- wow -->
@@ -170,14 +194,28 @@
 <script>
 
 
+  function openbox(id){
+    display = document.getElementById(id).style.display;
+
+    if(display=='none'){
+      document.getElementById(id).style.display='block';
+    }else{
+      document.getElementById(id).style.display='none';
+    }
+  }
+
   document.body.onload = function() {
     setTimeout(function(){
       var preloader = document.getElementById('page-preloader');
       if (!preloader.classList.contains('done')) {
         preloader.classList.add('done');
       }
-    },  000);
+    },  9000);
   }
+
+  var h = document.querySelector('#main-nav');
+        var height = window.getComputedStyle(h, null).height;
+        document.querySelector('#main-video').style.paddingTop=height;
 </script>
 </body>
 </html>

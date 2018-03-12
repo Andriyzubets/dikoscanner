@@ -20,30 +20,45 @@
   <header id="main-nav">
     <div class="container">
 
-      <a id="navigation" href="#" onclick="document.querySelector('.row').style.transition='.4s';document.querySelector('.row').style.left='150px';return false"><i class="fa fa-bars"></i></a>
+      <a id="navigation" href="#" onclick="document.querySelector('.row').style.transition='.4s';document.querySelector('.row').style.left='150px';document.querySelector('#footer').style.transition='.4s';document.querySelector('#footer').style.left='250px';return false"><i class="fa fa-bars"></i></a>
 
       <div id="slide_out_menu">
-        <a href="#" class="menu-close" onclick="document.querySelector('.row').style.left='0';document.querySelector('.row').style.transition='.4s';return false"><i class="fa fa-times"></i></a>
+        <a href="#" class="menu-close" onclick="document.querySelector('.row').style.left='0';document.querySelector('.row').style.transition='.4s';document.querySelector('#footer').style.left='0';return false"><i class="fa fa-times"></i></a>
         <!-- <div class="logo"><img src="images/logo-white.png" alt=""></div> -->
         <ul>
           <li><a href="#" class="side-world"></a></li>
-          <li><a href="#" class="side-ukr"></a></li>
-          <li><a href="#" class="side-decision"></a></li>
-          <li><a href="#" class="side-benefit"></a></li>
-          <li><a href="#" class="side-contacts"></a></li>
+          <li><a href="#customers" class="side-ukr"></a></li>
+          <li><a href="#society-decision" class="side-decision"></a></li>
+          <li><a href="#society-benefit" class="side-benefit"></a></li>
+          <li><a href="#footer" class="side-contacts"></a></li>
         </ul>
-
+        <ul class="smart">
+          <li><a href="#">Мировая практика</a></li>
+          <li><a href="#customers">Как происходит у нас</a></li>
+          <li><a href="#society-decision">Решение</a></li>
+          <li><a href="#society-benefit">Выгода</a></li>
+          <li><a href="#footer">Контакты</a></li>
+          <br>
+          <br>
+          <br>
+          <li><a href="govern.html"><p>Государству</p></a></li>
+          <li><a href="society.html"><p>Авторскому обществу</p></a></li>
+          <li><a href="author.html"><p>Музыканту</p></a></li>
+          <li><a href="business.html"><p>Заведению</p></a></li>
+          <li><a href="scanner.html"><p>Дикосканнер</p></a></li>
+          <li><a href="index.html"><p>Главная</p></a></li>
+        </ul>
         
       </div>
 
       <div class="row">
-        <div class="col-md-7">
+        <div class="col-md-7 visible-md visible-lg">
           <ul class="left row">
             <li class="col-md-2"><a href="govern.html" class="govern-link">
               <img src="images/govern.png" alt="">
               <video src="images/govern-header.mp4" autoplay="autoplay" loop></video>
             </a></li>
-            <li class="col-md-2"><a href="society.html" class="society-link">
+            <li class="col-md-2"><a href="society.html" class="society-link" style="background:#000;border-radius: 20px;box-shadow: 0 0 22px #111;height: auto;">
               <img src="images/society.png" alt="">
               <video src="images/society-header.mp4" autoplay="autoplay" loop></video>
             </a></li>
@@ -57,7 +72,7 @@
             </a></li>
           </ul>
         </div>
-        <div class="col-md-3 col-md-offset-2 text-right right">
+        <div class="col-md-3 col-md-offset-2 text-right col-xs-12 right">
           <a href="scanner.html" class="scanner scanner-link">
             <img src="images/final.png" alt="">
             <video src="images/dikoscanner.mp4" autoplay="autoplay" loop></video>
@@ -81,6 +96,8 @@
         <div class="col-md-10 col-md-offset-1 text-justify excerpt">
           <h1 class="wow fadeInUp">МИРОВАЯ ПРАКТИКА</h1>
           <p class="wow fadeInUp" data-wow-delay=".2s">Авторские общества существуют по всему миру для осуществления контроля над использованием авторского контента в заведениях и других общественных местах. Все они включены в единую Международную Конфедерацию, что позволяет контролировать выплаты по применению авторского продукта не только в своей стране, но и за рубежом.
+            <br><br>
+            Авторское общество является определенным посредником непосредственно между предпринимателем, самим артистом и государством.
           </p>
         </div>
       </div>
@@ -93,11 +110,12 @@
         <span id="min" style="display: none;">-</span>
       </a>
       <div>
-        <h4>Авторское общество</h4>
-        <p>является определенным посредником непосредственно между предпринимателем, самим артистом и государством.</p>
+        <h4>Все авторские общества включены в Международное авторское общество CISAC.</h4>
+        <p>Не так давно Международная Конфедерация обществ авторов и композиторов представиласвой годовой отчет, ...</p>
         <div id="soc-1" style="height: 0px;">
-          Стоит отметить, что все авторские общества включены в Международное авторское общество CISAC. А Украина не является полноправным членом этой организации. Не так давно Международная Конфедерация обществ авторов и композиторов представила свой годовой отчет, в котором подвела итоги работы за прошлый год, доказав, что общие сборы роялти в мире значительно увеличились, соответственно доходы государств, авторов и исполнителей стали выше, причем на совершенно законных основаниях. <br>
-          Украина же, по-прежнему, находится «в хвосте поезда» в контексте выплат роялти. То есть владельцы заведений, радиостанции и телеканалы используют музыкальные авторские продукты, не выплачивая за это положенных сумм.
+          в котором подвела итоги работы за прошлый год, доказав, что общие сборы роялти в мире значительно увеличились, соответственно доходы государств, авторов и исполнителей стали выше, причем на совершенно законных основаниях.
+          <br><br>
+          Наша страна не является полноправным членом этой организации. Украина же, по-прежнему, находится «в хвосте поезда» в контексте выплат роялти. То есть владельцы заведений, радиостанции и телеканалы используют музыкальные авторские продукты, не выплачивая за это положенных сумм.
         </div>
       </div>
       
@@ -114,7 +132,7 @@
             <h3 class="wow fadeInLeft text-center">Как происходит <b>у нас?</b></h3>
             <hr>
 
-            <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+            <div class="carousel slide" data-interval="3000" data-ride="carousel" id="quote-carousel">
               <!-- Carousel Slides / Quotes -->
               <div class="carousel-inner text-center">
                 <!-- Bottom Carousel Indicators -->
@@ -151,7 +169,7 @@
                 <div class="item">
                   <div class="testimonial">
                     <!-- <h3>ОТЧИСЛЕНИЯ В БЮДЖЕТ</h3> -->
-                    <p>При этом большинство заведений просто не выплачивают авторские отчисления, специально или по незнанию. И, если по всему миру музыка редко используется в заведениях, потому что это дорого, то в нашей стране она звучит на каждом углу.
+                    <p>Сфера является высоко коррумпированной, а тот небольшой объем выплат, которые все-таки поступают, распределяются без определенной схемы.
                     </p>
 
 
@@ -168,7 +186,7 @@
                 <!-- Qoute 4 -->
                 <div class="item">
                   <div class="testimonial">
-                    <p>Помимо этого, отсутствует и общепринятая система отчетности, поэтому очень сложно оценить, какие суммы должны быть выплачены, как они распределяются между автором и государством, и куда в принципе поступает то небольшое роялти, которое все-таки оплачивается добросовестными владельцами заведений.
+                    <p>Большинство заведений просто не выплачивают авторские отчисления, специально или по незнанию. И, если по всему миру музыка редко используется в заведениях, потому что это дорого, то в нашей стране она звучит на каждом углу.
                     </p>
 
                   </div>
@@ -176,7 +194,7 @@
                 <!-- Quote 5 -->
                 <div class="item">
                   <div class="testimonial">
-                    <p>В этой сфере процветает коррупция, так что добиться правды будет совсем не просто.
+                    <p>Отсутствует и общепринятая система отчетности, поэтому очень сложно оценить, какие суммы должны быть выплачены, как они распределяются между автором и государством, и куда в принципе поступает то небольшое роялти, которое все-таки оплачивается добросовестными владельцами заведений.
                     </p>
                   </div>
                 </div>
@@ -199,17 +217,29 @@
     data--40p-bottom="transform: rotateX(0deg);">
     <div><video src="images/decision.mp4" loop autoplay></video></div>
 
-
-  <!-- <p style="    font-size: 14px;
-  color: #fff;
-  text-align: justify;">
-  Оптимальным решением поставленной задачи является применение автоматизированной системы, которая представлена компанией DikoTech. Принцип работы нашего устройства Digital Sound Scanner заключается в подсчете количества и типа, использованного в заведении авторского музыкального контента в режиме онлайн. Оно подходит для установки в любом общественном месте, позволяет точно определять сумму выплат. <br>
-  При пользовании этим обеспечением отсутствует возможность исправить исходные данные или подтасовать их. Следовательно, коррумпированность этой сферы будет сведена к нулю. К тому же, это оборудование очень функционально, позволит наладить действенную систему контроля, которая будет оценена мировым сообществом, и позволит Украине выйти на совершенно новый уровень, обеспечить государство и авторов должным финансированием. 
-</p> -->
-</div>
+  </div>
 
 </section>
-<button class="after-decision wow fadeInUp" style="margin-top: 20%" onclick="location.href='scanner.html'">Узнать больше</button>
+<section id="society-report" style="    width: 60%;
+margin: 0 auto;">
+<div class="accPanel">
+  <a href="" class="plus" onclick="heightbox('soc-2');openbox('pl1');openbox('min1'); return false">
+    <span id="pl1">+</span>
+    <span id="min1" style="display: none;">-</span>
+  </a>
+  <div>
+    <h4>Что позволит устранить эту проблему?</h4>
+    <p>Оптимальным решением поставленной задачи является применение автоматизированной системы.</p>
+    <div id="soc-2" style="height: 0px;">
+      Принцип работы устройства Digital Sound Scanner заключается в подсчете количества и типа использованного в заведении авторского музыкального контента в режиме онлайн. Оно подходит для установки в любом общественном месте, позволяет точно определять сумму выплат.
+      <br><br>
+     Устройство обеспечивает отсутствие возможности исправить исходные данные или подтасовать их. Следовательно, коррумпированность этой сферы будет сведена к нулю. К тому же, это оборудование очень функционально, позволит наладить действенную систему контроля, которая будет оценена мировым сообществом, и позволит Украине выйти на совершенно новый уровень, обеспечить государство и авторов должным финансированием.
+   </div>
+ </div>
+
+</div>
+</section>
+<button class="after-decision wow fadeInUp" style="margin-top: 0%" onclick="location.href='scanner.html'">Узнать больше</button>
 
 <section id="society-benefit">
   <h2 class="text-center wow fadeInUp"><b>Выгода</b> авторского общества!</h2>
@@ -241,48 +271,61 @@
 </section>
 
 <footer id="footer">
-  <div class="container footer-container">
-    <div class="row">
-      <div class="col-md-3">
-        <img class="logo" src="images/logo.png" alt="">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos in nemo fuga modi voluptatum. </p>
-        <!-- <a href="#" class="app_download"><img src="images/app-store-download.png" alt=""></a> -->
-        <ul class="socials">
-          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-          <li><a href="#"><i class="fa fa-tumblr"></i></a></li>
-          <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-        </ul>
+    <div class="container footer-container">
+      <div class="row">
+        <div class="col-md-3">
+          <img class="logo" src="images/logo.png" alt="">
+          <p>Вы можете связаться с нами любым удобным для Вас способом. </p>
+          
+          <ul class="socials">
+
+            <li><a href="https://www.facebook.com/dikotech/"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCxAfLILqApy9Yjt1RJWKIwQ?view_as=subscriber"><i class="fa fa-youtube"></i></a></li>
+            <li><a href=" https://vk.com/dikotech"><i class="fa fa-vk"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-md-7 col-sm-7 col-xs-12 form">
+         <div class="title">
+          <h4>Обратная связь</h4>
+        </div>
+        <form action="contact.php" method="POST" id="feedback-form">
+          <div class="row">
+            <div class="col-md-12">
+              <label for="author">Имя<span class="required">*</span></label>
+              <input id="name" class="form-control" name="contactFF" type="text">
+            </div>
+            <div class="col-md-12">
+              <label for="email">Email<span class="required">*</span></label>
+              <input id="email" class="form-control" name="contactFF" type="text">
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <label for="comment">Ваше сообщение</label>
+              <textarea id="message" class="form-control" name="messageFF"></textarea>
+              <div id="notification"></div>
+              <input name="submit" type="submit" id="submit" class="def-button" value="Отправить сообщение" style="    margin: 20px 0;
+              border-radius: 15px;
+              background: #00000071;
+              border: none;
+              padding: 5px 20px;">
+            </div>
+          </div>
+        </form>
       </div>
-      <div class="col-md-2 col-md-offset-3 col-sm-4 col-xs-6 footer-links">
+      <div class="col-md-2 col-sm-2 col-xs-12 footer-links">
         <ul>
-          <li><p class="title">Узнать детальнее</p></li>
-          <li><a href="#">Как это работает?</a></li>
-          <li><a href="#">Политика конфиденциальности</a></li>
-          <li><a href="#">Мы в сетях</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li><p class="title">Дикосканнер</p></li>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="govern.html">Государству</a></li>
+          <li><a href="society.html">Авторскому сообществу</a></li>
+          <li><a href="author.html">Музыканту</a></li>
+          <li><a href="business.html">Заведению</a></li>
+          <li><a href="scanner.html"><b>Дикосканнер</b></a></li>
         </ul>
       </div>
-      <div class="col-md-2 col-sm-4 col-xs-6 footer-links">
-        <ul>
-          <li><p class="title">О нас</p></li>
-          <li><a href="#">О проекте</a></li>
-          <li><a href="#">Возможности</a></li>
-          <li><a href="#">Вопросы | ответы</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-      </div>
-      <div class="col-md-2 col-sm-4 col-xs-6 footer-links">
-        <ul>
-          <li><p class="title">Поддержка</p></li>
-          <li><a href="#">F.A.Q.</a></li>
-          <li><a href="#">Контакты</a></li>
-          <li><a href="#">FB chat</a></li>
-          <li><a href="#">Позвони нам</a></li>
-        </ul>
-      </div>
+
     </div>
   </div>
   <div class="container copyright-container">
@@ -301,25 +344,25 @@
 <!-- buttons -->
 <div id="top"></div>
 <div id="facebook-call-back" onclick="openbox('facebook-form'); return false"></div>
-  <!-- Facebook -->
+<!-- Facebook -->
 <div id="facebook-form" class="fb-page" style="display:none;position:fixed;bottom: 15%;left: 0%;z-index: 200;" data-href="https://www.facebook.com/DikoScanner-1595843727117873/" data-tabs="messages" data-width="300" data-height="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
 
   <blockquote cite="https://www.facebook.com/DikoScanner-1595843727117873/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/DikoScanner-1595843727117873/">Dikoscanner</a></blockquote>
 
 </div>
 
-  <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.12';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.12';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
 
 
 
-  </script>
+</script>
 <script src="js/jquery-2.1.4.min.js"></script> <!-- jQuery -->
 <script src="js/bootstrap.min.js"></script>  <!-- Bootstrap -->
 <script src="js/wow.min.js"></script>  <!-- wow -->
@@ -410,20 +453,20 @@ cssTo: {
     });
 
 // Правильный скролл на якоря
-     $(function(){
-    $('a[href*=#]').click(function() {
+$(function(){
+  $('a[href*=#]').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
       && location.hostname == this.hostname) {
-        var $target = $(this.hash);
-        $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
-        if ($target.length) {
+      var $target = $(this.hash);
+    $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+    if ($target.length) {
           var targetOffset = $target.offset().top - ($("#main-nav").outerHeight(true)+ 0); //#main-header - заменить на ваш элемент
           $('html,body').animate({scrollTop: targetOffset}, 700);
           return false;
         }
       }
     });
-  });
+});
 </script>
 </body>
 </html>
